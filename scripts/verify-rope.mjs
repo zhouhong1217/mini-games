@@ -32,7 +32,7 @@ const origin = new URL(home).origin;
 const browser = await chromium.launch({ headless: true,
   executablePath: process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' });
 const report = { result: 'running', home, checks: {}, page_errors: [], console_errors: [],
-  external_requests: [], failed_responses: [], input_actions: [], known_engine_warnings: [] };
+  external_requests: [], failed_responses: [], input_actions: [], known_engine_warnings: [], expected_load_errors: [] };
 const contexts = [];
 const logs = [];
 async function newContext(options = {}) {
@@ -53,7 +53,10 @@ async function newContext(options = {}) {
         report.known_engine_warnings.push(message.text());
         return;
       }
-      if (message.type() === 'error' && !page.expectedLoadFailure) report.console_errors.push(message.text());
+      if (message.type() === 'error') {
+        if (page.expectedLoadFailure) report.expected_load_errors.push(message.text());
+        else report.console_errors.push(message.text());
+      }
     });
     page.on('response', response => {
       if (response.status() >= 400 && !page.expectedLoadFailure) report.failed_responses.push({ url: response.url(), status: response.status() });
@@ -215,8 +218,16 @@ try {
   await retry.locator('#start').click();
   await retry.waitForFunction(()=>document.querySelector('#status').textContent==='加载未完成',null,{timeout:30000});
   await shot(retry,'network-error');
-  await retryContext.unroute(interrupted); retry.expectedLoadFailure=false;
+  await retryContext.unroute(interrupted);
   await retry.locator('#start').click(); await ready(retry);
+  // 故障阶段持续到恢复就绪：重试导航会取消旧 iframe 尚未完成的 data 请求。
+  retry.expectedLoadFailure=false;
+  assert.ok(report.expected_load_errors.every(message =>
+    /^Failed to load resource: net::ERR_(FAILED|ABORTED)$/.test(message) ||
+    message === 'Failed to download file Build/Rope Tangle Puzzle.data' ||
+    message === 'Failed to asynchronously prepare wasm: TypeError: Failed to fetch' ||
+    /^Aborted\(TypeError: Failed to fetch\)$/.test(message)
+  ), 'Unexpected error during intentional download failure: ' + JSON.stringify(report.expected_load_errors));
   await shot(retry,'retry-recovered');
   report.checks.retry = {wasm_aborted:true,error_visible:true,recovered:true};
   assert.deepEqual(report.page_errors,[]);
