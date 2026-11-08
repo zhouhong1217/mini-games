@@ -1,0 +1,20 @@
+
+daoju_yagao.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yagao01
+  rotate: true
+  xy: 0, 0
+  size: 153, 596
+  orig: 153, 596
+  offset: 0, 0
+  index: -1
+yagao02
+  rotate: false
+  xy: 597, 82
+  size: 57, 71
+  orig: 57, 71
+  offset: 0, 0
+  index: -1

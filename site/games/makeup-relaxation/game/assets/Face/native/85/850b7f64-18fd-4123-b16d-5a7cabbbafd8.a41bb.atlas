@@ -1,0 +1,13 @@
+
+daoju_xiumeidao.png
+size: 1024,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+meidao
+  rotate: true
+  xy: 0, 0
+  size: 58, 521
+  orig: 58, 521
+  offset: 0, 0
+  index: -1

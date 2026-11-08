@@ -1,0 +1,41 @@
+
+zjm.png
+size: 1688,692
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guang
+  rotate: false
+  xy: 1526, 287
+  size: 56, 56
+  orig: 64, 67
+  offset: 4, 8
+  index: -1
+zjm_01
+  rotate: false
+  xy: 1526, 344
+  size: 153, 48
+  orig: 156, 50
+  offset: 2, 1
+  index: -1
+zjm_02
+  rotate: false
+  xy: 1205, 27
+  size: 320, 365
+  orig: 320, 375
+  offset: 0, 5
+  index: -1
+zjm_03
+  rotate: true
+  xy: 0, 0
+  size: 692, 1204
+  orig: 733, 1262
+  offset: 41, 0
+  index: -1
+zjm_04
+  rotate: true
+  xy: 1205, 393
+  size: 299, 483
+  orig: 317, 526
+  offset: 18, 28
+  index: -1

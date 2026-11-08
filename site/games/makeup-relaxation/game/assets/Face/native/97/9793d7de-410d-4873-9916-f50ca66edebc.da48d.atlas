@@ -1,0 +1,13 @@
+
+daoju_shuazi.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shuazi
+  rotate: false
+  xy: 0, 0
+  size: 166, 145
+  orig: 166, 145
+  offset: 0, 0
+  index: -1

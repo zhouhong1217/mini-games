@@ -1,0 +1,13 @@
+
+daoju_bi_gaoguangshua.png
+size: 64,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bizi_gaoguang
+  rotate: false
+  xy: 0, 0
+  size: 37, 468
+  orig: 37, 468
+  offset: 0, 0
+  index: -1

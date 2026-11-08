@@ -1,0 +1,55 @@
+
+fang4.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4/xian4_0
+  rotate: false
+  xy: 1, 1
+  size: 206, 206
+  orig: 207, 206
+  offset: 0, 0
+  index: -1
+4/xian4_1
+  rotate: false
+  xy: 208, 1
+  size: 206, 206
+  orig: 207, 206
+  offset: 0, 0
+  index: -1
+4/xian4_2
+  rotate: false
+  xy: 415, 1
+  size: 206, 206
+  orig: 207, 206
+  offset: 0, 0
+  index: -1
+4/xian4_3
+  rotate: false
+  xy: 622, 1
+  size: 206, 206
+  orig: 207, 206
+  offset: 0, 0
+  index: -1
+4/xian4_4
+  rotate: false
+  xy: 829, 1
+  size: 206, 206
+  orig: 207, 206
+  offset: 0, 0
+  index: -1
+4/xian4_5
+  rotate: false
+  xy: 1036, 1
+  size: 206, 206
+  orig: 207, 206
+  offset: 0, 0
+  index: -1
+4/xian4_6
+  rotate: false
+  xy: 1243, 1
+  size: 206, 206
+  orig: 207, 206
+  offset: 0, 0
+  index: -1

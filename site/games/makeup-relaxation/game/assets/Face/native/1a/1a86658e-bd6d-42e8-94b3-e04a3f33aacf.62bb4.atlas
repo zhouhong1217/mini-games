@@ -1,0 +1,20 @@
+
+daoju_xifa.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xifa01
+  rotate: true
+  xy: 0, 0
+  size: 214, 606
+  orig: 214, 606
+  offset: 0, 0
+  index: -1
+xifa02
+  rotate: true
+  xy: 607, 59
+  size: 155, 98
+  orig: 155, 98
+  offset: 0, 0
+  index: -1

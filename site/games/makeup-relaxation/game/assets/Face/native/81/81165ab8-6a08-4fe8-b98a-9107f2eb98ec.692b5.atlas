@@ -1,0 +1,27 @@
+
+daoju_yanyingpan.png
+size: 512,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yanying01
+  rotate: false
+  xy: 0, 350
+  size: 351, 349
+  orig: 351, 349
+  offset: 0, 0
+  index: -1
+yanying02
+  rotate: false
+  xy: 0, 0
+  size: 351, 349
+  orig: 351, 349
+  offset: 0, 0
+  index: -1
+yanyingshua
+  rotate: false
+  xy: 352, 106
+  size: 77, 593
+  orig: 77, 593
+  offset: 0, 0
+  index: -1

@@ -73,5 +73,18 @@
         ]
       }
     }
+  },
+  {
+    "id": "makeup-relaxation",
+    "title": "化妆解压",
+    "subtitle": "轻松护理，随心上妆",
+    "description": "跟随画面提示，清洁护理、挑选妆容。慢慢完成每一个小步骤，享受轻松的化妆时光。",
+    "href": "games/makeup-relaxation/",
+    "cover": "assets/covers/makeup-relaxation.jpg",
+    "coverAlt": "化妆解压游戏封面：人物面部护理与化妆",
+    "tags": [
+      "休闲解压",
+      "中文游戏"
+    ]
   }
 ]

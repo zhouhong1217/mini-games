@@ -1,0 +1,41 @@
+
+daoju_shangkou.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuangketie
+  rotate: false
+  xy: 0, 0
+  size: 226, 86
+  orig: 226, 86
+  offset: 0, 0
+  index: -1
+shangkou
+  rotate: false
+  xy: 227, 24
+  size: 162, 62
+  orig: 177, 65
+  offset: 9, 0
+  index: -1
+yaogao01
+  rotate: true
+  xy: 0, 87
+  size: 153, 593
+  orig: 153, 593
+  offset: 0, 0
+  index: -1
+yaogao02
+  rotate: false
+  xy: 563, 16
+  size: 68, 70
+  orig: 68, 70
+  offset: 0, 0
+  index: -1
+yaogaotu
+  rotate: false
+  xy: 390, 30
+  size: 172, 56
+  orig: 197, 59
+  offset: 2, 1
+  index: -1

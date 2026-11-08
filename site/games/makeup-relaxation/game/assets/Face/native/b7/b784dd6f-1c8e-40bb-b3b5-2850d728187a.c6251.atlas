@@ -1,0 +1,13 @@
+
+daoju_meibi.png
+size: 1024,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+meibi
+  rotate: true
+  xy: 0, 0
+  size: 43, 693
+  orig: 43, 693
+  offset: 0, 0
+  index: -1

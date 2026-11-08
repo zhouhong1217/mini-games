@@ -1,0 +1,132 @@
+
+daoju_zhangzui.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mo
+  rotate: true
+  xy: 159, 130
+  size: 235, 125
+  orig: 236, 126
+  offset: 1, 0
+  index: -1
+nie01
+  rotate: true
+  xy: 633, 383
+  size: 640, 536
+  orig: 640, 536
+  offset: 0, 0
+  index: -1
+nie02
+  rotate: true
+  xy: 114, 366
+  size: 657, 518
+  orig: 658, 518
+  offset: 0, 0
+  index: -1
+ya01
+  rotate: false
+  xy: 234, 32
+  size: 216, 97
+  orig: 221, 101
+  offset: 2, 3
+  index: -1
+ya02
+  rotate: true
+  xy: 285, 149
+  size: 216, 97
+  orig: 221, 101
+  offset: 2, 3
+  index: -1
+ya03
+  rotate: true
+  xy: 383, 157
+  size: 208, 186
+  orig: 213, 188
+  offset: 2, 1
+  index: -1
+ya_huai
+  rotate: true
+  xy: 197, 0
+  size: 27, 36
+  orig: 29, 38
+  offset: 1, 1
+  index: -1
+ya_zhe
+  rotate: false
+  xy: 570, 160
+  size: 37, 44
+  orig: 39, 46
+  offset: 1, 1
+  index: -1
+ya_zhong
+  rotate: false
+  xy: 159, 28
+  size: 74, 101
+  orig: 76, 103
+  offset: 1, 1
+  index: -1
+ya_zhongx
+  rotate: true
+  xy: 159, 0
+  size: 27, 37
+  orig: 29, 39
+  offset: 1, 1
+  index: -1
+ya_zuo
+  rotate: false
+  xy: 608, 170
+  size: 56, 34
+  orig: 58, 37
+  offset: 1, 2
+  index: -1
+ya_zuox
+  rotate: true
+  xy: 114, 341
+  size: 24, 18
+  orig: 26, 20
+  offset: 1, 1
+  index: -1
+yagao00
+  rotate: false
+  xy: 570, 277
+  size: 34, 88
+  orig: 34, 88
+  offset: 0, 0
+  index: -1
+yagao01
+  rotate: true
+  xy: 451, 3
+  size: 153, 596
+  orig: 153, 596
+  offset: 0, 0
+  index: -1
+yagao02
+  rotate: false
+  xy: 570, 205
+  size: 57, 71
+  orig: 57, 71
+  offset: 0, 0
+  index: -1
+yashua01
+  rotate: false
+  xy: 0, 339
+  size: 113, 684
+  orig: 114, 684
+  offset: 0, 0
+  index: -1
+yashua02
+  rotate: false
+  xy: 87, 17
+  size: 71, 321
+  orig: 71, 322
+  offset: 0, 1
+  index: -1
+yashua03
+  rotate: false
+  xy: 0, 15
+  size: 86, 323
+  orig: 87, 323
+  offset: 1, 0
+  index: -1

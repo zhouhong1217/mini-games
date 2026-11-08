@@ -1,0 +1,76 @@
+
+xxtx.png
+size: 2009,260
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xx04/xx04_1
+  rotate: false
+  xy: 0, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1
+xx04/xx04_10
+  rotate: false
+  xy: 1809, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1
+xx04/xx04_2
+  rotate: false
+  xy: 201, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1
+xx04/xx04_3
+  rotate: false
+  xy: 402, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1
+xx04/xx04_4
+  rotate: false
+  xy: 603, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1
+xx04/xx04_5
+  rotate: false
+  xy: 804, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1
+xx04/xx04_6
+  rotate: false
+  xy: 1005, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1
+xx04/xx04_7
+  rotate: false
+  xy: 1206, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1
+xx04/xx04_8
+  rotate: false
+  xy: 1407, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1
+xx04/xx04_9
+  rotate: false
+  xy: 1608, 0
+  size: 200, 260
+  orig: 200, 260
+  offset: 0, 0
+  index: -1

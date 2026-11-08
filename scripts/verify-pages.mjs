@@ -161,6 +161,24 @@ try {
   report.checks.shared_origin_storage = { water_key: 'xeyaxz-4399-v1.0', cut_key: 'CTR', unchanged_water_save: true };
   console.log('Cut the Rope first level, save, shell and storage isolation passed.');
 
+  await page.goto(home);
+  await page.getByRole('link', { name: '化妆解压', exact: true }).click();
+  assert.equal(new URL(page.url()).pathname, new URL('games/makeup-relaxation/', home).pathname);
+  assert.equal(await page.evaluate(() => document.documentElement.lang), 'zh-CN');
+  assert.equal(await page.locator('#game').getAttribute('src'), null);
+  await page.locator('#start').click();
+  assert.equal(await page.locator('#game').getAttribute('src'), 'game/');
+  await page.waitForFunction(() => document.querySelector('#cover').hidden, null, { timeout: 90000 });
+  assert.ok(page.frames().some(frame => new URL(frame.url()).pathname === new URL('games/makeup-relaxation/game/', home).pathname));
+  await page.locator('#fullscreen').click();
+  assert.equal(await page.evaluate(() => document.fullscreenElement?.id), 'stage');
+  await page.evaluate(() => document.exitFullscreen());
+  await shot('makeup-shell');
+  await page.locator('.portal-back').click();
+  assertHome();
+  report.checks.makeup_shell = { chinese: true, deferred_game_load: true, relative_game_path: true, ready: true, fullscreen: true, return_home: true, gameplay_completion: 'covered by separate game verification' };
+  console.log('Makeup shell, relative path, ready, fullscreen and return passed.');
+
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(home);
   await page.waitForSelector('.game-card');
@@ -175,7 +193,11 @@ try {
   await page.locator('#start').click();
   await page.waitForFunction(() => document.querySelector('#cover').hidden);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390);
-  report.checks.mobile_layout = { width: 390, homepage: true, water: true, cut_the_rope: true, physical_touch_device: 'not tested' };
+  await page.getByRole('link', { name: '← 返回小游戏乐园', exact: true }).click();
+  await page.getByRole('link', { name: '化妆解压', exact: true }).click();
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390);
+  await shot('makeup-shell-mobile');
+  report.checks.mobile_layout = { width: 390, homepage: true, water: true, cut_the_rope: true, makeup: true, physical_touch_device: 'not tested' };
   if (!remote) {
     await page.goto(origin + '/');
     await page.waitForSelector('.game-card');

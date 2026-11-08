@@ -1,0 +1,13 @@
+
+daoju_maojin.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+maojin
+  rotate: false
+  xy: 0, 0
+  size: 211, 163
+  orig: 211, 163
+  offset: 0, 0
+  index: -1

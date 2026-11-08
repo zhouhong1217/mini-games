@@ -1,0 +1,76 @@
+
+daoju_kouhong.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+kouhong01
+  rotate: true
+  xy: 94, 0
+  size: 82, 151
+  orig: 82, 151
+  offset: 0, 0
+  index: -1
+kouhong02
+  rotate: true
+  xy: 0, 8
+  size: 74, 93
+  orig: 74, 93
+  offset: 0, 0
+  index: -1
+se_01
+  rotate: true
+  xy: 0, 242
+  size: 52, 124
+  orig: 52, 124
+  offset: 0, 0
+  index: -1
+se_02
+  rotate: true
+  xy: 125, 242
+  size: 52, 124
+  orig: 52, 124
+  offset: 0, 0
+  index: -1
+se_03
+  rotate: true
+  xy: 0, 189
+  size: 52, 124
+  orig: 52, 124
+  offset: 0, 0
+  index: -1
+se_04
+  rotate: true
+  xy: 125, 189
+  size: 52, 124
+  orig: 52, 124
+  offset: 0, 0
+  index: -1
+se_05
+  rotate: true
+  xy: 0, 136
+  size: 52, 124
+  orig: 52, 124
+  offset: 0, 0
+  index: -1
+se_06
+  rotate: true
+  xy: 125, 136
+  size: 52, 124
+  orig: 52, 124
+  offset: 0, 0
+  index: -1
+se_07
+  rotate: true
+  xy: 0, 83
+  size: 52, 124
+  orig: 52, 124
+  offset: 0, 0
+  index: -1
+se_08
+  rotate: true
+  xy: 125, 83
+  size: 52, 124
+  orig: 52, 124
+  offset: 0, 0
+  index: -1

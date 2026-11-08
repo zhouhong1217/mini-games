@@ -1,0 +1,27 @@
+
+daoju_xiurongpanfen.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+m_fenshua
+  rotate: true
+  xy: 0, 311
+  size: 139, 584
+  orig: 139, 584
+  offset: 0, 0
+  index: -1
+xiurong01
+  rotate: false
+  xy: 0, 1
+  size: 309, 309
+  orig: 309, 309
+  offset: 0, 0
+  index: -1
+xiurong02
+  rotate: true
+  xy: 310, 0
+  size: 310, 308
+  orig: 310, 308
+  offset: 0, 0
+  index: -1

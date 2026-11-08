@@ -89,6 +89,9 @@ try {
   assert.match(await page.locator('h1').textContent(), /little/);
   assert.match(await page.title(), /Little Playground/);
   assert.match(await page.locator('.card-media img').first().getAttribute('alt'), /Water/);
+  const chineseCard = page.getByRole('link', { name: '化妆解压', exact: true });
+  assert.equal(await chineseCard.count(), 1);
+  assert.equal(new URL(await chineseCard.getAttribute('href')).searchParams.get('lang'), 'en');
   await choose(page, 'zh-CN');
   assert.equal(await storage(page, 'mini-games-language'), 'zh-CN');
   await page.goto(home);
@@ -184,6 +187,18 @@ try {
   report.checks.cut = { language_interface: true, chinese_fonts_rendered: 'see screenshot', three_stars: true, switch_both_directions: true, settings_language_sync: true, completed_progress_preserved: true };
   console.log('Cut the Rope languages, real completion and cross-language saves passed.');
 
+  await page.goto(home + '?lang=en');
+  await page.getByRole('link', { name: '化妆解压', exact: true }).click();
+  assert.equal(await language(page), 'zh-CN');
+  assert.equal(await page.title(), '化妆解压 · 小游戏乐园');
+  assert.equal(new URL(await page.locator('.portal-back').getAttribute('href')).searchParams.get('lang'), 'en');
+  assert.equal(await page.locator('#game').getAttribute('src'), null);
+  await page.locator('.portal-back').click();
+  await page.waitForSelector('.game-card');
+  assert.equal(await language(page), 'en');
+  assert.equal(new URL(page.url()).searchParams.get('lang'), 'en');
+  report.checks.makeup_chinese_fallback = { english_home_card: true, chinese_shell: true, english_return_preserved: true };
+
   for (const lang of ['zh-CN', 'en']) {
     for (const width of [320, 390, 1280]) {
       await page.setViewportSize({ width, height: 844 });
@@ -192,6 +207,10 @@ try {
       assert.equal(await language(page), lang);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width);
       if (width === 390) await page.screenshot({ path: path.join(out, `home-${lang}-mobile.png`), fullPage: true });
+      await page.getByRole('link', { name: '化妆解压', exact: true }).click();
+      assert.equal(await language(page), 'zh-CN');
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width);
+      assert.equal(new URL(await page.locator('.portal-back').getAttribute('href')).searchParams.get('lang'), lang);
     }
   }
   const fallback = await context('fr-FR');

@@ -1,0 +1,27 @@
+
+daoju_yanyaoshui.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yanyao01
+  rotate: true
+  xy: 0, 7
+  size: 101, 277
+  orig: 101, 277
+  offset: 0, 0
+  index: -1
+yanyao02
+  rotate: false
+  xy: 278, 0
+  size: 72, 108
+  orig: 72, 108
+  offset: 0, 0
+  index: -1
+yanyao03
+  rotate: false
+  xy: 351, 59
+  size: 30, 49
+  orig: 30, 49
+  offset: 0, 0
+  index: -1

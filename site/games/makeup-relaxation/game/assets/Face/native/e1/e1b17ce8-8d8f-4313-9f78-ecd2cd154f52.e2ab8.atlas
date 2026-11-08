@@ -1,0 +1,20 @@
+
+daoju_shaungyanpi.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shuangyanpi01
+  rotate: true
+  xy: 168, 0
+  size: 75, 648
+  orig: 75, 648
+  offset: 0, 0
+  index: -1
+shuangyanpi02
+  rotate: false
+  xy: 0, 38
+  size: 167, 37
+  orig: 167, 37
+  offset: 0, 0
+  index: -1

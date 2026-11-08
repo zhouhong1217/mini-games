@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff7f3">
+  <meta name="description" content="跟随画面提示，清洁护理、挑选妆容，放松片刻。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>化妆解压 · 小游戏乐园</title>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="../../" data-home-link><span class="brand-icon" aria-hidden="true">✿</span><span>小游戏乐园<small>LITTLE PLAYGROUND</small></span></a>
+    <a class="portal-back" href="../../" data-home-link>← 返回小游戏乐园</a>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="game-title">
+      <p class="eyebrow">给自己一点放松的时间</p>
+      <h1 id="game-title">化妆解压</h1>
+      <p class="description">从清洁护理到挑选妆容，跟着提示，慢慢完成每一个小步骤。</p>
+    </section>
+    <section class="play-section" aria-label="化妆解压游戏">
+      <div class="game-toolbar"><p id="status" role="status" aria-live="polite">准备开始</p><div class="tools"><button id="restart" disabled>重新加载</button><button id="fullscreen" title="全屏游玩">⛶ 全屏</button></div></div>
+      <div class="game-stage" id="stage">
+        <iframe id="game" title="化妆解压游戏" allow="autoplay; fullscreen" tabindex="0"></iframe>
+        <div class="start-cover" id="cover">
+          <span class="cover-flower" aria-hidden="true">✿</span>
+          <p class="cover-kicker">慢慢来，漂亮一点点</p>
+          <h2>今天，轻松一下。</h2>
+          <p id="cover-copy">动动手指，开启一段轻松的化妆时光。</p>
+          <div class="loading-progress" id="loading-progress" hidden><progress id="progress" max="1" value="0" aria-label="游戏加载进度"></progress><span id="progress-text">0%</span></div>
+          <button class="start-button" id="start" disabled>开始游戏 ↗</button>
+          <p class="start-note">中文游戏 · 鼠标点击或触屏操作</p>
+        </div>
+      </div>
+      <p class="game-bottom">按画面提示点击或拖动，完成当前步骤。</p>
+    </section>
+    <section class="instructions" aria-labelledby="how-to-play">
+      <h2 id="how-to-play">怎么玩</h2>
+      <p>使用鼠标或手指，跟随画面提示选择工具、点击或拖动。完成当前步骤后，再继续下一项护理或妆容。</p>
+      <p>需要重新开始时，点击上方「重新加载」。全屏后，可按 <kbd>Esc</kbd> 或再次点击全屏按钮退出。</p>
+    </section>
+  </main>
+  <footer class="wrap">原游戏及素材版权归各自权利人所有</footer>
+  <script src="shell.js"></script>
+</body>
+</html>

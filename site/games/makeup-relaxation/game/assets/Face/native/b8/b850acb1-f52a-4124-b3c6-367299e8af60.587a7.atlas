@@ -1,0 +1,13 @@
+
+yuan.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yuan
+  rotate: false
+  xy: 0, 0
+  size: 156, 156
+  orig: 156, 156
+  offset: 0, 0
+  index: -1

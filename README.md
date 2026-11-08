@@ -1,14 +1,16 @@
 # 小游戏乐园
 
-中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」和新增的「窄道停车」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
+中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」和「化妆解压」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
 
 在线游玩：<https://zhouhong1217.github.io/mini-games/>
 
 ## 语言切换
 
-主页和三个游戏页面右上角均可选择「简体中文 / English」。首次访问按浏览器语言选择，无法匹配时使用简体中文；手动选择后记住偏好。链接中的有效 `lang` 参数优先，例如 `?lang=en` 或 `?lang=zh-CN`，便于分享指定语言的入口。
+主页及「小鳄鱼爱洗澡」「割绳子」「窄道停车」页面右上角可选择「简体中文 / English」。首次访问按浏览器语言选择，无法匹配时使用简体中文；手动选择后记住偏好。链接中的有效 `lang` 参数优先，例如 `?lang=en` 或 `?lang=zh-CN`，便于分享指定语言的入口。
 
-主页与各游戏外壳的操作说明支持中英文。「小鳄鱼爱洗澡」和「割绳子」的菜单、教程及结算文案也支持中英文；「窄道停车」内部保留原版语言，切换站点语言不会重启游戏。《割绳子》复用原有中文文案，并补充中文字体；《小鳄鱼爱洗澡》通过独立文案表翻译。
+主页与上述三个游戏外壳的操作说明支持中英文。「小鳄鱼爱洗澡」和「割绳子」的菜单、教程及结算文案也支持中英文；「窄道停车」内部保留原版语言，切换站点语言不会重启游戏。《割绳子》复用原有中文文案，并补充中文字体；《小鳄鱼爱洗澡》通过独立文案表翻译。
+
+「化妆解压」的首页卡片、外壳及游戏使用中文，英文首页显示中文卡片；从英文首页进入后，返回按钮仍保留 `lang=en`。该页面不提供语言切换。
 
 在「小鳄鱼爱洗澡」和「割绳子」中更改语言会返回游戏主菜单，已完成关卡的成绩保留。当前尚未完成的关卡会重新开始。语言偏好使用 `mini-games-language`，与原游戏存档键 `CTR`、`xeyaxz-4399-v1.0` 分开。
 
@@ -38,6 +40,16 @@ node scripts/build-parking.mjs ../4399_265813_2026-11-08/original
 ```
 
 重建前逐个核对原文件哈希；不会修改游戏的 `.wasm` 或 `.data` 内容。
+
+## 化妆解压
+
+页面入口为 `site/games/makeup-relaxation/index.html`，本地预览：<http://127.0.0.1:8766/games/makeup-relaxation/>。发布后的地址为 <https://zhouhong1217.github.io/mini-games/games/makeup-relaxation/>。
+
+点击「开始游戏」后才加载 `game/` 内的游戏，实际资源准备完成后移除加载封面；外壳提供中文操作说明、加载进度、失败重试、全屏与返回首页。按画面提示使用鼠标或手指点击、拖动，完成护理和化妆步骤。
+
+首页封面采用[原站图片](https://imga999.5054399.com/upload_pic/2025/10/21/4399_16581350264.jpg)，保存为 `site/assets/covers/makeup-relaxation.jpg`。封面及游戏素材的原有版权归属不变。
+
+原版画面、声音和玩法保留，广告、推广与统计入口已清理；原视频按钮直接执行解锁或继续。存档统一加 `makeup-relaxation-4399-v1:` 前缀，照片保存到游戏相册；原版不保存护理中途进度。资源构建和本地启动命令见[恢复工具](tools/makeup-relaxation/README.md)，已验证范围与限制见[恢复报告](provenance/makeup-relaxation.md)。
 
 ## 第一次发布
 
@@ -103,8 +115,8 @@ git push -u origin main
 
 ### 5. 检查上线结果
 
-- 首页显示三张游戏卡片，封面和文字正常。
-- 三个入口均能进入游戏，游戏中的「返回小游戏乐园」可回到首页。
+- 首页显示四张游戏卡片，封面和文字正常。
+- 四个入口均能进入游戏，游戏中的「返回小游戏乐园」可回到首页。
 - 直接打开游戏链接并刷新，仍可以游玩。
 - 分别游玩并刷新，当前浏览器的存档仍保留。
 
@@ -116,7 +128,7 @@ git push -u origin main
 
 1. 将能独立运行的静态游戏放进 `site/games/<game-id>/`，入口为 `index.html`，资源使用相对路径。
 2. 封面放进 `site/assets/covers/`。
-3. 在 `site/games.json` 数组中新增一项，填写 `id`、`title`、`subtitle`、`description`、`href`、`cover`、`coverAlt`、`tags`，并在 `translations.en` 中填写英文标题、简介、封面说明和标签。可复制现有一项后修改，`id` 保持唯一。
+3. 在 `site/games.json` 数组中新增一项，填写 `id`、`title`、`subtitle`、`description`、`href`、`cover`、`coverAlt`、`tags`。需要英文卡片时在 `translations.en` 中填写英文标题、简介、封面说明和标签；省略时使用中文卡片回退。可复制现有一项后修改，`id` 保持唯一。
 4. 游戏外层页面引入共享 `i18n.js`，使用 `PlaygroundI18n.withLanguage('../../')` 为返回链接保留语言；不同游戏的存档键应避免重名。新游戏内部语言需要单独适配，卡片翻译不会自动翻译新游戏的画面。
 5. 本地预览确认后，在项目目录执行：
 
@@ -136,7 +148,7 @@ git push
 PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-core/index.mjs node scripts/verify-pages.mjs
 ```
 
-双语验证包括浏览器语言、选择记忆、链接优先级、窄屏布局、实际首关操作，以及语言切换后的成绩保留：
+双语验证包括浏览器语言、选择记忆、链接优先级、窄屏布局、实际首关操作、语言切换后的成绩保留，以及「化妆解压」的中文卡片回退和返回首页语言：
 
 ```sh
 PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-core/index.mjs node scripts/verify-i18n.mjs
@@ -150,9 +162,18 @@ PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-co
 PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-core/index.mjs node scripts/verify-parking.mjs
 ```
 
-本地的 `verify-pages.mjs`、`verify-i18n.mjs` 和 `verify-parking.mjs` 均已通过。超时失败及重新挑战另有手动交互截图记录。发布完成后可设置上述 `PAGES_URL` 对线上版本复核，报告按本地与线上分别保留。
+`verify-pages.mjs` 还会检查「化妆解压」的入口、延迟加载、真实就绪消息、相对路径、全屏、返回首页及窄屏外壳；这些检查不代表已完成游戏内流程。窄道停车的超时失败及重新挑战另有手动交互截图记录。发布完成后可设置上述 `PAGES_URL` 对线上版本复核，报告按本地与线上分别保留。
 
 截图及验证报告生成在 `.verification/`，不会被提交或发布。该命令中的 Playwright 路径为当前制作电脑的已验证位置，其他电脑需设置自己的安装路径。
+
+化妆游戏的完整鼠标流程及 15 位人物检查使用独立脚本（先启动本地静态服务）：
+
+```sh
+GAME_URL=http://127.0.0.1:8767/games/makeup-relaxation/game/ PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-core/index.mjs node scripts/verify-makeup.mjs
+GAME_URL=http://127.0.0.1:8767/games/makeup-relaxation/game/ PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-core/index.mjs node scripts/verify-makeup-characters.mjs
+```
+
+已通过完整人物 01 的护理、化妆、结算和照片保存，以及 DIY、相册、暂停、声音、刷新存档和 15 人物各自的素材/工具检查。其余人物未逐一完整通关，实体手机与其他浏览器未验收。
 
 《小鳄鱼爱洗澡》的英文游戏文案在 `scripts/patch-water-locale.mjs` 中维护，修改后执行 `node scripts/patch-water-locale.mjs` 重建。首次补丁核对原始脚本 SHA-256，重复执行会核对已接入的全部 57 条文案，不会重复包装或修改玩法。
 

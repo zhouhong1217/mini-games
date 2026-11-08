@@ -1,0 +1,20 @@
+
+daoju_xiurongshuaf.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+m_fenshua
+  rotate: true
+  xy: 0, 118
+  size: 139, 584
+  orig: 139, 584
+  offset: 0, 0
+  index: -1
+m_heishua
+  rotate: true
+  xy: 0, 0
+  size: 117, 565
+  orig: 117, 565
+  offset: 0, 0
+  index: -1

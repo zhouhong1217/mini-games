@@ -1,0 +1,27 @@
+
+daoju_saihongpan.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+saihong01
+  rotate: true
+  xy: 0, 133
+  size: 329, 327
+  orig: 329, 327
+  offset: 0, 0
+  index: -1
+saihong02
+  rotate: true
+  xy: 328, 135
+  size: 327, 325
+  orig: 327, 325
+  offset: 0, 0
+  index: -1
+saihongshua
+  rotate: true
+  xy: 0, 0
+  size: 132, 484
+  orig: 132, 484
+  offset: 0, 0
+  index: -1

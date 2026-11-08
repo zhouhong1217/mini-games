@@ -1,0 +1,20 @@
+
+daoju_fendi.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fendi01
+  rotate: true
+  xy: 0, 0
+  size: 171, 418
+  orig: 171, 418
+  offset: 0, 0
+  index: -1
+fendi02
+  rotate: true
+  xy: 419, 91
+  size: 80, 70
+  orig: 80, 70
+  offset: 0, 0
+  index: -1

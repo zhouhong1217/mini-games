@@ -1,0 +1,13 @@
+
+daoju_xiurongshuah.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+m_heishua
+  rotate: true
+  xy: 0, 0
+  size: 117, 565
+  orig: 117, 565
+  offset: 0, 0
+  index: -1

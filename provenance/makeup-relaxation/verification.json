@@ -1,0 +1,655 @@
+{
+  "date": "2026-11-08",
+  "environment": "macOS, Chromium desktop with emulated viewport sizes; no physical phone/Safari/Firefox coverage",
+  "network_policy": "All HTTP requests and WebSockets outside the selected local origin blocked; service workers blocked in full_game/characters. Zero cross-origin attempts observed.",
+  "build_manifest_sha256": "27f9bb3860c708731584d21fb8d7eb1e0eaf2e3113d4a502aada0091fb6b510b",
+  "reports": {
+    "full_game": {
+      "local_report": ".verification/makeup-final/report.json",
+      "sha256": "e240fde0edfc01f26d5edaafb6dd26ff79e06852126e474f530ac6e4517fa9c1",
+      "result": "passed",
+      "checks": {
+        "pause_resume": true,
+        "complete_person": true,
+        "album_photo": true,
+        "diy": true,
+        "storage_isolation": true
+      },
+      "url": "http://127.0.0.1:8768/games/makeup-relaxation/game/",
+      "started": "2026-11-08T11:04:50.809Z",
+      "finished": "2026-11-08T11:08:50.480Z",
+      "requests": 1288,
+      "complete_person": "01",
+      "photos_after_refresh": [
+        "Photo_0",
+        "Photo_1"
+      ],
+      "normal_photo_score": 104,
+      "diy_photo_score": 101,
+      "sound_after_refresh": {
+        "music": false,
+        "effects": false
+      },
+      "page_errors": [],
+      "console_errors": [],
+      "failed_responses": [],
+      "failed_requests": [],
+      "external_requests": [],
+      "displayed_score_cap": 100
+    },
+    "characters": {
+      "local_report": ".verification/makeup-characters-final/report.json",
+      "sha256": "0ad72c1a5fff2efc45c299a45a715b5801a5bb018df7498554c21461b2bfe4eb",
+      "result": "passed",
+      "requests": 7716,
+      "coverage": "Each character entered care and triggered one tool using real pointer input; only 01 completed the full care and makeup sequence in the separate full_game run.",
+      "characters": [
+        {
+          "id": "01",
+          "name": "佳儿",
+          "result": "passed",
+          "initial_step": "dashitoufa",
+          "tool": "huasa",
+          "interaction": {
+            "tool_moved": true,
+            "matching_trigger_responded": true,
+            "step_before": "dashitoufa",
+            "step_after": "dashitoufa",
+            "position_before": {
+              "x": 307.339,
+              "y": -109.234
+            },
+            "position_during": {
+              "x": 201.339,
+              "y": 348.766
+            }
+          }
+        },
+        {
+          "id": "02",
+          "name": "知夏",
+          "result": "passed",
+          "initial_step": "jiyagao",
+          "tool": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          }
+        },
+        {
+          "id": "03",
+          "name": "月芽",
+          "result": "passed",
+          "initial_step": "jiyagao",
+          "tool": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          }
+        },
+        {
+          "id": "04",
+          "name": "星禾",
+          "result": "passed",
+          "initial_step": "dashitoufa",
+          "tool": "huasa",
+          "interaction": {
+            "tool_moved": true,
+            "matching_trigger_responded": true,
+            "step_before": "dashitoufa",
+            "step_after": "dashitoufa",
+            "position_before": {
+              "x": 307.339,
+              "y": -109.234
+            },
+            "position_during": {
+              "x": 201.339,
+              "y": 348.766
+            }
+          }
+        },
+        {
+          "id": "05",
+          "name": "绪儿",
+          "result": "passed",
+          "initial_step": "jiyagao",
+          "tool": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          }
+        },
+        {
+          "id": "06",
+          "name": "柚子",
+          "result": "passed",
+          "initial_step": "dashitoufa",
+          "tool": "huasa",
+          "interaction": {
+            "tool_moved": true,
+            "matching_trigger_responded": true,
+            "step_before": "dashitoufa",
+            "step_after": "dashitoufa",
+            "position_before": {
+              "x": 307.339,
+              "y": -109.234
+            },
+            "position_during": {
+              "x": 201.339,
+              "y": 348.766
+            }
+          }
+        },
+        {
+          "id": "07",
+          "name": "香椿",
+          "result": "passed",
+          "initial_step": "dashitoufa",
+          "tool": "huasa",
+          "interaction": {
+            "tool_moved": true,
+            "matching_trigger_responded": true,
+            "step_before": "dashitoufa",
+            "step_after": "dashitoufa",
+            "position_before": {
+              "x": 307.339,
+              "y": -109.234
+            },
+            "position_during": {
+              "x": 201.339,
+              "y": 348.766
+            }
+          }
+        },
+        {
+          "id": "08",
+          "name": "菲菲",
+          "result": "passed",
+          "initial_step": "dashitoufa",
+          "tool": "huasa",
+          "interaction": {
+            "tool_moved": true,
+            "matching_trigger_responded": true,
+            "step_before": "dashitoufa",
+            "step_after": "dashitoufa",
+            "position_before": {
+              "x": 307.339,
+              "y": -109.234
+            },
+            "position_during": {
+              "x": 201.339,
+              "y": 348.766
+            }
+          }
+        },
+        {
+          "id": "09",
+          "name": "洛洛",
+          "result": "passed",
+          "initial_step": "dashitoufa",
+          "tool": "huasa",
+          "interaction": {
+            "tool_moved": true,
+            "matching_trigger_responded": true,
+            "step_before": "dashitoufa",
+            "step_after": "dashitoufa",
+            "position_before": {
+              "x": 307.339,
+              "y": -109.234
+            },
+            "position_during": {
+              "x": 201.339,
+              "y": 348.766
+            }
+          }
+        },
+        {
+          "id": "10",
+          "name": "浅浅",
+          "result": "passed",
+          "initial_step": "jiyagao",
+          "tool": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          }
+        },
+        {
+          "id": "11",
+          "name": "风音",
+          "result": "passed",
+          "initial_step": "jiyagao",
+          "tool": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          }
+        },
+        {
+          "id": "12",
+          "name": "舞儿",
+          "result": "passed",
+          "initial_step": "jiyagao",
+          "tool": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          }
+        },
+        {
+          "id": "13",
+          "name": "阮软",
+          "result": "passed",
+          "initial_step": "jiyagao",
+          "tool": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          }
+        },
+        {
+          "id": "14",
+          "name": "森碟",
+          "result": "passed",
+          "initial_step": "jiyagao",
+          "tool": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          }
+        },
+        {
+          "id": "15",
+          "name": "尼尔",
+          "result": "passed",
+          "initial_step": "jiyagao",
+          "tool": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          }
+        }
+      ],
+      "page_errors": [],
+      "console_errors": [],
+      "failed_responses": [],
+      "failed_requests": [],
+      "external_requests": []
+    },
+    "pages": {
+      "local_report": ".verification/local/report.json",
+      "sha256": "f68968bc71ee9a888d915ed5d6eb224833c7e8760abf116425729b8612756889",
+      "result": "passed",
+      "checks": {
+        "homepage": {
+          "cards": 4,
+          "covers": "loaded",
+          "mount": "/mini-games/"
+        },
+        "water": {
+          "ducks": 3,
+          "received": 51,
+          "needed": 50,
+          "reload_persistence": true,
+          "fullscreen": true,
+          "back_forward": true,
+          "return_home": true
+        },
+        "cut_the_rope": {
+          "stars": 3,
+          "next_level_unlocked": true,
+          "reload_persistence": true,
+          "fullscreen": true,
+          "menu": true,
+          "return_home": true
+        },
+        "shared_origin_storage": {
+          "water_key": "xeyaxz-4399-v1.0",
+          "cut_key": "CTR",
+          "unchanged_water_save": true
+        },
+        "makeup_shell": {
+          "chinese": true,
+          "deferred_game_load": true,
+          "relative_game_path": true,
+          "ready": true,
+          "fullscreen": true,
+          "return_home": true,
+          "gameplay_completion": "covered by separate game verification"
+        },
+        "mobile_layout": {
+          "width": 390,
+          "homepage": true,
+          "water": true,
+          "cut_the_rope": true,
+          "makeup": true,
+          "physical_touch_device": "not tested"
+        },
+        "root_mount": true
+      },
+      "page_errors": [],
+      "failed_responses": [],
+      "external_requests": []
+    },
+    "i18n": {
+      "local_report": ".verification/i18n-local/report.json",
+      "sha256": "b6fbcd763ae30796206029770a6c342bb07d657692275847b6cb3b7d1ca1d785",
+      "result": "passed",
+      "checks": {
+        "preference": {
+          "browser": true,
+          "saved": true,
+          "url_priority": true,
+          "invalid_query": true
+        },
+        "water": {
+          "english_game_text": true,
+          "three_ducks": true,
+          "switch_both_directions": true,
+          "completed_progress_preserved": true
+        },
+        "cut": {
+          "language_interface": true,
+          "chinese_fonts_rendered": "see screenshot",
+          "three_stars": true,
+          "switch_both_directions": true,
+          "settings_language_sync": true,
+          "completed_progress_preserved": true
+        },
+        "makeup_chinese_fallback": {
+          "english_home_card": true,
+          "chinese_shell": true,
+          "english_return_preserved": true
+        },
+        "layout_and_fallbacks": {
+          "chinese_and_english": true,
+          "widths": [
+            320,
+            390,
+            1280
+          ],
+          "unsupported_browser": true,
+          "blocked_preference_storage": true
+        }
+      },
+      "errors": [],
+      "failed_responses": [],
+      "external_requests": []
+    },
+    "parking": {
+      "local_report": ".verification/parking-local/report.json",
+      "sha256": "8e4811dbfda68d29c67129b396c64826a9a29c615cec4b0805b4f1b7a64db843",
+      "result": "passed",
+      "checks": {
+        "original_binaries": "SHA-256 unchanged",
+        "gameplay": {
+          "Stars00": 3,
+          "CurLevel": 1,
+          "IsTutorialComplete": 1,
+          "Theme0FLevel": 1,
+          "next_level": 2,
+          "source": "real keyboard input and read-only persisted PlayerPrefs"
+        },
+        "controls": {
+          "acceleration": true,
+          "braking": true,
+          "gear": true,
+          "camera": "see screenshot",
+          "pause": "see screenshot"
+        },
+        "storage_isolation": true,
+        "reload_persistence": {
+          "Stars00": 3,
+          "CurLevel": 1,
+          "IsTutorialComplete": 1,
+          "Theme0FLevel": 1
+        },
+        "shell": {
+          "languages": true,
+          "language_switch_preserves_game": true,
+          "fullscreen": true,
+          "return_home": true
+        },
+        "load_retry": {
+          "wasm_requests_blocked": 1,
+          "recovered": true
+        },
+        "layout": {
+          "languages": [
+            "zh-CN",
+            "en"
+          ],
+          "widths": [
+            320,
+            390,
+            1280
+          ],
+          "physical_mobile": "not tested; requires keyboard"
+        }
+      },
+      "page_errors": [],
+      "console_errors": [],
+      "failed_responses": [],
+      "external_requests": []
+    },
+    "new_unlock_refresh": {
+      "local_report": ".verification/makeup-unlock/report.json",
+      "sha256": "f1a2c60f2b9134d882747a6fd6e2d4dbc6c483e7638a2a4b4679f16261d33c51",
+      "result": "passed",
+      "requests": 729,
+      "characters": [
+        {
+          "id": "02",
+          "result": "passed",
+          "requests": 729,
+          "steps": [
+            {
+              "action": "mouse.click",
+              "handler": "click_kaishi",
+              "path": "FaceScene/Canvas/_uiRootNode_/uiKaiShi/bottomBar/kaishi",
+              "point": {
+                "x": 360,
+                "y": 983.451
+              }
+            },
+            {
+              "action": "mouse.click",
+              "character": "02",
+              "path": "FaceScene/Canvas/_uiRootNode_/uiXuanRen/kuang/ScrollView/view/content/02",
+              "point": {
+                "x": 360,
+                "y": 515.5669999999999
+              }
+            },
+            {
+              "action": "mouse.click",
+              "handler": "click_queding",
+              "path": "FaceScene/Canvas/_uiRootNode_/uiXuanRen/kuang/queding",
+              "point": {
+                "x": 360,
+                "y": 898.2959999999998
+              }
+            },
+            {
+              "action": "mouse.click",
+              "handler": "click_xiayiwei",
+              "path": "FaceScene/Canvas/_uiRootNode_/uiLiaoTian/bottom/kaishi",
+              "point": {
+                "x": 360,
+                "y": 1176
+              }
+            },
+            {
+              "action": "mouse.drag",
+              "purpose": "interact with visible care tool",
+              "tool": "FaceScene/Canvas/_uiRootNode_/uiHuaZhuang/djGroup/yagao",
+              "from": {
+                "x": 533.275,
+                "y": 793.8459999999999
+              },
+              "to": {
+                "x": 360.0000000000001,
+                "y": 853.0265
+              }
+            },
+            {
+              "action": "page.reload",
+              "purpose": "verify selected character unlock and photo storage persistence"
+            }
+          ],
+          "screenshots": [
+            "character-02-selection.png",
+            "character-02-chat.png",
+            "character-02-care.png",
+            "character-02-tool-interaction.png",
+            "character-02-menu-after-reload.png"
+          ],
+          "storage_initial": {
+            "raw": {
+              "__realTime__": "{\"Standard_Time\":1794136688337.9,\"realtime_offset\":0,\"Last_realTime\":1794136689530}",
+              "_mainData_": "{\"_BundleStamp_\":\"\",\"playerId\":\"\",\"coinCount\":60,\"freeAdCount\":0,\"pet_BingGan\":0,\"pet_WanJu\":0,\"soundMusic\":true,\"soundEffect\":true,\"playerID\":\"\",\"petUnlock\":[\"铃铛喵\"],\"petUse\":\"铃铛喵\",\"pet\":{\"铃铛喵\":{\"lv\":0,\"exp\":0,\"outputTime\":0,\"hungry\":100,\"bellyful\":0}}}",
+              "__FaceGame__": "{\"photo\":[],\"unlock\":[\"01\"]}",
+              "_dataKeyList_": "[\"__realTime__\",\"_mainData_\",\"__FaceGame__\"]"
+            },
+            "face": {
+              "photo": [],
+              "unlock": [
+                "01"
+              ]
+            }
+          },
+          "chat_name": "知夏",
+          "face_name": "tou_2",
+          "initial_step": "jiyagao",
+          "tool_name": "yagao",
+          "interaction": {
+            "tool_moved": false,
+            "matching_trigger_responded": true,
+            "step_before": "jiyagao",
+            "step_after": "yachiqingli",
+            "position_before": {
+              "x": 228.047,
+              "y": -38.675
+            }
+          },
+          "storage_before_reload": {
+            "raw": {
+              "__realTime__": "{\"Standard_Time\":1794136688337.9,\"realtime_offset\":0,\"Last_realTime\":1794136689530}",
+              "_mainData_": "{\"_BundleStamp_\":\"\",\"playerId\":\"\",\"coinCount\":60,\"freeAdCount\":0,\"pet_BingGan\":0,\"pet_WanJu\":0,\"soundMusic\":true,\"soundEffect\":true,\"playerID\":\"\",\"petUnlock\":[\"铃铛喵\"],\"petUse\":\"铃铛喵\",\"pet\":{\"铃铛喵\":{\"lv\":0,\"exp\":0,\"outputTime\":0,\"hungry\":100,\"bellyful\":0}}}",
+              "__FaceGame__": "{\"photo\":[],\"unlock\":[\"02\",\"01\"]}",
+              "_dataKeyList_": "[\"__realTime__\",\"_mainData_\",\"__FaceGame__\"]"
+            },
+            "face": {
+              "photo": [],
+              "unlock": [
+                "02",
+                "01"
+              ]
+            }
+          },
+          "storage_after_reload": {
+            "raw": {
+              "__realTime__": "{\"Standard_Time\":1794136688337.9,\"realtime_offset\":0,\"Last_realTime\":1794136689530}",
+              "_mainData_": "{\"_BundleStamp_\":\"\",\"playerId\":\"\",\"coinCount\":60,\"freeAdCount\":0,\"pet_BingGan\":0,\"pet_WanJu\":0,\"soundMusic\":true,\"soundEffect\":true,\"playerID\":\"\",\"petUnlock\":[\"铃铛喵\"],\"petUse\":\"铃铛喵\",\"pet\":{\"铃铛喵\":{\"lv\":0,\"exp\":0,\"outputTime\":0,\"hungry\":100,\"bellyful\":0}}}",
+              "__FaceGame__": "{\"photo\":[],\"unlock\":[\"02\",\"01\"]}",
+              "_dataKeyList_": "[\"__realTime__\",\"_mainData_\",\"__FaceGame__\"]"
+            },
+            "face": {
+              "photo": [],
+              "unlock": [
+                "02",
+                "01"
+              ]
+            }
+          },
+          "unlock_persistence": {
+            "selected_id": "02",
+            "newly_unlocked": true,
+            "preserved": true,
+            "initial_unlock": [
+              "01"
+            ],
+            "restored_unlock": [
+              "02",
+              "01"
+            ],
+            "photos_preserved": true
+          }
+        }
+      ],
+      "page_errors": [],
+      "console_errors": [],
+      "failed_requests": [],
+      "failed_responses": [],
+      "external_requests": []
+    }
+  },
+  "screenshots": [
+    {
+      "file": "album-after-refresh.png",
+      "sha256": "b9622f8780aa5074b582133ee8809ed5e8eb11695445fadaaca7a42d9ca1c2b9"
+    },
+    {
+      "file": "characters-overview.png",
+      "sha256": "0564a64979ac66f0830ce6b5a2c9261d26ba4802f32b6fcf5aede94f6079748f"
+    },
+    {
+      "file": "complete-person.png",
+      "sha256": "10f6242d3a2b72c9393f100d298a90b302b888efa6b4070197bc423c0b51397e"
+    }
+  ]
+}

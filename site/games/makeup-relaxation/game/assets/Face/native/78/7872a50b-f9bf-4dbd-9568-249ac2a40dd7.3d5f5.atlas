@@ -1,0 +1,27 @@
+
+daoju_jiemaojia.png
+size: 564,387
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiemaojia01
+  rotate: true
+  xy: 0, 58
+  size: 95, 343
+  orig: 95, 343
+  offset: 0, 0
+  index: -1
+jiemaojia02
+  rotate: false
+  xy: 344, 0
+  size: 218, 153
+  orig: 218, 153
+  offset: 0, 0
+  index: -1
+jiemaojia03
+  rotate: true
+  xy: 0, 154
+  size: 233, 564
+  orig: 233, 564
+  offset: 0, 0
+  index: -1

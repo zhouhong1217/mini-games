@@ -1,0 +1,34 @@
+
+daoju_huasa.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huasa
+  rotate: true
+  xy: 0, 21
+  size: 329, 446
+  orig: 329, 446
+  offset: 0, 0
+  index: -1
+shui/hua2
+  rotate: true
+  xy: 447, 0
+  size: 165, 144
+  orig: 174, 144
+  offset: 4, 0
+  index: -1
+shui/zhu1
+  rotate: true
+  xy: 447, 166
+  size: 184, 192
+  orig: 188, 196
+  offset: 3, 4
+  index: -1
+shui/zhu2
+  rotate: true
+  xy: 640, 163
+  size: 187, 183
+  orig: 188, 196
+  offset: 1, 9
+  index: -1

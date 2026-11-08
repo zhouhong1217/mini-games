@@ -1,0 +1,27 @@
+
+daoju_lmianmo.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mianmo_bai
+  rotate: false
+  xy: 0, 0
+  size: 611, 741
+  orig: 626, 763
+  offset: 4, 7
+  index: -1
+mianmo_lan
+  rotate: false
+  xy: 612, 0
+  size: 611, 741
+  orig: 626, 763
+  offset: 4, 7
+  index: -1
+mianmo_lv
+  rotate: false
+  xy: 1224, 0
+  size: 611, 741
+  orig: 626, 763
+  offset: 4, 7
+  index: -1

@@ -1,0 +1,13 @@
+
+daoju_yinxing.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yinxing02
+  rotate: false
+  xy: 0, 0
+  size: 202, 201
+  orig: 202, 201
+  offset: 0, 0
+  index: -1

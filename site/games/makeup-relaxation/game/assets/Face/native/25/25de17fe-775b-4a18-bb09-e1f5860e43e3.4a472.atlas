@@ -1,0 +1,13 @@
+
+daoju_bi_yinyingshua.png
+size: 64,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bizi_yinyingshua
+  rotate: false
+  xy: 0, 0
+  size: 41, 467
+  orig: 41, 467
+  offset: 0, 0
+  index: -1

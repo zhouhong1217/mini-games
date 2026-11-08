@@ -1,0 +1,13 @@
+
+daoju_yanxianbi.png
+size: 1024,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yanxianbi
+  rotate: true
+  xy: 0, 0
+  size: 50, 539
+  orig: 50, 539
+  offset: 0, 0
+  index: -1

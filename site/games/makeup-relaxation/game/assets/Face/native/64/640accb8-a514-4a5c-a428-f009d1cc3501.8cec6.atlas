@@ -1,0 +1,13 @@
+
+daoju_jiemaosha.png
+size: 32,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiemaoshua
+  rotate: false
+  xy: 0, 0
+  size: 25, 340
+  orig: 25, 340
+  offset: 0, 0
+  index: -1
