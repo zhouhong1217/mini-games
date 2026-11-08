@@ -7,6 +7,46 @@
   const completed = () => Promise.resolve();
   let muted = false;
   const memory = new Map();
+  const initialLanguage = window.PlaygroundI18n.language;
+  const selectedLanguage = () => {
+    try {
+      if (parent !== window && parent.location.origin === location.origin && parent.PlaygroundI18n) {
+        return parent.PlaygroundI18n.language;
+      }
+    } catch { /* A cross-origin embed uses its own language. */ }
+    return window.PlaygroundI18n.language;
+  };
+  const language = () => selectedLanguage() === 'zh-CN' ? 'zh' : 'en';
+  const toggleLanguage = () => {
+    const next = language() === 'zh' ? 'en' : 'zh-CN';
+    try {
+      if (parent !== window && parent.location.origin === location.origin && parent.PlaygroundI18n) {
+        parent.PlaygroundI18n.setLanguage(next);
+        return;
+      }
+    } catch { /* Use the standalone selector below. */ }
+    window.PlaygroundI18n.setLanguage(next);
+  };
+  const reloadLanguage = () => {
+    const next = selectedLanguage();
+    if ((next === 'zh-CN' || next === 'en') && next !== initialLanguage) {
+      const url = new URL(location.href);
+      url.searchParams.set('lang', next);
+      location.replace(url.href);
+    }
+  };
+  // The shell owns the language selector. Restart the canvas when its locale changes.
+  // Reuse the CTR save key so switching languages preserves completed levels.
+  try {
+    if (parent !== window && parent.location.origin === location.origin && parent.PlaygroundI18n) {
+      parent.addEventListener('playground:languagechange', reloadLanguage);
+      window.addEventListener('pagehide', () => parent.removeEventListener('playground:languagechange', reloadLanguage), {once: true});
+      reloadLanguage();
+    }
+  } catch { /* A standalone or cross-origin embed uses its own URL language. */ }
+  window.addEventListener('playground:languagechange', reloadLanguage);
+  document.documentElement.lang = language() === 'zh' ? 'zh-CN' : 'en';
+  document.title = language() === 'zh' ? '割绳子' : 'Cut the Rope';
   const report = (type, detail) => {
     window.parent.postMessage({source: 'ctr-local', type, detail}, location.origin);
   };
@@ -14,7 +54,8 @@
     hasFeature: name => features.has(name),
     isMuted: () => muted,
     isPaused: () => false,
-    getCurrentLanguage: () => 'en',
+    getCurrentLanguage: language,
+    toggleLanguage,
     getOffsets: () => ({left: 0, right: 0, top: 0, bottom: 0}),
     isRewardedAdAvailable: () => false,
     showRewardedAd: () => Promise.resolve({isRewardGranted: false}),

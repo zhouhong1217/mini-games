@@ -1,4 +1,9 @@
 const status = document.querySelector('#load-status');
+const i18n = window.PlaygroundI18n;
+let statusKey = 'water.loading';
+const translateStatus = () => { status.textContent = i18n.t(statusKey); };
+translateStatus();
+window.addEventListener('playground:languagechange', translateStatus);
 document.querySelector('#fullscreen').addEventListener('click', async () => {
   const player = document.querySelector('.player');
   try {
@@ -6,7 +11,8 @@ document.querySelector('#fullscreen').addEventListener('click', async () => {
     else await player.requestFullscreen();
   } catch {
     status.hidden = false;
-    status.textContent = '此浏览器暂不支持全屏，请调整窗口大小游玩。';
+    statusKey = 'water.fullscreenError';
+    translateStatus();
   }
 });
 const loaded = setInterval(() => {
@@ -19,7 +25,8 @@ const loaded = setInterval(() => {
 window.addEventListener('error', event => {
   if (event.message) {
     status.hidden = false;
-    status.textContent = '游戏加载遇到问题，请刷新页面重试。';
+    statusKey = 'water.error';
+    translateStatus();
     console.error('Local game:', event.message);
   }
 });

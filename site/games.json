@@ -7,7 +7,22 @@
     "href": "games/wheres-my-water/",
     "cover": "assets/covers/wheres-my-water.jpg",
     "coverAlt": "小鳄鱼爱洗澡关卡：让水穿过泥土，流进浴缸",
-    "tags": ["益智解谜", "11 个关卡"]
+    "tags": [
+      "益智解谜",
+      "11 个关卡"
+    ],
+    "translations": {
+      "en": {
+        "title": "Where’s My Water?",
+        "subtitle": "WHERE’S MY WATER?",
+        "description": "Dig through the dirt and guide clean water into Swampy’s bathtub. Plan a clever route and collect the ducks along the way.",
+        "coverAlt": "Where’s My Water? level with water, dirt, ducks, and Swampy in his bathtub",
+        "tags": [
+          "Puzzle",
+          "11 levels"
+        ]
+      }
+    }
   },
   {
     "id": "cut-the-rope",
@@ -17,6 +32,21 @@
     "href": "games/cut-the-rope/",
     "cover": "assets/covers/cut-the-rope.jpg",
     "coverAlt": "割绳子关卡：悬挂的糖果、三颗星星和等待投喂的 Om Nom",
-    "tags": ["物理解谜", "425 个关卡"]
+    "tags": [
+      "物理解谜",
+      "425 个关卡"
+    ],
+    "translations": {
+      "en": {
+        "title": "Cut the Rope",
+        "subtitle": "CUT THE ROPE",
+        "description": "Time your cuts, collect the stars, and feed the candy to Om Nom. A sweet little adventure is waiting.",
+        "coverAlt": "Cut the Rope level with hanging candy, three stars, and Om Nom waiting below",
+        "tags": [
+          "Physics puzzle",
+          "425 levels"
+        ]
+      }
+    }
   }
 ]

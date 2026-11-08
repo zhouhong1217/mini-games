@@ -1,6 +1,9 @@
 const grid = document.querySelector('#game-grid');
 const message = document.querySelector('#load-message');
 const count = document.querySelector('#game-count');
+const i18n = window.PlaygroundI18n;
+let games = null;
+let loadFailed = false;
 
 function element(tag, className, text) {
   const node = document.createElement(tag);
@@ -10,8 +13,9 @@ function element(tag, className, text) {
 }
 
 function gameCard(game, index) {
+  game = { ...game, ...(i18n.language === 'en' ? game.translations?.en : {}) };
   const card = element('a', 'game-card');
-  card.href = game.href;
+  card.href = i18n.withLanguage(game.href);
   card.setAttribute('aria-labelledby', `game-${game.id}`);
   const media = element('div', 'card-media');
   const image = document.createElement('img');
@@ -29,7 +33,7 @@ function gameCard(game, index) {
   const bottom = element('div', 'card-bottom');
   const tags = element('div', 'card-tags');
   for (const tag of game.tags) tags.append(element('span', '', tag));
-  const cta = element('span', 'card-cta', '开始游戏');
+  const cta = element('span', 'card-cta', i18n.t('start'));
   const arrow = element('span', 'card-arrow', '↗');
   arrow.setAttribute('aria-hidden', 'true');
   cta.append(arrow);
@@ -39,19 +43,31 @@ function gameCard(game, index) {
   return card;
 }
 
+function render() {
+  if (games) {
+    grid.replaceChildren(...games.map(gameCard));
+    count.textContent = i18n.t('home.count', { count: String(games.length).padStart(2, '0') });
+    message.hidden = games.length > 0;
+    if (!games.length) message.textContent = i18n.t('home.empty');
+  } else if (loadFailed) {
+    count.textContent = i18n.t('home.failedCount');
+    message.replaceChildren(document.createTextNode(i18n.t('home.failed')),
+      Object.assign(document.createElement('a'), { href: i18n.withLanguage('./'), textContent: i18n.t('home.retry') }));
+  } else {
+    count.textContent = i18n.t('home.loadingCount');
+    message.textContent = i18n.t('home.loading');
+  }
+}
+window.addEventListener('playground:languagechange', render);
+render();
 try {
   const response = await fetch(new URL('games.json', import.meta.url));
   if (!response.ok) throw new Error(`Game list: HTTP ${response.status}`);
-  const games = await response.json();
-  grid.replaceChildren(...games.map(gameCard));
-  count.textContent = `${String(games.length).padStart(2, '0')} 款小游戏`;
-  message.hidden = games.length > 0;
-  if (!games.length) message.textContent = '新的小游戏正在路上，过会儿再来看看。';
+  games = await response.json();
 } catch (error) {
-  count.textContent = '稍后再试';
-  message.replaceChildren(document.createTextNode('游戏列表暂时没有加载成功。'),
-    Object.assign(document.createElement('a'), { href: './', textContent: '刷新页面重试' }));
+  loadFailed = true;
   console.error(error);
 } finally {
+  render();
   grid.setAttribute('aria-busy', 'false');
 }

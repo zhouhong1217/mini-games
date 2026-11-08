@@ -6,7 +6,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const project = fileURLToPath(new URL('../', import.meta.url));
 const site = path.join(project, 'site');
-const output = path.join(project, '.verification');
+const remote = process.env.PAGES_URL;
+const output = path.join(project, '.verification', remote ? 'live' : 'local');
 const playwrightModule = process.env.PLAYWRIGHT_MODULE;
 if (!playwrightModule) throw new Error('Set PLAYWRIGHT_MODULE to playwright-core/index.mjs');
 const { chromium } = await import(pathToFileURL(playwrightModule));
@@ -33,13 +34,14 @@ const server = createServer(async (req, res) => {
   }
 });
 await mkdir(output, { recursive: true });
-await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-const origin = `http://127.0.0.1:${server.address().port}`;
-const home = `${origin}/mini-games/`;
+if (!remote) await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+const home = remote || `http://127.0.0.1:${server.address().port}/mini-games/`;
+const origin = new URL(home).origin;
+const assertHome = () => assert.equal(new URL(page.url()).pathname, new URL(home).pathname);
 const browser = await chromium.launch({ headless: true,
   executablePath: process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' });
-const context = await browser.newContext({ viewport: { width: 1280, height: 1000 } });
-const report = { result: 'running', mount: '/mini-games/', checks: {}, page_errors: [], failed_responses: [], external_requests: [] };
+const context = await browser.newContext({ locale: 'zh-CN', viewport: { width: 1280, height: 1000 } });
+const report = { result: 'running', home, mount: '/mini-games/', checks: {}, page_errors: [], failed_responses: [], external_requests: [] };
 await context.route('**/*', route => {
   const url = route.request().url();
   if (/^https?:/.test(url) && new URL(url).origin !== origin) {
@@ -116,7 +118,7 @@ try {
   await active('levels');
   assert.equal(await storage('xeyaxz-4399-v1.0'), waterSave);
   await page.getByRole('link', { name: '← 返回小游戏乐园', exact: true }).click();
-  assert.equal(page.url(), home);
+  assertHome();
   report.checks.water = { ...waterResult, reload_persistence: true, fullscreen: true, back_forward: true, return_home: true };
   console.log('Water first level, save, navigation and fullscreen passed.');
 
@@ -131,7 +133,7 @@ try {
   await page.waitForFunction(() => !document.querySelector('#home').disabled);
   await shot('cut-the-rope-shell');
   await page.getByRole('link', { name: '← 返回小游戏乐园', exact: true }).click();
-  assert.equal(page.url(), home);
+  assertHome();
 
   // 使用原游戏已验证的 1100 × 680 画布坐标执行真实剪绳操作。
   await page.setViewportSize({ width: 1100, height: 680 });
@@ -174,9 +176,11 @@ try {
   await page.waitForFunction(() => document.querySelector('#cover').hidden);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), 390);
   report.checks.mobile_layout = { width: 390, homepage: true, water: true, cut_the_rope: true, physical_touch_device: 'not tested' };
-  await page.goto(origin + '/');
-  await page.waitForSelector('.game-card');
-  report.checks.root_mount = true;
+  if (!remote) {
+    await page.goto(origin + '/');
+    await page.waitForSelector('.game-card');
+    report.checks.root_mount = true;
+  }
   assert.deepEqual(report.page_errors, []);
   assert.deepEqual(report.failed_responses, []);
   assert.deepEqual(report.external_requests, []);
@@ -191,6 +195,6 @@ try {
 } finally {
   await writeFile(path.join(output, 'report.json'), JSON.stringify(report, null, 2));
   await browser.close();
-  await new Promise(resolve => server.close(resolve));
+  if (server.listening) await new Promise(resolve => server.close(resolve));
   console.log(JSON.stringify(report, null, 2));
 }
