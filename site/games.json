@@ -1,0 +1,22 @@
+[
+  {
+    "id": "wheres-my-water",
+    "title": "小鳄鱼爱洗澡",
+    "subtitle": "WHERE'S MY WATER?",
+    "description": "挖开泥土，把清水引进小鳄鱼的浴缸。规划一条好路线，别忘了沿途的小鸭子。",
+    "href": "games/wheres-my-water/",
+    "cover": "assets/covers/wheres-my-water.jpg",
+    "coverAlt": "小鳄鱼爱洗澡关卡：让水穿过泥土，流进浴缸",
+    "tags": ["益智解谜", "11 个关卡"]
+  },
+  {
+    "id": "cut-the-rope",
+    "title": "割绳子",
+    "subtitle": "CUT THE ROPE",
+    "description": "看准时机，轻轻一剪。收集星星，让糖果落进 Om Nom 的嘴里，开启一场甜蜜冒险。",
+    "href": "games/cut-the-rope/",
+    "cover": "assets/covers/cut-the-rope.jpg",
+    "coverAlt": "割绳子关卡：悬挂的糖果、三颗星星和等待投喂的 Om Nom",
+    "tags": ["物理解谜", "425 个关卡"]
+  }
+]

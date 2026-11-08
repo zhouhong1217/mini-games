@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f6ee">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>割绳子 · 糖果时间</title>
+</head>
+<body>
+  <header class="site-header">
+    <a href="./" class="brand" aria-label="糖果时间首页"><span class="brand-icon">✂</span> 糖果时间<span class="brand-en">CANDY TIME</span></a>
+    <a class="portal-back" href="../../">← 返回小游戏乐园</a>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">CUT THE ROPE</p><h1>割绳子<span class="title-dot">.</span></h1><p class="description">剪断绳索，收集星星。把糖果送进 Om Nom 的嘴里。</p></div>
+      <div class="game-facts"><div><strong>17</strong><span>主题章节</span></div><span class="fact-line"></span><div><strong>425</strong><span>趣味关卡</span></div><span class="star-doodle">✦</span></div>
+    </section>
+    <section class="play-section" aria-label="割绳子游戏">
+      <div class="game-toolbar"><div class="game-label"><span class="live-dot"></span> 割绳子 <span class="divider">/</span><span id="status" role="status">准备开始</span></div><div class="tools"><button id="home" disabled title="返回游戏主菜单">⌂ <span>主菜单</span></button><button id="fullscreen" title="全屏游玩">⛶ <span>全屏</span></button></div></div>
+      <div class="game-stage" id="stage">
+        <iframe id="game" title="割绳子游戏" allow="autoplay; fullscreen" tabindex="0"></iframe>
+        <div class="start-cover" id="cover">
+          <span class="floating-star star-one">✦</span><span class="floating-star star-two">✧</span>
+          <div class="candy" aria-hidden="true"></div>
+          <p class="cover-kicker">一颗糖果，一场小冒险</p><h2>Om Nom 在等你！</h2><p class="cover-copy">动动手指，开启今天的糖果时间。</p>
+          <button class="start-button" id="start">开始游戏 <span>↗</span></button>
+          <p class="start-note">鼠标拖动 / 触屏滑动 · 进度自动保存</p>
+        </div>
+      </div>
+      <div class="game-bottom"><span><span class="key">↔</span> 按住鼠标划过绳索即可剪断</span><span class="save-info" id="save-status">◉ 存档保存在当前浏览器</span></div>
+    </section>
+    <section class="tips" aria-label="玩法指南">
+      <article><span class="tip-icon scissors">✂</span><div><h3>看准时机，轻轻一剪</h3><p>划过绳索，让糖果借助重力和摆动前进。</p></div></article>
+      <article><span class="tip-icon star">★</span><div><h3>沿途的星星也别错过</h3><p>规划糖果路线，挑战每一关的三星成绩。</p></div></article>
+      <article><span class="tip-icon candy-small">●</span><div><h3>喂饱这个绿色小家伙</h3><p>避开尖刺，利用气泡、气囊和更多机关。</p></div></article>
+    </section>
+    <p class="small-note">游戏内为英文界面。音效、音乐、重玩和暂停按钮位于游戏画面右上角。</p>
+  </main>
+  <footer><span>给生活加一颗糖。</span><span>原游戏 © ZeptoLab <a href="https://www.4399.com/flash/142014.htm" target="_blank" rel="noreferrer">原始页面 ↗</a></span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
