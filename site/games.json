@@ -86,5 +86,30 @@
       "休闲解压",
       "中文游戏"
     ]
+  },
+  {
+    "id": "apple-snake",
+    "title": "吃苹果的蛇",
+    "subtitle": "SNAKE TO EAT",
+    "description": "吃苹果、长身体，绕过障碍与悬崖。动动脑筋，让灵活的小蛇抵达出口。",
+    "href": "games/apple-snake/",
+    "cover": "assets/covers/apple-snake.jpg",
+    "coverAlt": "吃苹果的蛇：小蛇、苹果与方块平台",
+    "tags": [
+      "益智闯关",
+      "键盘 / 触屏"
+    ],
+    "translations": {
+      "en": {
+        "title": "Snake to Eat",
+        "subtitle": "SNAKE TO EAT",
+        "description": "Eat apples, grow longer, and work your way around tricky obstacles. Help a hungry snake reach the exit.",
+        "coverAlt": "Snake to Eat with a snake, apples, and block platforms",
+        "tags": [
+          "Puzzle",
+          "Keyboard / touch"
+        ]
+      }
+    }
   }
 ]

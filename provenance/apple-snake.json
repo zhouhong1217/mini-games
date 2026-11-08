@@ -1,0 +1,54 @@
+{
+  "source_page": "https://www.4399.com/flash/257457.htm",
+  "source_base": "https://sda.4399.com/4399swf/upload_swf/ftp53/zmj/20260108/13/",
+  "binary_changes": "None. Compressed WASM and data bytes are copied exactly.",
+  "framework_changes": "Brotli decompress and guard the original touch-event preventDefault call with event.cancelable. The native callback still executes.",
+  "loader_changes": "Load the selected framework through the original blob; route startup errors to the local retry UI.",
+  "sdk_changes": "Prefix only the original SDK localStorage operations with apple-snake-4399-v1:. Force mock platform and disable analytics/ad preloads in local config.",
+  "binding_changes": "Extract original window bindings; runtime.js replaces ad callbacks, unsupported external links and server time with local handling.",
+  "text_normalization": "Generated JavaScript uses LF line endings and omits trailing line whitespace.",
+  "files": [
+    {
+      "source": "Build/SnaketoEat.loader.js",
+      "destination": "Build/SnaketoEat.loader.js",
+      "original_sha256": "e0fe1cb9740d9abfe706c3c8979df1df6dfa41992157cbb2cf07f3a094ce3acd",
+      "local_sha256": "d05f46951c19ecbc8a4f715f9b2d613d2afd5a6f4a8537436d05a657536f927a",
+      "bytes": 160963
+    },
+    {
+      "source": "Build/SnaketoEat.framework.js.unityweb",
+      "destination": "Build/SnaketoEat.framework.js",
+      "original_sha256": "8f62969f7abac49edfd088a7c7cd5e65c931c7a2d5cadb91aa35743d7490168d",
+      "local_sha256": "c33eff2852fecd5b7583aeb74da0510ea1d2eaf3ddf3b74e1ac2400ebf8a970e",
+      "bytes": 470914
+    },
+    {
+      "source": "Build/SnaketoEat.data.unityweb",
+      "destination": "Build/SnaketoEat.data.unityweb",
+      "original_sha256": "cc8453d3a12d51fa7616f2d6779b7e23ae249f56fa0b527f44f7142db7f49a11",
+      "local_sha256": "cc8453d3a12d51fa7616f2d6779b7e23ae249f56fa0b527f44f7142db7f49a11",
+      "bytes": 7814931
+    },
+    {
+      "source": "Build/SnaketoEat.wasm.unityweb",
+      "destination": "Build/SnaketoEat.wasm.unityweb",
+      "original_sha256": "6e5af1bfb0c06ca04919b9afee498d977c3737b170616cf68ab6f0a98c26d33f",
+      "local_sha256": "6e5af1bfb0c06ca04919b9afee498d977c3737b170616cf68ab6f0a98c26d33f",
+      "bytes": 7328304
+    },
+    {
+      "source": "playgama-bridge.js",
+      "destination": "playgama-bridge.js",
+      "original_sha256": "84acaf7f8cab584d55a31b04c8ffd6de73030a2022f7107c2cee3a5056fe6c40",
+      "local_sha256": "9d3471d27abbd14e52523f273452ab9bc8b5f02d88e993fdcad73c12a5283676",
+      "bytes": 853213
+    },
+    {
+      "source": "index.html",
+      "destination": "bridge-bindings.js",
+      "original_sha256": "406895bdea97ee033072834a14066133926e9fd6f19e371b22426726c78186c8",
+      "local_sha256": "eec482b73324986db2ff48c86109f862cccee9a1944d4a36b6ef4ed1b29c96be",
+      "bytes": 22934
+    }
+  ]
+}

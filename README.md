@@ -1,6 +1,6 @@
 # 小游戏乐园
 
-中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」和「化妆解压」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
+中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」「化妆解压」和「吃苹果的蛇」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
 
 在线游玩：<https://zhouhong1217.github.io/mini-games/>
 
@@ -50,6 +50,28 @@ node scripts/build-parking.mjs ../4399_265813_2026-11-08/original
 首页封面采用[原站图片](https://imga999.5054399.com/upload_pic/2025/10/21/4399_16581350264.jpg)，保存为 `site/assets/covers/makeup-relaxation.jpg`。封面及游戏素材的原有版权归属不变。
 
 原版画面、声音和玩法保留，广告、推广与统计入口已清理；原视频按钮直接执行解锁或继续。存档统一加 `makeup-relaxation-4399-v1:` 前缀，照片保存到游戏相册；原版不保存护理中途进度。资源构建和本地启动命令见[恢复工具](tools/makeup-relaxation/README.md)，已验证范围与限制见[恢复报告](provenance/makeup-relaxation.md)。
+
+## 吃苹果的蛇
+
+在线入口：<https://zhouhong1217.github.io/mini-games/games/apple-snake/>。本地预览：<http://127.0.0.1:8781/games/apple-snake/>。
+
+点击「开始游戏」加载约 16 MB 原版 Unity WebGL 资源；使用 `WASD` 或游戏中的方向按钮移动，吃苹果后身体增长，抵达漩涡出口通关。游戏内 `↻` 重开当前关卡，外壳「重新加载」返回原版主菜单。外壳支持中英文、加载进度、失败重试、全屏及返回首页，游戏内保留原版英文。
+
+WASM 和关卡数据保留原始压缩字节；框架解压后给触屏事件补充可取消检查，平台初始化使用本地模式，广告回调在本地继续。存档仅给原 SDK 的读写键增加 `apple-snake-4399-v1:` 前缀，通关后刷新可继续下一关。完整 Unity 源工程为 `Unknown`。
+
+来源、校验及最小适配记录见 [恢复记录](provenance/apple-snake.md) 和 `provenance/apple-snake.json`。保留的原包在本机 `/Users/a/Documents/REA/output/4399_257457_2026-11-08/original/`。重建发布资源：
+
+```sh
+node scripts/build-snake.mjs ../4399_257457_2026-11-08/original
+```
+
+验收脚本使用真实键盘完成前两关，再检查重开、刷新恢复第三关、提示、触屏模拟首关、语言切换、全屏、窄屏和 WASM 下载失败后的重试：
+
+```sh
+PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-core/index.mjs node scripts/verify-snake.mjs
+```
+
+设置 `PAGES_URL=https://zhouhong1217.github.io/mini-games/` 可复用相同流程验证线上版本。截图和报告保留在 `.verification/snake-local/` 或 `.verification/snake-live/`。实体手机和其余关卡未逐一验收。
 
 ## 第一次发布
 
@@ -115,8 +137,8 @@ git push -u origin main
 
 ### 5. 检查上线结果
 
-- 首页显示四张游戏卡片，封面和文字正常。
-- 四个入口均能进入游戏，游戏中的「返回小游戏乐园」可回到首页。
+- 首页显示五张游戏卡片，封面和文字正常。
+- 五个入口均能进入游戏，游戏中的「返回小游戏乐园」可回到首页。
 - 直接打开游戏链接并刷新，仍可以游玩。
 - 分别游玩并刷新，当前浏览器的存档仍保留。
 
