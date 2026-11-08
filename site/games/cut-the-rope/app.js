@@ -65,3 +65,5 @@ document.getElementById('fullscreen').addEventListener('click', async () => {
     translate();
   }
 });
+// Enable play only after the shell has registered its game handlers.
+start.disabled = false;
