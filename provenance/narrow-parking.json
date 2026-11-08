@@ -1,0 +1,38 @@
+{
+  "source_page": "https://www.4399.com/flash/265813.htm",
+  "source_base": "https://sda.4399.com/4399swf/upload_swf/ftp55/zmj/20260912/02/",
+  "engine_observed": "Unity 6000.0.59f2",
+  "binary_changes": "None. Both .br source files contain uncompressed bytes; only their names change.",
+  "loader_changes": "Replace original parent.showUnitywebNoSupport with local showBanner/startup rejection; handle framework startup promise rejection so network failures reach retry UI.",
+  "framework_changes": "Scope SDK localStorage operations to narrow-parking:; local writes need no remote sync. Clamp HTMLMediaElement playbackRate to Chromium supported range 0.0625–16 to prevent idle engine audio exceptions.",
+  "files": [
+    {
+      "source": "Build/game.loader.js",
+      "destination": "Build/game.loader.js",
+      "bytes": 39449,
+      "original_sha256": "cc0268c6b29648c05030e7d1919e36a20478561067f70e55690e77fcc93ca671",
+      "local_sha256": "4a82ed3cfb21415fea430739410a084a5198140ae730637558f31edc6954af4f"
+    },
+    {
+      "source": "Build/game.framework.js",
+      "destination": "Build/game.framework.js",
+      "bytes": 525129,
+      "original_sha256": "b5f7f97816f40085d2cb18198bfa9bd7fea71aad1977d8d54297e1077e79cfff",
+      "local_sha256": "72f53abf15654fec870719f887e5be590a5499993c117078302fc386426dba5c"
+    },
+    {
+      "source": "Build/game.data.br",
+      "destination": "Build/game.data",
+      "bytes": 22427934,
+      "original_sha256": "0a0d82f2997fea9054017c118851f77f373e72cdbeca14acaf617887478fc136",
+      "local_sha256": "0a0d82f2997fea9054017c118851f77f373e72cdbeca14acaf617887478fc136"
+    },
+    {
+      "source": "Build/game.wasm.br",
+      "destination": "Build/game.wasm",
+      "bytes": 29296518,
+      "original_sha256": "00482cabcf02f625b8d0e26fa5cca8feb86b2d8de9b1c36ceca0ad7187e59d98",
+      "local_sha256": "00482cabcf02f625b8d0e26fa5cca8feb86b2d8de9b1c36ceca0ad7187e59d98"
+    }
+  ]
+}

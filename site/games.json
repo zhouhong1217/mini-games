@@ -48,5 +48,30 @@
         ]
       }
     }
+  },
+  {
+    "id": "narrow-parking",
+    "title": "窄道停车",
+    "subtitle": "NARROW PARKING",
+    "description": "慢慢转向，稳稳停车。在狭窄路段控制好速度，挑战你的驾驶与停车技巧。",
+    "href": "games/narrow-parking/",
+    "cover": "assets/covers/narrow-parking.jpg",
+    "coverAlt": "窄道停车游戏画面：在狭窄道路中驾驶并寻找停车位置",
+    "tags": [
+      "驾驶挑战",
+      "键盘操作"
+    ],
+    "translations": {
+      "en": {
+        "title": "Narrow Parking",
+        "subtitle": "NARROW PARKING",
+        "description": "Find your line, keep a steady speed, and ease into tight parking spots. A little patience goes a long way.",
+        "coverAlt": "Narrow Parking gameplay with a car navigating narrow roads and parking spaces",
+        "tags": [
+          "Driving challenge",
+          "Keyboard controls"
+        ]
+      }
+    }
   }
 ]

@@ -13,7 +13,7 @@ await mkdir(out, { recursive: true });
 const { chromium } = await import(pathToFileURL(process.env.PLAYWRIGHT_MODULE));
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.json': 'application/json',
   '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg',
-  '.avif': 'image/avif', '.mp3': 'audio/mpeg', '.aac': 'audio/aac', '.mp4': 'video/mp4' };
+  '.avif': 'image/avif', '.mp3': 'audio/mpeg', '.aac': 'audio/aac', '.mp4': 'video/mp4', '.wasm': 'application/wasm' };
 const server = createServer(async (req, res) => {
   try {
     const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);

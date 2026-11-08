@@ -14,7 +14,7 @@ const { chromium } = await import(pathToFileURL(playwrightModule));
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8', '.json': 'application/json', '.jpg': 'image/jpeg',
   '.png': 'image/png', '.svg': 'image/svg+xml', '.avif': 'image/avif',
-  '.mp3': 'audio/mpeg', '.aac': 'audio/aac', '.ogg': 'audio/ogg', '.mp4': 'video/mp4' };
+  '.mp3': 'audio/mpeg', '.aac': 'audio/aac', '.ogg': 'audio/ogg', '.mp4': 'video/mp4', '.wasm': 'application/wasm' };
 const server = createServer(async (req, res) => {
   try {
     const requested = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
@@ -63,11 +63,11 @@ const waterClick = async (x, y) => {
 };
 const storage = key => page.evaluate(key => localStorage.getItem(key), key);
 try {
-  await page.goto(home);
-  await page.waitForFunction(() => document.querySelectorAll('.game-card').length === 2);
-  assert.equal(await page.locator('#game-count').textContent(), '02 款小游戏');
-  await page.waitForFunction(() => [...document.querySelectorAll('.card-media img')].every(img => img.complete && img.naturalWidth > 0));
   const games = JSON.parse(await readFile(path.join(site, 'games.json'), 'utf8'));
+  await page.goto(home);
+  await page.waitForFunction(count => document.querySelectorAll('.game-card').length === count, games.length);
+  assert.equal(await page.locator('#game-count').textContent(), `${String(games.length).padStart(2, '0')} 款小游戏`);
+  await page.waitForFunction(() => [...document.querySelectorAll('.card-media img')].every(img => img.complete && img.naturalWidth > 0));
   for (const game of games) {
     assert.ok(game.href.endsWith('/'));
     assert.ok(!game.href.startsWith('/'));
@@ -75,7 +75,7 @@ try {
     await stat(path.join(site, game.cover));
   }
   await shot('homepage-desktop');
-  report.checks.homepage = { cards: 2, covers: 'loaded', mount: '/mini-games/' };
+  report.checks.homepage = { cards: games.length, covers: 'loaded', mount: '/mini-games/' };
   console.log('Homepage and project subpath passed.');
 
   await page.getByRole('link', { name: '小鳄鱼爱洗澡', exact: true }).click();
