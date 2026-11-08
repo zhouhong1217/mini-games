@@ -36,6 +36,13 @@ const observedContexts = [];
 async function context(locale) {
   const ctx = await browser.newContext({ locale, viewport: { width: 1100, height: 850 } });
   observedContexts.push(ctx);
+  await ctx.addInitScript(() => {
+    window.__ctrReady = false;
+    window.addEventListener('message', event => {
+      if (event.source === window && event.origin === location.origin &&
+          event.data?.source === 'ctr-local' && event.data.type === 'ready') window.__ctrReady = true;
+    });
+  });
   await ctx.route('**/*', route => {
     const url = route.request().url();
     if (/^https?:/.test(url) && new URL(url).origin !== origin) {
@@ -144,10 +151,13 @@ try {
   await page.setViewportSize({ width: 1100, height: 680 });
   await page.goto(home + 'games/cut-the-rope/game/?lang=en');
   await page.waitForSelector('canvas');
+  await page.waitForFunction(() => window.__ctrReady);
   await page.waitForTimeout(2500);
   await page.mouse.click(550, 460, { delay: 120 });
+  await page.waitForLoadState('networkidle');
   await page.waitForTimeout(3600);
   await page.mouse.move(400, 180); await page.mouse.down();
+  await page.waitForTimeout(100);
   await page.mouse.move(700, 180, { steps: 25 }); await page.mouse.up();
   await page.waitForFunction(() => JSON.parse(localStorage.getItem('CTR') || '{}').levelStars?.[0]?.[0] === 3,
     null, { timeout: 20000 });
