@@ -1,6 +1,6 @@
 # 化妆解压模拟恢复记录
 
-已恢复为独立静态网页并通过本地验收：一位人物完成护理、化妆、结算与照片保存；15 位人物分别进入护理并触发工具。中文外壳已接入小游戏乐园，Pages 发布状态见末表。没有恢复 Cocos 编辑器源工程。
+已恢复为独立静态网页并发布到[小游戏乐园](https://zhouhong1217.github.io/mini-games/games/makeup-relaxation/)。本地及线上均以真实鼠标完成一位人物的护理、化妆、结算、照片保存、DIY 与刷新存档；本地另对 15 位人物逐一进入护理并触发工具。没有恢复 Cocos 编辑器源工程。
 
 ## 来源与原始文件
 
@@ -74,11 +74,17 @@ REA 静态快照早于最终资源获取：当时相关目录文件数为 634，
 | 阻断外网后完整流程、无跨站请求和运行阻断错误 | 完整流程 1,288 请求；15 人独立上下文共 7,716 请求；均无跨站尝试、失败请求、HTTP 失败、页面及控制台错误 |
 | 桌面/手机尺寸、根路径和 `/mini-games/` 子路径 | 桌面与 320/390 像素窄屏无横向溢出，根路径与子路径、真实加载完成、全屏及返回通过；非实体手机验收 |
 | 原有游戏、语言切换、存档隔离回归 | 水/割绳子实际首关与跨语言存档、停车独立回归通过；英文卡片中文回退及返回 en 通过；本游戏 clear 仅删前缀键，其他游戏哨兵保留 |
-| Pages 发布 | 本地验收通过后推送 main，复用 `.github/workflows/pages.yml`；部署以对应 Actions 结果为准，发布后的检查保存在 `.verification/*-live/` |
+| Pages 发布 | 游戏提交 `b094dbe` 已推送 main，[Actions 42475459700](https://github.com/zhouhong1217/mini-games/actions/runs/42475459700) 部署成功；线上入口、完整人物/DIY/相册/刷新、全部旧游戏与语言回归通过 |
 
 最终本地结果、原始报告哈希及逐人物记录保存在 [验收摘要](makeup-relaxation/verification.json)。[结算截图](makeup-relaxation/complete-person.png)、[刷新后相册](makeup-relaxation/album-after-refresh.png)、[15 人护理总览](makeup-relaxation/characters-overview.png)随仓库保留。完整操作日志与逐人物四阶段截图位于忽略的 `.verification/makeup-final/` 和 `.verification/makeup-characters-final/`；平台回归位于 `.verification/local/`、`.verification/i18n-local/`、`.verification/parking-local/`。
 
+线上游戏完整流程累计 1,245 次请求，页面异常、控制台错误、失败请求、HTTP 失败和跨站请求均为零。[线上结算截图](makeup-relaxation/online-complete-person.png)及摘要随仓库保留，详细报告在 `.verification/makeup-live/`。首页、语言和停车线上回归分别在 `.verification/live/`、`.verification/i18n-live/`、`.verification/parking-live/`，均通过；线上 HTML、runtime、main 与 Face 脚本逐字节匹配本地最终包。
+
+线上补充 REA 被动记录 `ev_b0aef69c195a74f4f109677ba35060ee1ad2bb51ccea90cfb4af0094c8794e75` 及其[有限窗口摘要](makeup-relaxation/rea-live.json)确认部署 URL 和带前缀的存档键；同样只覆盖附着后的 1 秒，不代表此前网络。后续证据与测试提交未改动已验收的 `site/` 内容。
+
 可复跑 `scripts/verify-makeup.mjs`、`scripts/verify-makeup-characters.mjs`（设置 `GAME_URL` 和 `PLAYWRIGHT_MODULE`），以及 `verify-pages.mjs`、`verify-i18n.mjs`、`verify-parking.mjs`。鼠标脚本只读取 Cocos 节点、触发区与存档来定位和断言，不调用跳关、结算函数或预写进度；末尾的 Storage clear 是单独的清理边界测试。
+
+冷加载时，UI 已创建可能早于可操作画面。化妆测试等待按钮位置、缩放及透明度稳定再点击；割绳子语言回归等待浏览器实际呈现的连续两张截图显示完整绳子，再执行真实手势。固定延迟及 WebGL `toDataURL` 的临时初始化画面不能作为该关卡就绪证据。这些调整只修改测试，不修改生产游戏。
 
 REA 对初次本地页的 `ev_009139f272ae66dd58862a17044792e9a85ea1e7177ddf9e53114578d439a199` 只观察附着后的 1 秒，受 `attach_limited` 和 `policy_filtered` 限制，不能回溯证明此前网络。截图 `ev_d43120dcf645abb798bf878087361d76af6d5b313b0ba0dc5b9d15037001159b` 的 SHA-256 为 `333e4a9271bc3a3519c855ee192be888c12fcb48de311ef48c6692ef3ba2521e`。上表的全程请求结果来自从加载起监听的 Playwright 测试，和 REA 的被动窗口分开记录。
 

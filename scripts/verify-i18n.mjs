@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 import { readFile, writeFile, mkdir, stat } from 'node:fs/promises';
 import path from 'node:path';
+import { inflateSync } from 'node:zlib';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -79,6 +80,58 @@ const waterClick = async (page, x, y) => {
   const b = await page.locator('canvas').boundingBox();
   await page.mouse.click(b.x + x * b.width / 750, b.y + y * b.height / 500, { delay: 70 });
 };
+// 使用浏览器实际呈现的 PNG；WebGL 资源初始化期间 canvas.toDataURL() 可读到临时画面。
+// Chrome 截图为 8-bit RGB/RGBA PNG，解码只用于读取已验证坐标的颜色。
+function pngPixels(png) {
+  let width, height, channels;
+  const chunks = [];
+  for (let offset = 8; offset < png.length;) {
+    const length = png.readUInt32BE(offset), type = png.toString('ascii', offset + 4, offset + 8);
+    const data = png.subarray(offset + 8, offset + 8 + length);
+    if (type === 'IHDR') {
+      width = data.readUInt32BE(0); height = data.readUInt32BE(4);
+      assert.equal(data[8], 8); assert.ok([2, 6].includes(data[9])); assert.equal(data[12], 0);
+      channels = data[9] === 6 ? 4 : 3;
+    } else if (type === 'IDAT') chunks.push(data);
+    offset += length + 12;
+  }
+  const raw = inflateSync(Buffer.concat(chunks)), stride = width * channels;
+  const pixels = Buffer.alloc(stride * height);
+  const paeth = (a, b, c) => {
+    const p = a + b - c, da = Math.abs(p - a), db = Math.abs(p - b), dc = Math.abs(p - c);
+    return da <= db && da <= dc ? a : db <= dc ? b : c;
+  };
+  for (let y = 0, source = 0; y < height; y++) {
+    const filter = raw[source++]; assert.ok(filter <= 4);
+    for (let x = 0; x < stride; x++) {
+      const at = y * stride + x, left = x >= channels ? pixels[at - channels] : 0;
+      const up = y ? pixels[at - stride] : 0, upperLeft = y && x >= channels ? pixels[at - stride - channels] : 0;
+      const prediction = [0, left, up, Math.floor((left + up) / 2), paeth(left, up, upperLeft)][filter];
+      pixels[at] = (raw[source++] + prediction) & 255;
+    }
+  }
+  return (x, y) => [...pixels.subarray((Math.round(y * height / 680) * width + Math.round(x * width / 1100)) * channels,
+    (Math.round(y * height / 680) * width + Math.round(x * width / 1100)) * channels + 3)];
+}
+// ready 生命周期早于关卡资源显示；连续两次截图确认 Play 或蓝色锚点与完整绳子。
+async function waitCutCanvas(page, screen) {
+  const started = Date.now(); let consecutive = 0, evidence;
+  while (Date.now() - started < 60000) {
+    const png = await page.screenshot(), pixel = pngPixels(png);
+    const anchor = pixel(550, 72), rope = pixel(550, 130), background = pixel(570, 130), play = pixel(400, 460);
+    const visible = screen === 'menu'
+      ? rope.every(value => value > 225) && play[0] > 180 && play[1] < 130 && play[2] < 100
+      : anchor[0] < 190 && anchor[1] > anchor[0] + 35 && anchor[2] > anchor[1] + 15 &&
+        rope[0] < 135 && rope[1] < 110 && rope[2] < 90 && background[0] > rope[0] + 50;
+    consecutive = visible ? consecutive + 1 : 0;
+    evidence = { screen, wait_ms: Date.now() - started, anchor, rope, background, play };
+    if (consecutive >= 2) {
+      await writeFile(path.join(out, `cut-en-${screen}-ready.png`), png); return evidence;
+    }
+    await page.waitForTimeout(250);
+  }
+  throw new Error(`Cut the Rope ${screen} did not become visible: ${JSON.stringify(evidence)}`);
+}
 let page;
 try {
   const ctx = await context('en-US');
@@ -155,16 +208,17 @@ try {
   await page.goto(home + 'games/cut-the-rope/game/?lang=en');
   await page.waitForSelector('canvas');
   await page.waitForFunction(() => window.__ctrReady);
-  await page.waitForTimeout(2500);
+  const cutMenu = await waitCutCanvas(page, 'menu');
   await page.mouse.click(550, 460, { delay: 120 });
-  await page.waitForLoadState('networkidle');
-  await page.waitForTimeout(3600);
+  const cutRope = await waitCutCanvas(page, 'rope');
   await page.mouse.move(400, 180); await page.mouse.down();
   await page.waitForTimeout(100);
   await page.mouse.move(700, 180, { steps: 25 }); await page.mouse.up();
   await page.waitForFunction(() => JSON.parse(localStorage.getItem('CTR') || '{}').levelStars?.[0]?.[0] === 3,
     null, { timeout: 20000 });
+  await page.screenshot({ path: path.join(out, 'cut-en-result.png') });
   const before = JSON.parse(await storage(page, 'CTR'));
+  report.checks.cut_canvas_ready = { menu: cutMenu, rope: cutRope, input: 'real mouse drag at y=180' };
   await page.goto(home + 'games/cut-the-rope/?lang=zh-CN');
   await page.locator('#start').click(); await gameReady(page);
   frame = page.frames().find(frame => /\/cut-the-rope\/game\//.test(frame.url()));
@@ -189,9 +243,10 @@ try {
 
   await page.goto(home + '?lang=en');
   await page.getByRole('link', { name: '化妆解压', exact: true }).click();
+  await page.waitForFunction(() => !document.querySelector('#start').disabled);
   assert.equal(await language(page), 'zh-CN');
   assert.equal(await page.title(), '化妆解压 · 小游戏乐园');
-  assert.equal(new URL(await page.locator('.portal-back').getAttribute('href')).searchParams.get('lang'), 'en');
+  assert.equal(new URL(await page.locator('.portal-back').getAttribute('href'), page.url()).searchParams.get('lang'), 'en');
   assert.equal(await page.locator('#game').getAttribute('src'), null);
   await page.locator('.portal-back').click();
   await page.waitForSelector('.game-card');
@@ -208,9 +263,10 @@ try {
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width);
       if (width === 390) await page.screenshot({ path: path.join(out, `home-${lang}-mobile.png`), fullPage: true });
       await page.getByRole('link', { name: '化妆解压', exact: true }).click();
+      await page.waitForFunction(() => !document.querySelector('#start').disabled);
       assert.equal(await language(page), 'zh-CN');
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width);
-      assert.equal(new URL(await page.locator('.portal-back').getAttribute('href')).searchParams.get('lang'), lang);
+      assert.equal(new URL(await page.locator('.portal-back').getAttribute('href'), page.url()).searchParams.get('lang'), lang);
     }
   }
   const fallback = await context('fr-FR');

@@ -67,15 +67,22 @@ async function css(pos) {
   return { x: box.x + pos.x * box.width / width, y: box.y + (height - pos.y) * box.height / height };
 }
 async function clickHandler(handler, parent, item) {
-  const p = await until(() => page.evaluate(({ handler, parent, item }) => {
+  const locate = () => page.evaluate(({ handler, parent, item }) => {
     const x = __makeupLocal, cc = x.engine;
+    const visible = n => { let opacity = 255; for (let p = n; p; p = p.parent) opacity *= (p.getComponent(cc.UIOpacity)?.opacity ?? 255) / 255; return opacity > 240; };
     const n = x.nodes().find(n => n.activeInHierarchy && (!parent || n.parent?.name === parent) &&
       (!item || n.name === item) && n.worldPosition.y > 0 && n.worldPosition.x > 0 && n.worldPosition.x < 720 &&
-      n.getComponent(cc.Button)?.clickEvents.some(e => e.handler === handler));
-    return n ? { name: n.name, x: n.worldPosition.x, y: n.worldPosition.y } : null;
-  }, { handler, parent, item }), 'button ' + handler);
+      visible(n) && n.getComponent(cc.Button)?.interactable && n.getComponent(cc.Button)?.clickEvents.some(e => e.handler === handler));
+    return n ? { name: n.name, x: n.worldPosition.x, y: n.worldPosition.y, sx: n.worldScale.x, sy: n.worldScale.y } : null;
+  }, { handler, parent, item });
+  let previous;
+  const p = await until(async () => {
+    const current = await locate(), last = previous; previous = current;
+    return current && last && Math.hypot(current.x - last.x, current.y - last.y) < .5 &&
+      Math.abs(current.sx - last.sx) < .001 && Math.abs(current.sy - last.sy) < .001 ? current : null;
+  }, 'stable visible button ' + handler);
   const q = await css(p); await page.mouse.click(q.x, q.y); await delay(700);
-  report.steps.push({ input: 'click', handler, node: p.name }); return p;
+  report.steps.push({ input: 'click', handler, node: p.name, point: q }); return p;
 }
 async function drag(target, duration = 0) {
   const s = await inspect();
@@ -140,6 +147,7 @@ try {
   const initial = await storage();
   report.checks.initial_storage = initial;
   await clickHandler('click_kaishi');
+  await clickHandler('click_item', 'content', '01');
   await clickHandler('click_queding');
   // 对话原包有定时输入，等待真实开始按钮可操作。
   await delay(6500);

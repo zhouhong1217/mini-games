@@ -387,7 +387,7 @@
     },
     "i18n": {
       "local_report": ".verification/i18n-local/report.json",
-      "sha256": "b6fbcd763ae30796206029770a6c342bb07d657692275847b6cb3b7d1ca1d785",
+      "sha256": "84cc3cde928bf31666e26202f1b3a5afe911b3a4fb4326fa5ffd121908997e58",
       "result": "passed",
       "checks": {
         "preference": {
@@ -401,6 +401,57 @@
           "three_ducks": true,
           "switch_both_directions": true,
           "completed_progress_preserved": true
+        },
+        "cut_canvas_ready": {
+          "menu": {
+            "screen": "menu",
+            "wait_ms": 618,
+            "anchor": [
+              231,
+              242,
+              247
+            ],
+            "rope": [
+              252,
+              255,
+              255
+            ],
+            "background": [
+              117,
+              118,
+              117
+            ],
+            "play": [
+              241,
+              67,
+              41
+            ]
+          },
+          "rope": {
+            "screen": "rope",
+            "wait_ms": 2851,
+            "anchor": [
+              145,
+              223,
+              255
+            ],
+            "rope": [
+              61,
+              39,
+              24
+            ],
+            "background": [
+              192,
+              149,
+              104
+            ],
+            "play": [
+              216,
+              152,
+              85
+            ]
+          },
+          "input": "real mouse drag at y=180"
         },
         "cut": {
           "language_interface": true,
@@ -636,6 +687,241 @@
       "failed_requests": [],
       "failed_responses": [],
       "external_requests": []
+    },
+    "full_game_live": {
+      "local_report": ".verification/makeup-live/report.json",
+      "sha256": "f1a39a019685494b8f71c514323187c98f62966416da2936cac0bab983306433",
+      "result": "passed",
+      "url": "https://zhouhong1217.github.io/mini-games/games/makeup-relaxation/game/",
+      "started": "2026-11-08T11:30:43.149Z",
+      "finished": "2026-11-08T11:35:46.831Z",
+      "requests": 1245,
+      "checks": {
+        "pause_resume": true,
+        "complete_person": true,
+        "album_photo": true,
+        "diy": true,
+        "storage_isolation": true
+      },
+      "photos_after_refresh": [
+        "Photo_0",
+        "Photo_1"
+      ],
+      "sound_after_refresh": {
+        "music": false,
+        "effects": false
+      },
+      "page_errors": [],
+      "console_errors": [],
+      "failed_requests": [],
+      "failed_responses": [],
+      "external_requests": []
+    },
+    "pages_live": {
+      "local_report": ".verification/live/report.json",
+      "sha256": "b32ed63e5f5fc5a813254e27ff1a352022a61366249d41594dae84b72f8f14eb",
+      "result": "passed",
+      "checks": {
+        "homepage": {
+          "cards": 4,
+          "covers": "loaded",
+          "mount": "/mini-games/"
+        },
+        "water": {
+          "ducks": 3,
+          "received": 51,
+          "needed": 50,
+          "reload_persistence": true,
+          "fullscreen": true,
+          "back_forward": true,
+          "return_home": true
+        },
+        "cut_the_rope": {
+          "stars": 3,
+          "next_level_unlocked": true,
+          "reload_persistence": true,
+          "fullscreen": true,
+          "menu": true,
+          "return_home": true
+        },
+        "shared_origin_storage": {
+          "water_key": "xeyaxz-4399-v1.0",
+          "cut_key": "CTR",
+          "unchanged_water_save": true
+        },
+        "makeup_shell": {
+          "chinese": true,
+          "deferred_game_load": true,
+          "relative_game_path": true,
+          "ready": true,
+          "fullscreen": true,
+          "return_home": true,
+          "gameplay_completion": "covered by separate game verification"
+        },
+        "mobile_layout": {
+          "width": 390,
+          "homepage": true,
+          "water": true,
+          "cut_the_rope": true,
+          "makeup": true,
+          "physical_touch_device": "not tested"
+        }
+      },
+      "page_errors": [],
+      "failed_responses": [],
+      "external_requests": []
+    },
+    "i18n_live": {
+      "local_report": ".verification/i18n-live/report.json",
+      "sha256": "75ad8b031884b46e1c3e4e5933de57a766b0601bdf6c3ccf9e12e63a08874b9a",
+      "result": "passed",
+      "checks": {
+        "preference": {
+          "browser": true,
+          "saved": true,
+          "url_priority": true,
+          "invalid_query": true
+        },
+        "water": {
+          "english_game_text": true,
+          "three_ducks": true,
+          "switch_both_directions": true,
+          "completed_progress_preserved": true
+        },
+        "cut_canvas_ready": {
+          "menu": {
+            "screen": "menu",
+            "wait_ms": 619,
+            "anchor": [
+              231,
+              242,
+              247
+            ],
+            "rope": [
+              252,
+              255,
+              255
+            ],
+            "background": [
+              117,
+              118,
+              117
+            ],
+            "play": [
+              241,
+              67,
+              41
+            ]
+          },
+          "rope": {
+            "screen": "rope",
+            "wait_ms": 6379,
+            "anchor": [
+              145,
+              223,
+              255
+            ],
+            "rope": [
+              61,
+              39,
+              24
+            ],
+            "background": [
+              192,
+              149,
+              104
+            ],
+            "play": [
+              216,
+              152,
+              85
+            ]
+          },
+          "input": "real mouse drag at y=180"
+        },
+        "cut": {
+          "language_interface": true,
+          "chinese_fonts_rendered": "see screenshot",
+          "three_stars": true,
+          "switch_both_directions": true,
+          "settings_language_sync": true,
+          "completed_progress_preserved": true
+        },
+        "makeup_chinese_fallback": {
+          "english_home_card": true,
+          "chinese_shell": true,
+          "english_return_preserved": true
+        },
+        "layout_and_fallbacks": {
+          "chinese_and_english": true,
+          "widths": [
+            320,
+            390,
+            1280
+          ],
+          "unsupported_browser": true,
+          "blocked_preference_storage": true
+        }
+      },
+      "errors": [],
+      "failed_responses": [],
+      "external_requests": []
+    },
+    "parking_live": {
+      "local_report": ".verification/parking-live/report.json",
+      "sha256": "afc97c44046996be105fdfb60fc8b1ac8612fb58d5d73d58d261b4adcc1a26fe",
+      "result": "passed",
+      "checks": {
+        "original_binaries": "SHA-256 unchanged",
+        "gameplay": {
+          "Stars00": 3,
+          "CurLevel": 1,
+          "IsTutorialComplete": 1,
+          "Theme0FLevel": 1,
+          "next_level": 2,
+          "source": "real keyboard input and read-only persisted PlayerPrefs"
+        },
+        "controls": {
+          "acceleration": true,
+          "braking": true,
+          "gear": true,
+          "camera": "see screenshot",
+          "pause": "see screenshot"
+        },
+        "storage_isolation": true,
+        "reload_persistence": {
+          "Stars00": 3,
+          "CurLevel": 1,
+          "IsTutorialComplete": 1,
+          "Theme0FLevel": 1
+        },
+        "shell": {
+          "languages": true,
+          "language_switch_preserves_game": true,
+          "fullscreen": true,
+          "return_home": true
+        },
+        "load_retry": {
+          "wasm_requests_blocked": 1,
+          "recovered": true
+        },
+        "layout": {
+          "languages": [
+            "zh-CN",
+            "en"
+          ],
+          "widths": [
+            320,
+            390,
+            1280
+          ],
+          "physical_mobile": "not tested; requires keyboard"
+        }
+      },
+      "page_errors": [],
+      "console_errors": [],
+      "failed_responses": [],
+      "external_requests": []
     }
   },
   "screenshots": [
@@ -650,6 +936,54 @@
     {
       "file": "complete-person.png",
       "sha256": "10f6242d3a2b72c9393f100d298a90b302b888efa6b4070197bc423c0b51397e"
+    },
+    {
+      "file": "online-complete-person.png",
+      "sha256": "877e570b5bc03850f5f78dcf65b4545cbf640ba41aa5d224837de0c360524ad2"
     }
+  ],
+  "deployment": {
+    "commit": "b094dbee06aac148414637e3d38b3442224717a7",
+    "site_tree": "ec55081f90666c2d957d6f25acd7988b1cd922de",
+    "workflow_run": "https://github.com/zhouhong1217/mini-games/actions/runs/42475459700",
+    "conclusion": "success",
+    "url": "https://zhouhong1217.github.io/mini-games/games/makeup-relaxation/",
+    "checked_at": "2026-11-08T11:38:15.890205+00:00",
+    "verified_files": [
+      {
+        "file": "index.html",
+        "status": 200,
+        "bytes": 2150,
+        "sha256": "ee8b29d70518097acb2b70d3e3c948847a47c798d6f0571ec6a25e8c44b0ef35",
+        "matches_local": true
+      },
+      {
+        "file": "local-runtime.js",
+        "status": 200,
+        "bytes": 2547,
+        "sha256": "d1e4c09cc5de1040e819a239d189eb94941847569784375cac8d87a0926aaf4e",
+        "matches_local": true
+      },
+      {
+        "file": "assets/main/index.e576d.js",
+        "status": 200,
+        "bytes": 99524,
+        "sha256": "3562efedcf9c8ebeaa0feeb21798cf96cfc418269aed16d7af5be62bf7ed3d39",
+        "matches_local": true
+      },
+      {
+        "file": "assets/Face/index.b21d5.js",
+        "status": 200,
+        "bytes": 112624,
+        "sha256": "a4c3ef94e7058a36a557b6743826dd8dac724ac18e0a1a06c1c9c21395a09d4b",
+        "matches_local": true
+      }
+    ],
+    "rea_passive_evidence": "ev_b0aef69c195a74f4f109677ba35060ee1ad2bb51ccea90cfb4af0094c8794e75"
+  },
+  "verification_notes": [
+    "Game controls are clicked after their actual position/scale/opacity stabilize.",
+    "Cut the Rope input waits for two browser screenshots of the visible menu and then full rope; WebGL toDataURL and fixed delays were insufficient during cold loading.",
+    "Input readiness changes are confined to test scripts; the published site tree is unchanged by the follow-up evidence commit."
   ]
 }

@@ -221,4 +221,4 @@ async function outputFiles(directory,relative='') {
 }
 const outputs=await outputFiles(site);
 await writeFile(path.join(evidence,'build-manifest.json'),JSON.stringify({columns:['path','bytes','sha256'],original_verified_files:pinned.original_files.length,files:outputs},null,2)+'\n');
-console.log(JSON.stringify({site,evidence,verifiedOriginals:pinned.original_files.length,outputFiles:outputs.length,mainBytes:localMain.length,removedModules:main.size-included.size-1,faceBytes:localFace.length}));
+console.log(JSON.stringify({site,evidence,verifiedOriginals:pinned.original_files.length,outputFiles:outputs.length,mainBytes:Buffer.byteLength(localMain),removedModules:main.size-included.size-1,faceBytes:Buffer.byteLength(localFace)}));
