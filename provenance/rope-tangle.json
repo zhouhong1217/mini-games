@@ -1,0 +1,41 @@
+{
+  "source_page": "https://www.4399.com/flash/242335.htm",
+  "source_base": "https://sda.4399.com/4399swf/upload_swf/ftp47/gamehwq/20240709/09/",
+  "binary_changes": "None. WASM and data bytes copied exactly.",
+  "loader_changes": "LF line endings; replace original parent error callback and catch framework initialization rejection.",
+  "framework_changes": "Namespace IndexedDB as rope-tangle-4399-v1:/idbfs; guard touch preventDefault with cancelable; remove original SDK block and retain only WASM ABI wrappers into platform-adapter.js with local game-ready notification.",
+  "platform_adapter": "Independent local implementation. Default ads complete directly; optional providers are injected only here. Original callback object name LaggedAPIUnity remains an ABI string. Scores and achievements stay in namespaced localStorage.",
+  "binary_dependency_boundary": "WASM is unmodified. Complete removal of binary-internal SDK or server references is Unknown; network is restricted to same origin and tested with external requests blocked.",
+  "storage": "Original Unity PlayerPrefs; namespaced IndexedDB, original in-game keys and values retained.",
+  "game_language": "Original English. Bilingual portal shell.",
+  "files": [
+    {
+      "source": "Build/Rope Tangle Puzzle.loader.js",
+      "destination": "Build/Rope Tangle Puzzle.loader.js",
+      "original_sha256": "12ce8697b24e37ce695dfb740783b6104c4ea2ba5016e21bc2bb9e9101810c92",
+      "local_sha256": "0bf137d6f22a12ede6d7f3436babdfbfa050e1b1ef26fd7032093f2ad8050f64",
+      "bytes": 14028
+    },
+    {
+      "source": "Build/Rope Tangle Puzzle.framework.js",
+      "destination": "Build/Rope Tangle Puzzle.framework.js",
+      "original_sha256": "ec0160a4b543f4083aa3cb58867859fb2f2dcce0ca90124cf2109e32a707e266",
+      "local_sha256": "df49306676f88c8c02439126646e18734de02baf0dbd4f2d6410ec899b2a7c61",
+      "bytes": 582308
+    },
+    {
+      "source": "Build/Rope Tangle Puzzle.data",
+      "destination": "Build/Rope Tangle Puzzle.data",
+      "original_sha256": "659877f2a0d43940365e34f21dc723771336aaef5ec398eb174bc66b13a70089",
+      "local_sha256": "659877f2a0d43940365e34f21dc723771336aaef5ec398eb174bc66b13a70089",
+      "bytes": 18907907
+    },
+    {
+      "source": "Build/Rope Tangle Puzzle.wasm",
+      "destination": "Build/Rope Tangle Puzzle.wasm",
+      "original_sha256": "5c41f772a181026144bc01e041e04e6ef47ba448b1a88877a45303d26b64aa97",
+      "local_sha256": "5c41f772a181026144bc01e041e04e6ef47ba448b1a88877a45303d26b64aa97",
+      "bytes": 32080908
+    }
+  ]
+}

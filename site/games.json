@@ -111,5 +111,30 @@
         ]
       }
     }
+  },
+  {
+    "id": "rope-tangle",
+    "title": "缠绕的绳子",
+    "subtitle": "ROPE TANGLE PUZZLE",
+    "description": "理清交错的绳索，慢慢解开眼前的结。跟随画面提示，寻找解结的顺序。",
+    "href": "games/rope-tangle/",
+    "cover": "assets/covers/rope-tangle.jpg",
+    "coverAlt": "缠绕的绳子游戏封面：交错的彩色绳索",
+    "tags": [
+      "益智解谜",
+      "鼠标 / 触屏"
+    ],
+    "translations": {
+      "en": {
+        "title": "Rope Tangle Puzzle",
+        "subtitle": "ROPE TANGLE PUZZLE",
+        "description": "Follow each strand, untangle the knots, and work out a clever order. Take your time with a colorful rope puzzle.",
+        "coverAlt": "Rope Tangle Puzzle cover with tangled colorful ropes",
+        "tags": [
+          "Puzzle",
+          "Mouse / touch"
+        ]
+      }
+    }
   }
 ]

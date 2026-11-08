@@ -1,6 +1,6 @@
 # 小游戏乐园
 
-中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」「化妆解压」和「吃苹果的蛇」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
+中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」「化妆解压」「吃苹果的蛇」和「缠绕的绳子」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
 
 在线游玩：<https://zhouhong1217.github.io/mini-games/>
 
@@ -73,6 +73,29 @@ PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-co
 
 设置 `PAGES_URL=https://zhouhong1217.github.io/mini-games/` 可复用相同流程验证线上版本。截图和报告保留在 `.verification/snake-local/` 或 `.verification/snake-live/`。实体手机和其余关卡未逐一验收。
 
+## 缠绕的绳子
+
+在线入口：<https://zhouhong1217.github.io/mini-games/games/rope-tangle/>。本地预览：<http://127.0.0.1:8766/games/rope-tangle/>。
+
+点击「开始游戏」加载约 52 MB 的原版 Unity WebGL 资源。拖动绳索的圆形端点到空位，调整顺序和路线，解开交错的绳索；通过后点击 `NEXT` 进入下一关。游戏左上角 `↻` 重开当前关卡，外壳「重新加载」恢复最近进入的关卡。页面支持中英文说明、加载进度、失败重试、全屏及返回首页，游戏内保留原版英文。
+
+WASM 和关卡数据保持原始字节，脚本适配错误回报、触屏事件和存档隔离，原广告 SDK 实现已移除；广告入口通过独立 `platform-adapter.js` 保留原回调，默认直接完成，可在该层接入新供应商。原版 Unity PlayerPrefs 保存在独立 IndexedDB `rope-tangle-4399-v1:/idbfs`。原游戏可能输出一条文件同步并发警告；验证脚本单独记录该已知警告，并实际检查保存和刷新恢复。关卡总数、其余关卡的完整通关和完整 Unity 源工程为 `Unknown`。
+
+来源、哈希及验证范围见 [恢复记录](provenance/rope-tangle.md) 和 `provenance/rope-tangle.json`。原包保存在本机 `/Users/a/Documents/REA/output/4399_242335_2026-11-08/original/`。重建发布资源：
+
+```sh
+node scripts/build-rope.mjs ../4399_242335_2026-11-08/original
+node scripts/verify-rope-platform.mjs
+```
+
+验收使用真实鼠标完成前两关，检查第 3 关刷新恢复、原版重开、触屏模拟首关、语言切换、全屏、390px 窄屏和 WASM 下载失败重试：
+
+```sh
+PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-core/index.mjs node scripts/verify-rope.mjs
+```
+
+设置 `PAGES_URL=https://zhouhong1217.github.io/mini-games/` 验证线上版本。截图和报告保存在 `.verification/rope-local/` 或 `.verification/rope-live/`。实体手机与其他浏览器未验收。
+
 ## 第一次发布
 
 ### 1. 创建公开仓库
@@ -137,8 +160,8 @@ git push -u origin main
 
 ### 5. 检查上线结果
 
-- 首页显示五张游戏卡片，封面和文字正常。
-- 五个入口均能进入游戏，游戏中的「返回小游戏乐园」可回到首页。
+- 首页显示六张游戏卡片，封面和文字正常。
+- 六个入口均能进入游戏，游戏中的「返回小游戏乐园」可回到首页。
 - 直接打开游戏链接并刷新，仍可以游玩。
 - 分别游玩并刷新，当前浏览器的存档仍保留。
 
