@@ -29,14 +29,19 @@ const vars={
 const audit=[];
 function patchJS(text,name){
  const worker=/^labw\./.test(name),dataFile=name==='era.js';if(dataFile)return text;
- const ast=parse(text,{ecmaVersion:'latest',sourceType:'script'}),edits=[],covered=[],changed=new Set();
+ const ast=parse(text,{ecmaVersion:'latest',sourceType:'script'}),edits=[],covered=[],changed=new Set(),workerGuards=new Set();
  const add=(start,end,value)=>{if(covered.some(([a,b])=>start>=a&&end<=b))return;edits.push({start,end,value});};
  fullAncestor(ast,(n,state,parents)=>{
-  if(worker)return;
+  if(worker){
+   if(n.type==='VariableDeclarator'&&n.id.type==='Identifier'&&n.init){const init=text.slice(n.init.start,n.init.end);if(init.includes('self.location.hostname')&&init.includes('1in8b.life')&&init.includes('.translate.goog')){covered.push([n.init.start,n.init.end]);workerGuards.add(n.id.name);changed.add(n.id.name);}}
+   return;
+  }
   if(n.type==='FunctionDeclaration'&&replacements.has(n.id?.name)){covered.push([n.start,n.end]);changed.add(n.id.name);}
   if(n.type==='VariableDeclarator'&&n.id.type==='Identifier'&&vars[n.id.name]!=null&&n.init){covered.push([n.init.start,n.init.end]);changed.add(n.id.name);}
  });
+ if(worker&&workerGuards.size!==1)throw new Error('Expected one original worker hostname guard: '+name);
  fullAncestor(ast,(n,state,parents)=>{
+  if(worker&&n.type==='VariableDeclarator'&&workerGuards.has(n.id.name)){edits.push({start:n.init.start,end:n.init.end,value:'true'});return;}
   if(!worker&&n.type==='FunctionDeclaration'&&replacements.has(n.id?.name)){edits.push({start:n.start,end:n.end,value:replacements.get(n.id.name)});return;}
   if(!worker&&n.type==='VariableDeclarator'&&n.id.type==='Identifier'&&vars[n.id.name]!=null&&n.init){edits.push({start:n.init.start,end:n.init.end,value:vars[n.id.name]});return;}
   if(covered.some(([a,b])=>n.start>=a&&n.end<=b))return;

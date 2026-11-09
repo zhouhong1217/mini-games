@@ -286,8 +286,8 @@ try {
   report.result = 'failed'; report.failure = error.stack || String(error); process.exitCode = 1;
   console.error(error);
 } finally {
-  for (const ctx of contexts) await ctx.close().catch(() => {});
-  await browser.close();
   await writeFile(path.join(output, 'report.json'), JSON.stringify(report, null, 2));
   console.log(JSON.stringify({ result: report.result, checks: Object.fromEntries(Object.entries(report.checks).map(([name, value]) => [name, value.result])), report: path.join(output, 'report.json') }));
+  await Promise.race([browser.close(), new Promise(resolve => setTimeout(resolve, 5000))]);
+  process.exit(process.exitCode || 0);
 }

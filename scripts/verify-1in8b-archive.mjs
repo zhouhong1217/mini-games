@@ -268,8 +268,8 @@ try {
   report.result = 'failed'; report.failure = error.stack || String(error); process.exitCode = 1;
   console.error(error); if (page) await shot('failure').catch(() => {});
 } finally {
-  for (const context of contexts) await context.close().catch(() => {});
-  await browser.close();
   await writeFile(path.join(out, 'report.json'), JSON.stringify(report, null, 2));
   console.log(JSON.stringify({ result: report.result, checks: Object.keys(report.checks), failure: report.failure, report: path.join(out, 'report.json') }));
+  await Promise.race([browser.close(), new Promise(resolve => setTimeout(resolve, 5000))]);
+  process.exit(process.exitCode || 0);
 }

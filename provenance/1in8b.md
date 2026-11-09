@@ -21,6 +21,10 @@ node scripts/build-1in8b.mjs /Users/a/Documents/REA/output/1in8b_2026-11-09
 
 `provenance/1in8b.json` 记录原始与分发哈希、大小及被替换的符号。重建同时应用相同清理，避免重新引入原支付或服务器代码。
 
+教育实验室的原版 Worker 另有域名白名单，仅接受原站和 localhost。静态构建按语法树识别并移除 19 个 Worker 的这项限制，使 GitHub Pages 及其他静态域名能正常执行模拟；每个 Worker 必须恰好匹配一个检查，否则构建报错。
+
+域名适配另在 `https://pages.invalid` 上拦截提供本地分发文件，对全部 19 个 Worker 执行原生 `run` 消息并等待真实人生结果及 `done`；19 项均通过，记录见 `.verification/1in8b-worker-host/report.json`。
+
 ## 本地能力
 
 影片、相簿、照片和记录集沿用客户端生成实现；原付款、退款、邮箱激活和通行证校验被替换为独立本地能力判断，不产生购买凭证。已有装扮内容可直接使用。游戏内的虚拟消费、剧情及统计数据保持原实现。

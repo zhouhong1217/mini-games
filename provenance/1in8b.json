@@ -4564,116 +4564,116 @@
     {
       "path": "labw.ar.8d413f15ec.js",
       "original_sha256": "8d413f15ec0f8ffbd6fcd6b17cc707aee50cff8dff31753abf56e1cfa5c1dca3",
-      "local_sha256": "8d413f15ec0f8ffbd6fcd6b17cc707aee50cff8dff31753abf56e1cfa5c1dca3",
-      "bytes": 4816087
+      "local_sha256": "d700513445b70d5b4848dbe691228ba5cd80afcd062f1b998112067131edbd87",
+      "bytes": 4815908
     },
     {
       "path": "labw.de.7ee2e550d4.js",
       "original_sha256": "7ee2e550d4faee4daa77689be46e72f16b1f9cb3fcb808c6709e32b6c42df0a0",
-      "local_sha256": "7ee2e550d4faee4daa77689be46e72f16b1f9cb3fcb808c6709e32b6c42df0a0",
-      "bytes": 4374091
+      "local_sha256": "243bedbf8156d1932e9d5779502da0eb8210a32f2ebdc477a8b37933f1151ea7",
+      "bytes": 4373912
     },
     {
       "path": "labw.en.2c16bdc9a5.js",
       "original_sha256": "2c16bdc9a519a431f7aa636818986ef7075a72bb033e2b540cbc68c4afa51f8a",
-      "local_sha256": "2c16bdc9a519a431f7aa636818986ef7075a72bb033e2b540cbc68c4afa51f8a",
-      "bytes": 4030288
+      "local_sha256": "351a5e672bd6bb076013f9a5ac8bb983ef37fb8d802f93a1638d78c8f3eeb734",
+      "bytes": 4030109
     },
     {
       "path": "labw.es.44615f8cdf.js",
       "original_sha256": "44615f8cdf2cb0a83871a8ce69a9ebf2636b1a4863a3cd15e71b0f95076c9f80",
-      "local_sha256": "44615f8cdf2cb0a83871a8ce69a9ebf2636b1a4863a3cd15e71b0f95076c9f80",
-      "bytes": 4213300
+      "local_sha256": "b4dff4b8292e1cc5712e494452bf97cf16c8f02a60de8ed4bbfacb35f69cfb36",
+      "bytes": 4213121
     },
     {
       "path": "labw.fa.abfa174e22.js",
       "original_sha256": "abfa174e221f58b1dc4fae51eb3e9474195dd58f002b5d46768f5e37af15c772",
-      "local_sha256": "abfa174e221f58b1dc4fae51eb3e9474195dd58f002b5d46768f5e37af15c772",
-      "bytes": 4740248
+      "local_sha256": "650ddb0a7ffd4293a60fdf05f438489395365f976711797d00e9b1efec177275",
+      "bytes": 4740069
     },
     {
       "path": "labw.fr.57ce8b491a.js",
       "original_sha256": "57ce8b491a1592f9fb56a49517841864c62aefadd1166dca564913b6ad17373f",
-      "local_sha256": "57ce8b491a1592f9fb56a49517841864c62aefadd1166dca564913b6ad17373f",
-      "bytes": 4367646
+      "local_sha256": "9d958f3adfe921474d168e7ce6942465cc0c30131db4715545a2e01fd2c579ab",
+      "bytes": 4367467
     },
     {
       "path": "labw.id.92c2db744f.js",
       "original_sha256": "92c2db744fbee54ee0d7c0a69389b91d1aa82e0dac5f9ab9625f5e0891e2b923",
-      "local_sha256": "92c2db744fbee54ee0d7c0a69389b91d1aa82e0dac5f9ab9625f5e0891e2b923",
-      "bytes": 4175580
+      "local_sha256": "dd571cee3f26a10ec2042d5f7f7fc00cdae445248d14a4f1f899b2116b3f6234",
+      "bytes": 4175401
     },
     {
       "path": "labw.it.6d44e53909.js",
       "original_sha256": "6d44e5390901abcdc4627b20b4f4a8fad41de35e2f2bd7fee622cbeb8d3d865b",
-      "local_sha256": "6d44e5390901abcdc4627b20b4f4a8fad41de35e2f2bd7fee622cbeb8d3d865b",
-      "bytes": 4336818
+      "local_sha256": "1e1fc564326b1c48df9f8b1499e11d6605c3b1fa19e9b3e3886b61123f14ebea",
+      "bytes": 4336639
     },
     {
       "path": "labw.ja.5bfb9f0ef4.js",
       "original_sha256": "5bfb9f0ef4cc7a2c712bf7bcd32dd3f1e2ed9a7c08c5caf501685b7229234883",
-      "local_sha256": "5bfb9f0ef4cc7a2c712bf7bcd32dd3f1e2ed9a7c08c5caf501685b7229234883",
-      "bytes": 4313023
+      "local_sha256": "a193cbdc80752cde59c199b77944bc2a741d537b417548fefb0417158299440a",
+      "bytes": 4312844
     },
     {
       "path": "labw.ko.858552e1db.js",
       "original_sha256": "858552e1db15d70f6c3a9aa14c7f061f4152dd7e1789861a07a4e31f91a0ff6b",
-      "local_sha256": "858552e1db15d70f6c3a9aa14c7f061f4152dd7e1789861a07a4e31f91a0ff6b",
-      "bytes": 2677620
+      "local_sha256": "22a1decdac245de01c155466ee34241f0dccb17f1e231a9b4bc47b48798cd80a",
+      "bytes": 2677441
     },
     {
       "path": "labw.pl.1ed93811ce.js",
       "original_sha256": "1ed93811ce1f6be42550c0e490d55f0d903d279d38a943d8aeff79831f67e3dd",
-      "local_sha256": "1ed93811ce1f6be42550c0e490d55f0d903d279d38a943d8aeff79831f67e3dd",
-      "bytes": 4729385
+      "local_sha256": "70c84d9ed8c1e4feee2fcc07cdc6d3f51c5dbfebc36ccc52758705e7067c5682",
+      "bytes": 4729206
     },
     {
       "path": "labw.pt.1114f38221.js",
       "original_sha256": "1114f382218dc48d2bb96b00b15d757f3fc4a7aa5eee0f828197bfb8a1c4cc82",
-      "local_sha256": "1114f382218dc48d2bb96b00b15d757f3fc4a7aa5eee0f828197bfb8a1c4cc82",
-      "bytes": 4288364
+      "local_sha256": "11cc9325f3cc1172e7638c3d553b350640bf37b2b1828ccb659424d4f248dcb4",
+      "bytes": 4288185
     },
     {
       "path": "labw.ru.a4fea02d20.js",
       "original_sha256": "a4fea02d20ccf2c452e99bf9a2016326279d21b8bbed974a10a092cc29d2a283",
-      "local_sha256": "a4fea02d20ccf2c452e99bf9a2016326279d21b8bbed974a10a092cc29d2a283",
-      "bytes": 5616990
+      "local_sha256": "86d4ec74059958d8ffbdb0a7bb05060b15b69bb99abe4dbe5c91818ce2efc27c",
+      "bytes": 5616811
     },
     {
       "path": "labw.th.fe7af61fbc.js",
       "original_sha256": "fe7af61fbc3c7ede93dcf4e61cea907eaa68caab538e138031fffa491582de31",
-      "local_sha256": "fe7af61fbc3c7ede93dcf4e61cea907eaa68caab538e138031fffa491582de31",
-      "bytes": 5502664
+      "local_sha256": "5759f1b9450e6caff88cec5a9941cbbd7b653f3e20d6554569722b68345c23d3",
+      "bytes": 5502485
     },
     {
       "path": "labw.tr.6504c1f0e2.js",
       "original_sha256": "6504c1f0e29c355ddfbdd2de1886416e80a98d8e9dbd3e59d021f342262e7afe",
-      "local_sha256": "6504c1f0e29c355ddfbdd2de1886416e80a98d8e9dbd3e59d021f342262e7afe",
-      "bytes": 4137344
+      "local_sha256": "ca50220a526fe3214e62eef1c75b390383d71d9f073e80f9a47115e5128bfa88",
+      "bytes": 4137165
     },
     {
       "path": "labw.uk.a9b4b1eade.js",
       "original_sha256": "a9b4b1eadec7bae02c4056eb44d2109ef7ec06874f0799d33e9704caaab841a8",
-      "local_sha256": "a9b4b1eadec7bae02c4056eb44d2109ef7ec06874f0799d33e9704caaab841a8",
-      "bytes": 5606418
+      "local_sha256": "3a5b2120d8ad269c6d198b6a3690664313c5ffd5f20c1cb04fcd97bdd9499748",
+      "bytes": 5606239
     },
     {
       "path": "labw.vi.16bb8c1f0a.js",
       "original_sha256": "16bb8c1f0aa3bbd0ef059f05ac55c8725b7e4cee57f7825a6fc14419a0e9ebce",
-      "local_sha256": "16bb8c1f0aa3bbd0ef059f05ac55c8725b7e4cee57f7825a6fc14419a0e9ebce",
-      "bytes": 4378300
+      "local_sha256": "89fe50b73f94dd1431c21c7feb2f1df68219b58093579c38f75e42c38b3ed783",
+      "bytes": 4378121
     },
     {
       "path": "labw.zh-hans.158293316e.js",
       "original_sha256": "158293316ed563f9fb38ec3e5ce47acdcca789195001299da4c050c5346e55fc",
-      "local_sha256": "158293316ed563f9fb38ec3e5ce47acdcca789195001299da4c050c5346e55fc",
-      "bytes": 3944920
+      "local_sha256": "bd493e729df65954defef9b02db34b6e01d197ede68ebad5af37392a60c79d4d",
+      "bytes": 3944741
     },
     {
       "path": "labw.zh.7b60e760b8.js",
       "original_sha256": "7b60e760b8e98d70d936321630a92fa9fbd88a16d538047d0fb3a48901a17e8c",
-      "local_sha256": "7b60e760b8e98d70d936321630a92fa9fbd88a16d538047d0fb3a48901a17e8c",
-      "bytes": 3944210
+      "local_sha256": "4e571fcd42de57ee38ae8ccae1535f622afa5a7d48e5110b74113986b524a321",
+      "bytes": 3944031
     },
     {
       "path": "manifest.webmanifest",
@@ -7430,98 +7430,136 @@
     },
     {
       "path": "labw.ar.8d413f15ec.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "W_"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.de.7ee2e550d4.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "tq"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.en.2c16bdc9a5.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "RD"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.es.44615f8cdf.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "VH"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.fa.abfa174e22.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "CK"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.fr.57ce8b491a.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "YI"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.id.92c2db744f.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "$O"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.it.6d44e53909.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "pG"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.ja.5bfb9f0ef4.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "NH"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.ko.858552e1db.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "wB"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.pl.1ed93811ce.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "RU"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.pt.1114f38221.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "sB"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.ru.a4fea02d20.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "z_"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.th.fe7af61fbc.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "EK"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.tr.6504c1f0e2.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "JG"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.uk.a9b4b1eade.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "z_"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.vi.16bb8c1f0a.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "BO"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.zh-hans.158293316e.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "T_"
+      ],
+      "patches": 1
     },
     {
       "path": "labw.zh.7b60e760b8.js",
-      "replaced_symbols": [],
-      "patches": 0
+      "replaced_symbols": [
+        "T_"
+      ],
+      "patches": 1
     }
   ]
 }
