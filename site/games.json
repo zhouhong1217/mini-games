@@ -261,5 +261,30 @@
         ]
       }
     }
+  },
+  {
+    "id": "ancient-tycoon",
+    "title": "穿回古代当首富",
+    "subtitle": "ANCIENT TYCOON",
+    "description": "拖动摇杆移动人物，靠近物品自动拾取。站到标记处建造、补货和收钱，从韭菜小摊开始经营。",
+    "href": "games/ancient-tycoon/",
+    "cover": "assets/covers/ancient-tycoon.jpg",
+    "coverAlt": "穿回古代当首富原版游戏封面",
+    "tags": [
+      "模拟经营",
+      "鼠标 / 触屏"
+    ],
+    "translations": {
+      "en": {
+        "title": "Ancient Tycoon",
+        "subtitle": "ANCIENT TYCOON",
+        "description": "Drag the joystick to move and pick up nearby items. Stand on marked spots to build, restock, and collect coins at your first leek stall.",
+        "coverAlt": "Original Ancient Tycoon game cover",
+        "tags": [
+          "Business simulation",
+          "Mouse / touch"
+        ]
+      }
+    }
   }
 ]

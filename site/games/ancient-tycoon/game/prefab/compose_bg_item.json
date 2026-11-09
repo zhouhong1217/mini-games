@@ -1,0 +1,1 @@
+{"type":"Box","props":{"y":0,"x":0,"width":90,"presetID":1,"name":"compose_bg_item","isPresetRoot":true,"height":90,"anchorY":0.5,"anchorX":0.5,"alpha":1},"compId":30,"child":[{"type":"Image","props":{"width":90,"skin":"assets_compose2/item_bg0.png","sizeGrid":"15,7,15,5","presetID":2,"height":90},"compId":31}],"loadList":["assets_compose2/item_bg0.png"],"loadList3D":[]}

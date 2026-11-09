@@ -1,0 +1,121 @@
+[{
+    "id":1, 
+    "name":"肚子疼痛",
+    "room":"内科",
+
+    "prescription_name":"平胃散",
+    "prescription":[1,2,3,4],
+    "prescription_num":[6,4,4,2],
+    "talkId":1
+},
+{
+    "id":2, 
+    "name":"感觉全身发凉，穿衣烤火也没用，头疼头发烫",
+    "room":"内科",
+
+    "prescription_name":"麻黄汤",
+    "prescription":[5,6,7,4],
+    "prescription_num":[3,2,2,1],
+    "talkId":1
+},
+{
+    "id":3, 
+    "name":"胸闷气短，一直咳嗽、痰多",
+    "room":"内科",
+
+    "prescription_name":"苓桂术甘汤",
+    "prescription":[8,6,9,4],
+    "prescription_num":[4,3,2,2],
+    "talkId":1
+},
+{
+    "id":4, 
+    "name":"感觉身上很热，但是摸了又不热，口渴",
+    "room":"内科",
+
+    "prescription_name":"麻杏石甘汤",
+    "prescription":[5,7,11,4],
+    "prescription_num":[2,3,8,2],
+    "talkId":1
+},
+{
+    "id":5, 
+    "name":"感觉很热很烦躁，口燥咽干，有时候还会吐血",
+    "room":"内科",
+
+    "prescription_name":"黄连解毒汤",
+    "prescription":[12,13,14,15],
+    "prescription_num":[3,2,2,3],
+    "talkId":1
+},
+{
+    "id":6, 
+    "name":"手脚冰冷，腹泻腹痛，脉搏按起来像紧绷的琴弦",
+    "room":"内科",
+
+    "prescription_name":"四逆散",
+    "prescription":[16,17,18,4],
+    "prescription_num":[2,3,2,1],
+    "talkId":1
+},
+{
+    "id":7, 
+    "name":"大的拉不出，肚子摸起来硬鼓鼓的，口舌干燥",
+    "room":"内科",
+
+    "prescription_name":"大承气汤",
+    "prescription":[19,18,2,20],
+    "prescription_num":[4,5,5,3],
+    "talkId":1
+},
+{
+    "id":8, 
+    "name":"最近来那个事了，感觉身体很虚弱",
+    "room":"内科",
+
+    "prescription_name":"四物汤",
+    "prescription":[21,22,17,23],
+    "prescription_num":[5,3,5,7],
+    "talkId":1
+},
+{
+    "id":9, 
+    "name":"痰多咳嗽，没有食欲",
+    "room":"内科",
+
+    "prescription_name":"三子养亲汤",
+    "prescription":[24,25,26],
+    "prescription_num":[9,6,9],
+    "talkId":1
+},
+{
+    "id":10, 
+    "name":"最近经常失眠，睡着了也容易惊醒，头胀头痛",
+    "room":"内科",
+
+    "prescription_name":"酸枣仁汤",
+    "prescription":[27,4,10,8,22],
+    "prescription_num":[6,1,2,2,1],
+    "talkId":1
+},
+{
+    "id":11, 
+    "name":"浑身发痒",
+    "room":"外科",
+
+    "prescription_name":"药皂药浴",
+    "prescription":[28],
+    "prescription_num":[10],
+    "talkId":1
+},
+{
+    "id":12, 
+    "name":"无法产奶",
+    "room":"内科",
+
+    "prescription_name":"韭菜安慰剂",
+    "prescription":[29],
+    "prescription_num":[10],
+    "talkId":1
+}
+]

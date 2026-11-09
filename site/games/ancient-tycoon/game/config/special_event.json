@@ -1,0 +1,141 @@
+{
+    "gold": [
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "oldman",
+            "roleName": "神秘老人",
+            "desc": [
+                "你怎么又往这里丢东西了！",
+                "池水都变浑浊了！！"
+            ]
+        },
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "oldman",
+            "roleName": "神秘老人",
+            "desc": [
+                "刚刚你丢的金粑粑还是银粑粑？"
+            ]
+        },
+        {
+            "ismask": true,
+            "type": 4,
+            "desc": [
+                "金粑粑",
+                "银粑粑",
+                "都是我的！"
+            ]
+        },
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "oldman",
+            "roleName": "神秘老人",
+            "pop": true,
+            "desc": [
+                "现在诚实善良的人太少了！",
+                "作为奖励这些请收下"
+            ]
+        },
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "oldman",
+            "roleName": "神秘老人",
+            "pop": true,
+            "isEnd": true,
+            "desc": [
+                "为了让你认识到错误，我将扣除你-50金"
+            ]
+        },
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "oldman",
+            "roleName": "神秘老人",
+            "isEnd": true,
+            "desc": [
+                "这里有X金请收下",
+                "收下这些将来你一定可以黄袍加身"
+            ]
+        },
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "oldman",
+            "roleName": "神秘老人",
+            "isEnd": true,
+            "desc": [
+                "虽然你不接受奖励",
+                "但我还是会给一些奖励的：5金"
+            ]
+        }
+    ],
+    "oldman": [
+        {
+            "ismask": false,
+            "role": "grandma",
+            "roleName": "受伤老人",
+            "type": 2,
+            "desc": [
+                "哎哟！有好心人，能送我回家吗？"
+            ]
+        },
+        {
+            "ismask": true,
+            "type": 4,
+            "idEnd": true,
+            "desc": [
+                "热心帮助",
+                "残忍拒绝"
+            ]
+        },
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "grandma",
+            "roleName": "受伤老人",
+            "pop": true,
+            "isEnd": true,
+            "desc": [
+                "你的良心不会痛吗？",
+                "（原来这个老人身份显赫，随后你被罚了Y金）"
+            ]
+        },
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "grandma",
+            "roleName": "受伤老人",
+            "pop": true,
+            "desc": [
+                "谢谢你，好心人！好心一般都会有好报的~"
+            ]
+        },
+        {},
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "grandma",
+            "roleName": "受伤老人",
+            "isEnd": true,
+            "desc": [
+                "日后有机会皇宫里面见~",
+                "这里有X金请收下"
+            ]
+        },
+        {
+            "ismask": false,
+            "type": 2,
+            "role": "grandma",
+            "roleName": "受伤老人",
+            "isEnd": true,
+            "desc": [
+                "虽然你不接受奖励，日后有机会皇宫里面见~",
+                "但我还是会给一些奖励的：5金"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1131 @@
+{
+    "type": "Scene",
+    "props": {
+        "width": 750,
+        "runtime": "controller/uicontroller/ui_dialog/DayLoginDialogUI.ts",
+        "height": 1334
+    },
+    "compId": 2,
+    "child": [
+        {
+            "type": "Box",
+            "props": {
+                "var": "bg",
+                "top": 0,
+                "right": 0,
+                "left": 0,
+                "bottom": 0,
+                "bgColor": "#000000",
+                "alpha": 0.7
+            },
+            "compId": 3
+        },
+        {
+            "type": "Image",
+            "props": {
+                "y": 136,
+                "x": 0,
+                "skin": "assets_compose2/diban02.png",
+                "sizeGrid": "119,0,106,0",
+                "height": 860,
+                "centerY": -101
+            },
+            "compId": 5,
+            "child": [
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": -65,
+                        "skin": "assets_dayLogin/每日签到.png"
+                    },
+                    "compId": 6
+                },
+                {
+                    "type": "Box",
+                    "props": {
+                        "y": 120,
+                        "x": 40,
+                        "width": 600,
+                        "var": "list",
+                        "height": 660
+                    },
+                    "compId": 7,
+                    "child": [
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": -4,
+                                "x": 25,
+                                "width": 170,
+                                "skin": "assets_dayLogin/底板.png",
+                                "sizeGrid": "66,33,25,29",
+                                "name": "listItem1",
+                                "height": 212
+                            },
+                            "compId": 8,
+                            "child": [
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 2,
+                                        "x": -19,
+                                        "skin": "assets_dayLogin/光效 拷贝.png",
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 55
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "x": 33.5,
+                                        "skin": "assets_dayLogin/创业金.png",
+                                        "centerY": 0
+                                    },
+                                    "compId": 16
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 13,
+                                        "text": "第1天",
+                                        "strokeColor": "#7F6300",
+                                        "stroke": 3,
+                                        "fontSize": 26,
+                                        "color": "#FFFFFF",
+                                        "centerX": 0,
+                                        "bold": true,
+                                        "align": "center"
+                                    },
+                                    "compId": 19
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 161,
+                                        "width": 144,
+                                        "skin": "assets_dayLogin/文字底板.png",
+                                        "sizeGrid": "0,22,0,28",
+                                        "height": 30,
+                                        "centerX": 0
+                                    },
+                                    "compId": 17,
+                                    "child": [
+                                        {
+                                            "type": "Label",
+                                            "props": {
+                                                "text": "创业金x100",
+                                                "fontSize": 22,
+                                                "color": "#FFFFFF",
+                                                "centerY": 0,
+                                                "centerX": 0,
+                                                "bold": true,
+                                                "align": "center"
+                                            },
+                                            "compId": 18
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "width": 170,
+                                        "skin": "assets_dayLogin/遮罩.png",
+                                        "sizeGrid": "21,16,23,19",
+                                        "name": "hasGet",
+                                        "height": 212,
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 57,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 132,
+                                                "skin": "assets_dayLogin/已领取.png",
+                                                "centerX": 0
+                                            },
+                                            "compId": 59
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 54,
+                                                "skin": "assets_dayLogin/勾.png",
+                                                "centerX": 11
+                                            },
+                                            "compId": 58
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": -4,
+                                "x": 215,
+                                "width": 170,
+                                "skin": "assets_dayLogin/底板.png",
+                                "sizeGrid": "66,33,25,29",
+                                "name": "listItem2",
+                                "height": 212
+                            },
+                            "compId": 20,
+                            "child": [
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 2,
+                                        "x": -19,
+                                        "skin": "assets_dayLogin/光效 拷贝.png",
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 56
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "skin": "assets_dayLogin/星光特效.png",
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 21
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 13,
+                                        "text": "第2天",
+                                        "strokeColor": "#7F6300",
+                                        "stroke": 3,
+                                        "fontSize": 26,
+                                        "color": "#FFFFFF",
+                                        "centerX": 0,
+                                        "bold": true,
+                                        "align": "center"
+                                    },
+                                    "compId": 22
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 161,
+                                        "width": 144,
+                                        "skin": "assets_dayLogin/文字底板.png",
+                                        "sizeGrid": "0,22,0,28",
+                                        "height": 30,
+                                        "centerX": 0
+                                    },
+                                    "compId": 23,
+                                    "child": [
+                                        {
+                                            "type": "Label",
+                                            "props": {
+                                                "text": "仙气附体",
+                                                "fontSize": 22,
+                                                "color": "#FFFFFF",
+                                                "centerY": 0,
+                                                "centerX": 0,
+                                                "bold": true,
+                                                "align": "center"
+                                            },
+                                            "compId": 24
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "width": 170,
+                                        "skin": "assets_dayLogin/遮罩.png",
+                                        "sizeGrid": "21,16,23,19",
+                                        "name": "hasGet",
+                                        "height": 212,
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 60,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 132,
+                                                "skin": "assets_dayLogin/已领取.png",
+                                                "centerX": 0
+                                            },
+                                            "compId": 61
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 54,
+                                                "skin": "assets_dayLogin/勾.png",
+                                                "centerX": 11
+                                            },
+                                            "compId": 62
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": -4,
+                                "x": 405,
+                                "width": 170,
+                                "skin": "assets_dayLogin/底板.png",
+                                "sizeGrid": "66,33,25,29",
+                                "name": "listItem3",
+                                "height": 212
+                            },
+                            "compId": 25,
+                            "child": [
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 2,
+                                        "x": -19,
+                                        "skin": "assets_dayLogin/光效 拷贝.png",
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 54
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "x": 33.5,
+                                        "skin": "assets_dayLogin/宝箱.png",
+                                        "centerY": 0
+                                    },
+                                    "compId": 26
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 13,
+                                        "text": "第3天",
+                                        "strokeColor": "#7F6300",
+                                        "stroke": 3,
+                                        "fontSize": 26,
+                                        "color": "#FFFFFF",
+                                        "centerX": 0,
+                                        "bold": true,
+                                        "align": "center"
+                                    },
+                                    "compId": 27
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 161,
+                                        "width": 144,
+                                        "skin": "assets_dayLogin/文字底板.png",
+                                        "sizeGrid": "0,22,0,28",
+                                        "height": 30,
+                                        "centerX": 0
+                                    },
+                                    "compId": 28,
+                                    "child": [
+                                        {
+                                            "type": "Label",
+                                            "props": {
+                                                "text": "创业宝箱",
+                                                "fontSize": 22,
+                                                "color": "#FFFFFF",
+                                                "centerY": 0,
+                                                "centerX": 0,
+                                                "bold": true,
+                                                "align": "center"
+                                            },
+                                            "compId": 29
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 228,
+                                        "x": -190,
+                                        "width": 170,
+                                        "skin": "assets_dayLogin/遮罩.png",
+                                        "sizeGrid": "21,16,23,19",
+                                        "name": "hasGet",
+                                        "height": 212,
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 63,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 132,
+                                                "skin": "assets_dayLogin/已领取.png",
+                                                "centerX": 0
+                                            },
+                                            "compId": 64
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 54,
+                                                "skin": "assets_dayLogin/勾.png",
+                                                "centerX": 11
+                                            },
+                                            "compId": 65
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": 226,
+                                "x": 25,
+                                "width": 170,
+                                "skin": "assets_dayLogin/底板.png",
+                                "sizeGrid": "66,33,25,29",
+                                "name": "listItem4",
+                                "height": 212
+                            },
+                            "compId": 30,
+                            "child": [
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 2,
+                                        "x": -19,
+                                        "skin": "assets_dayLogin/光效 拷贝.png",
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 53
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "x": 33.5,
+                                        "skin": "assets_dayLogin/宝箱.png",
+                                        "centerY": 0
+                                    },
+                                    "compId": 31
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 13,
+                                        "text": "第4天",
+                                        "strokeColor": "#7F6300",
+                                        "stroke": 3,
+                                        "fontSize": 26,
+                                        "color": "#FFFFFF",
+                                        "centerX": 0,
+                                        "bold": true,
+                                        "align": "center"
+                                    },
+                                    "compId": 32
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 161,
+                                        "width": 144,
+                                        "skin": "assets_dayLogin/文字底板.png",
+                                        "sizeGrid": "0,22,0,28",
+                                        "height": 30,
+                                        "centerX": 0
+                                    },
+                                    "compId": 33,
+                                    "child": [
+                                        {
+                                            "type": "Label",
+                                            "props": {
+                                                "text": "创业宝箱",
+                                                "fontSize": 22,
+                                                "color": "#FFFFFF",
+                                                "centerY": 0,
+                                                "centerX": 0,
+                                                "bold": true,
+                                                "align": "center"
+                                            },
+                                            "compId": 34
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": -230,
+                                        "x": 380,
+                                        "width": 170,
+                                        "skin": "assets_dayLogin/遮罩.png",
+                                        "sizeGrid": "21,16,23,19",
+                                        "name": "hasGet",
+                                        "height": 212,
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 66,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 132,
+                                                "skin": "assets_dayLogin/已领取.png",
+                                                "centerX": 0
+                                            },
+                                            "compId": 67
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 54,
+                                                "skin": "assets_dayLogin/勾.png",
+                                                "centerX": 11
+                                            },
+                                            "compId": 68
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": 226,
+                                "x": 215,
+                                "width": 170,
+                                "skin": "assets_dayLogin/底板.png",
+                                "sizeGrid": "66,33,25,29",
+                                "name": "listItem5",
+                                "height": 212
+                            },
+                            "compId": 35,
+                            "child": [
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 2,
+                                        "x": -19,
+                                        "skin": "assets_dayLogin/光效 拷贝.png",
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 52
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "skin": "assets_dayLogin/随机仙灵.png",
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 36
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 13,
+                                        "text": "第5天",
+                                        "strokeColor": "#7F6300",
+                                        "stroke": 3,
+                                        "fontSize": 26,
+                                        "color": "#FFFFFF",
+                                        "centerX": 0,
+                                        "bold": true,
+                                        "align": "center"
+                                    },
+                                    "compId": 37
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 161,
+                                        "width": 144,
+                                        "skin": "assets_dayLogin/文字底板.png",
+                                        "sizeGrid": "0,22,0,28",
+                                        "height": 30,
+                                        "centerX": 0
+                                    },
+                                    "compId": 38,
+                                    "child": [
+                                        {
+                                            "type": "Label",
+                                            "props": {
+                                                "text": "随机仙灵",
+                                                "fontSize": 22,
+                                                "color": "#FFFFFF",
+                                                "centerY": 0,
+                                                "centerX": 0,
+                                                "bold": true,
+                                                "align": "center"
+                                            },
+                                            "compId": 39
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 0,
+                                        "x": -190,
+                                        "width": 170,
+                                        "skin": "assets_dayLogin/遮罩.png",
+                                        "sizeGrid": "21,16,23,19",
+                                        "name": "hasGet",
+                                        "height": 212,
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 69,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 132,
+                                                "skin": "assets_dayLogin/已领取.png",
+                                                "centerX": 0
+                                            },
+                                            "compId": 70
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 54,
+                                                "skin": "assets_dayLogin/勾.png",
+                                                "centerX": 11
+                                            },
+                                            "compId": 71
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": 226,
+                                "x": 405,
+                                "width": 170,
+                                "skin": "assets_dayLogin/底板.png",
+                                "sizeGrid": "66,33,25,29",
+                                "name": "listItem6",
+                                "height": 212
+                            },
+                            "compId": 40,
+                            "child": [
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": -19,
+                                        "x": -40,
+                                        "skin": "assets_dayLogin/光效 拷贝.png",
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 51
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "x": 33.5,
+                                        "skin": "assets_dayLogin/宝箱.png",
+                                        "centerY": 0
+                                    },
+                                    "compId": 41
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 13,
+                                        "text": "第6天",
+                                        "strokeColor": "#7F6300",
+                                        "stroke": 3,
+                                        "fontSize": 26,
+                                        "color": "#FFFFFF",
+                                        "centerX": 0,
+                                        "bold": true,
+                                        "align": "center"
+                                    },
+                                    "compId": 42
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 161,
+                                        "width": 144,
+                                        "skin": "assets_dayLogin/文字底板.png",
+                                        "sizeGrid": "0,22,0,28",
+                                        "height": 30,
+                                        "centerX": 0
+                                    },
+                                    "compId": 43,
+                                    "child": [
+                                        {
+                                            "type": "Label",
+                                            "props": {
+                                                "text": "创业宝箱",
+                                                "fontSize": 22,
+                                                "color": "#FFFFFF",
+                                                "centerY": 0,
+                                                "centerX": 0,
+                                                "bold": true,
+                                                "align": "center"
+                                            },
+                                            "compId": 44
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 0,
+                                        "x": -190,
+                                        "width": 170,
+                                        "skin": "assets_dayLogin/遮罩.png",
+                                        "sizeGrid": "21,16,23,19",
+                                        "name": "hasGet",
+                                        "height": 212,
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 72,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 132,
+                                                "skin": "assets_dayLogin/已领取.png",
+                                                "centerX": 0
+                                            },
+                                            "compId": 73
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 54,
+                                                "skin": "assets_dayLogin/勾.png",
+                                                "centerX": 11
+                                            },
+                                            "compId": 74
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": 452,
+                                "x": 25,
+                                "width": 550,
+                                "skin": "assets_dayLogin/底板.png",
+                                "sizeGrid": "66,33,25,29",
+                                "name": "listItem7",
+                                "height": 212
+                            },
+                            "compId": 15,
+                            "child": [
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 79,
+                                        "x": 33,
+                                        "skin": "assets_dayLogin/累计签到.png"
+                                    },
+                                    "compId": 45
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 13,
+                                        "x": 432,
+                                        "text": "第7天",
+                                        "strokeColor": "#7F6300",
+                                        "stroke": 3,
+                                        "fontSize": 26,
+                                        "color": "#FFFFFF",
+                                        "centerX": 0,
+                                        "bold": true,
+                                        "align": "center"
+                                    },
+                                    "compId": 47
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 0,
+                                        "x": 275.22998046875,
+                                        "skin": "assets_dayLogin/光效 拷贝.png",
+                                        "scaleY": 1.2,
+                                        "scaleX": 1.2
+                                    },
+                                    "compId": 50
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 55,
+                                        "x": 292,
+                                        "skin": "assets_dayLogin/不摸鱼buff.png"
+                                    },
+                                    "compId": 48
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": -226,
+                                        "x": 380,
+                                        "width": 550,
+                                        "skin": "assets_dayLogin/遮罩.png",
+                                        "sizeGrid": "21,16,23,19",
+                                        "name": "hasGet",
+                                        "height": 212,
+                                        "centerY": 0,
+                                        "centerX": 0
+                                    },
+                                    "compId": 75,
+                                    "child": [
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 132,
+                                                "skin": "assets_dayLogin/已领取.png",
+                                                "centerX": 0
+                                            },
+                                            "compId": 76
+                                        },
+                                        {
+                                            "type": "Image",
+                                            "props": {
+                                                "y": 54,
+                                                "skin": "assets_dayLogin/勾.png",
+                                                "centerX": 11
+                                            },
+                                            "compId": 77
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": 438,
+                                "x": 11,
+                                "width": 580,
+                                "var": "light",
+                                "skin": "assets_dayLogin/发光.png",
+                                "sizeGrid": "60,33,56,29",
+                                "height": 241
+                            },
+                            "compId": 11
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 0,
+                        "x": 9.5,
+                        "var": "closeBtn",
+                        "skin": "assets_dialog/close_dialog.png"
+                    },
+                    "compId": 89
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "var": "btnVideo",
+                "skin": "assets_dialog/按钮-棕.png",
+                "centerY": 374,
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+            },
+            "compId": 81,
+            "child": [
+                {
+                    "type": "Script",
+                    "props": {
+                        "runtime": "controller/uicontroller/EffectButton.ts"
+                    },
+                    "compId": 82
+                },
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": 27,
+                        "x": 50,
+                        "width": 37,
+                        "texture": "assets_dialog/icon_video.png",
+                        "name": "videoIcon",
+                        "height": 27
+                    },
+                    "compId": 83
+                },
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": 25,
+                        "x": 97,
+                        "texture": "assets_dialog/提前领取.png",
+                        "name": "label"
+                    },
+                    "compId": 84
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "var": "btnGet",
+                "skin": "assets_dialog/按钮-棕.png",
+                "centerY": 374,
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+            },
+            "compId": 85,
+            "child": [
+                {
+                    "type": "Script",
+                    "props": {
+                        "runtime": "controller/uicontroller/EffectButton.ts"
+                    },
+                    "compId": 86
+                },
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": 24,
+                        "x": 75,
+                        "texture": "assets_dialog/签到领取.png",
+                        "name": "label"
+                    },
+                    "compId": 88
+                }
+            ]
+        },
+        {
+            "type": "Label",
+            "props": {
+                "var": "dayLabel",
+                "text": "提前领取第2天奖励，还需观看",
+                "fontSize": 24,
+                "color": "#FFFFFF",
+                "centerY": 447,
+                "centerX": -50,
+                "bold": true
+            },
+            "compId": 90,
+            "child": [
+                {
+                    "type": "Label",
+                    "props": {
+                        "y": 0,
+                        "x": 327,
+                        "width": 18,
+                        "var": "twiceLabel",
+                        "text": "2",
+                        "height": 24,
+                        "fontSize": 24,
+                        "color": "#FF250A",
+                        "bold": true
+                    },
+                    "compId": 92,
+                    "child": [
+                        {
+                            "type": "Label",
+                            "props": {
+                                "y": 0,
+                                "x": 15,
+                                "var": "targetLabel",
+                                "text": "/2次视频",
+                                "fontSize": 24,
+                                "color": "#FFFFFF",
+                                "bold": true
+                            },
+                            "compId": 93
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "animations": [
+        {
+            "nodes": [
+                {
+                    "target": 85,
+                    "keyframes": {
+                        "scaleY": [
+                            {
+                                "value": 1,
+                                "tweenMethod": "sineInOut",
+                                "tween": true,
+                                "target": 85,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 0
+                            },
+                            {
+                                "value": 0.9,
+                                "tweenMethod": "sineInOut",
+                                "tween": true,
+                                "target": 85,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 20
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 85,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 40
+                            }
+                        ],
+                        "scaleX": [
+                            {
+                                "value": 1,
+                                "tweenMethod": "sineInOut",
+                                "tween": true,
+                                "target": 85,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 0
+                            },
+                            {
+                                "value": 0.9,
+                                "tweenMethod": "sineInOut",
+                                "tween": true,
+                                "target": 85,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 20
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 85,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 40
+                            }
+                        ]
+                    }
+                }
+            ],
+            "name": "get_Anim",
+            "id": 1,
+            "frameRate": 24,
+            "action": 0
+        },
+        {
+            "nodes": [
+                {
+                    "target": 81,
+                    "keyframes": {
+                        "scaleY": [
+                            {
+                                "value": 1,
+                                "tweenMethod": "sineInOut",
+                                "tween": true,
+                                "target": 81,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 0
+                            },
+                            {
+                                "value": 0.9,
+                                "tweenMethod": "sineInOut",
+                                "tween": true,
+                                "target": 81,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 20
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 81,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 40
+                            }
+                        ],
+                        "scaleX": [
+                            {
+                                "value": 1,
+                                "tweenMethod": "sineInOut",
+                                "tween": true,
+                                "target": 81,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 0
+                            },
+                            {
+                                "value": 0.9,
+                                "tweenMethod": "sineInOut",
+                                "tween": true,
+                                "target": 81,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 20
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 81,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 40
+                            }
+                        ]
+                    }
+                }
+            ],
+            "name": "video_Anim",
+            "id": 2,
+            "frameRate": 24,
+            "action": 0
+        }
+    ],
+    "loadList": [
+        "assets_compose2/diban02.png",
+        "assets_dayLogin/每日签到.png",
+        "assets_dayLogin/底板.png",
+        "assets_dayLogin/光效 拷贝.png",
+        "assets_dayLogin/创业金.png",
+        "assets_dayLogin/文字底板.png",
+        "assets_dayLogin/遮罩.png",
+        "assets_dayLogin/已领取.png",
+        "assets_dayLogin/勾.png",
+        "assets_dayLogin/星光特效.png",
+        "assets_dayLogin/宝箱.png",
+        "assets_dayLogin/随机仙灵.png",
+        "assets_dayLogin/累计签到.png",
+        "assets_dayLogin/不摸鱼buff.png",
+        "assets_dayLogin/发光.png",
+        "assets_dialog/close_dialog.png",
+        "assets_dialog/按钮-棕.png",
+        "assets_dialog/icon_video.png",
+        "assets_dialog/提前领取.png",
+        "assets_dialog/签到领取.png"
+    ],
+    "loadList3D": []
+}

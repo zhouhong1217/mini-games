@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "招财猫",
+        "model": "pet_cat",
+        "attribute": []
+    },
+    {
+        "id": 2,
+        "name": "小恶魔",
+        "model": "pet_ghost",
+        "attribute": []
+    },
+    {
+        "id": 3,
+        "name": "小柴犬",
+        "model": "pet_dog",
+        "attribute": []
+    }
+]

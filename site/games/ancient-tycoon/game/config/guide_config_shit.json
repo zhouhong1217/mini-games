@@ -1,0 +1,34 @@
+[
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "将地上的物品捡起来",
+        "arrowItem": "shit"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "把手上物品丢到坑里"
+    },
+    {
+        "ismask": false,
+        "type": 2,
+        "desc": "你想成为万人之上的女皇吗？"
+    },
+    {
+        "ismask": false,
+        "type": 4,
+        "desc": ""
+    },
+    {
+        "ismask": false,
+        "type": 2,
+        "desc": "那就捡起一亿坨粑粑给我吧！"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "捡起地上的金币，开始捡粑粑吧",
+        "isEnd": true
+    }
+]

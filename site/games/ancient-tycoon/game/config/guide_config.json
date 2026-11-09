@@ -1,0 +1,89 @@
+[
+    {
+        "ismask": false,
+        "type": 0,
+        "desc": "小女子从小被人抛弃至破庙，幸好被好心的道长收养，靠百家饭长大，如今已是花季少女，还过着食不果腹的日子"
+    },
+    {
+        "ismask": false,
+        "type": 1,
+        "desc": "肚子好饿，听说附近有一个神奇的坑，只要投掷东西下去，可以实现愿望"
+    },
+    {
+        "ismask": true,
+        "type": 3,
+        "desc": "拖动陀螺仪，控制人物移动"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "将地上的物品捡起来",
+        "arrowItem": "shit"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "把手上物品丢到坑里"
+    },
+    {
+        "ismask": false,
+        "type": 2,
+        "desc": "你掉的是金粑粑  还是  银粑粑？"
+    },
+    {
+        "ismask": false,
+        "type": 4,
+        "desc": ""
+    },
+    {
+        "ismask": false,
+        "type": 2,
+        "desc": "你确定是普通的粑粑么？"
+    },
+    {
+        "ismask": false,
+        "type": 1,
+        "desc": "是啊，而且还是三坨！"
+    },
+    {
+        "ismask": false,
+        "type": 2,
+        "desc": "天啊！好久没遇到诚实的人，作为奖励~ 这些钱你拿去吧"
+    },
+    {
+        "ismask": false,
+        "type": 2,
+        "desc": "你将来一定会黄袍加身，餐餐大鱼大肉为伴（请好好地利用好这些钱，改善生活）"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "捡起地上的金币"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "移动到市集，租用一个韭菜摊位"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "移动到田间，购买一片韭菜田"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "将韭菜放到摊位上，等待客人购买"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "前往摊位，收集客人留下的金币"
+    },
+    {
+        "ismask": false,
+        "type": 3,
+        "desc": "干得漂亮！后面怎么经营你的人生就靠你自己了",
+        "isEnd": true
+    }
+]

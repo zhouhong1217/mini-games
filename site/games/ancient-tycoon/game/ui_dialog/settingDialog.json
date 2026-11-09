@@ -1,0 +1,493 @@
+{
+    "type": "Scene",
+    "props": {
+        "width": 750,
+        "runtime": "controller/uicontroller/ui_dialog/settingDialogUI.ts",
+        "height": 1334
+    },
+    "compId": 2,
+    "child": [
+        {
+            "type": "Box",
+            "props": {
+                "var": "bg",
+                "top": 0,
+                "right": 0,
+                "left": 0,
+                "bottom": 0,
+                "bgColor": "#000000",
+                "alpha": 0.7
+            },
+            "compId": 3
+        },
+        {
+            "type": "Image",
+            "props": {
+                "width": 647,
+                "skin": "assets_dialog/bg.png",
+                "sizeGrid": "80,50,120,50",
+                "height": 700,
+                "centerY": 0,
+                "centerX": 0,
+                "anchorY": 0.5,
+                "anchorX": 0.5
+            },
+            "compId": 4,
+            "child": [
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": -22,
+                        "x": -6,
+                        "texture": "assets_dialog/header_1.png"
+                    },
+                    "compId": 5,
+                    "child": [
+                        {
+                            "type": "Sprite",
+                            "props": {
+                                "y": 10,
+                                "x": 267,
+                                "texture": "assets_dialog/设置.png"
+                            },
+                            "compId": 6
+                        }
+                    ]
+                },
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": 136,
+                        "x": 95,
+                        "texture": "assets_dialog/音效.png"
+                    },
+                    "compId": 25
+                },
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": 236,
+                        "x": 95,
+                        "texture": "assets_dialog/背景音乐.png"
+                    },
+                    "compId": 26
+                },
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": 336,
+                        "x": 95,
+                        "visible":false,
+                        "texture": "assets_dialog/震动.png"
+                    },
+                    "compId": 27
+                },
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": 436,
+                        "x": 95,
+                        "visible": false,
+                        "texture": "assets_dialog/默认.png"
+                    },
+                    "compId": 47
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 133,
+                        "x": 403,
+                        "width": 172,
+                        "var": "btnSound",
+                        "skin": "assets_dialog/bg_off.png",
+                        "sizeGrid": "0,32,0,28"
+                    },
+                    "compId": 28,
+                    "child": [
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": -6,
+                                "x": 117,
+                                "skin": "assets_dialog/off.png"
+                            },
+                            "compId": 29
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 233,
+                        "x": 403,
+                        "width": 172,
+                        "var": "btnMusic",
+                        "skin": "assets_dialog/bg_off.png",
+                        "sizeGrid": "0,32,0,28"
+                    },
+                    "compId": 30,
+                    "child": [
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": -6,
+                                "x": -7,
+                                "skin": "assets_dialog/off.png"
+                            },
+                            "compId": 31
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 333,
+                        "x": 403,
+                        "width": 172,
+                        "var": "btnShake",
+                        "visible":false,
+                        "skin": "assets_dialog/bg_off.png",
+                        "sizeGrid": "0,32,0,28"
+                    },
+                    "compId": 32,
+                    "child": [
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": -6,
+                                "x": -7,
+                                "skin": "assets_dialog/off.png"
+                            },
+                            "compId": 33
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 436,
+                        "x": 403,
+                        "width": 172,
+                        "visible": false,
+                        "var": "btnAvatar",
+                        "skin": "assets_dialog/bg_off.png",
+                        "sizeGrid": "0,32,0,28"
+                    },
+                    "compId": 45,
+                    "child": [
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": -6,
+                                "x": -7,
+                                "skin": "assets_dialog/off.png"
+                            },
+                            "compId": 46
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 11,
+                        "x": 598,
+                        "var": "btnClose",
+                        "skin": "assets_dialog/close_dialog.png",
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                    },
+                    "compId": 34,
+                    "child": [
+                        {
+                            "type": "Script",
+                            "props": {
+                                "y": 0,
+                                "x": 0,
+                                "runtime": "controller/uicontroller/EffectButton.ts"
+                            },
+                            "compId": 35
+                        }
+                    ]
+                },
+                {
+                    "type": "Box",
+                    "props": {
+                        "visible": false,
+                        "var": "btnChangeScene",
+                        "left": 282,
+                        "bottom": -142
+                    },
+                    "compId": 48,
+                    "child": [
+                        {
+                            "type": "Image",
+                            "props": {
+                                "skin": "assets_mainGame/快速入口.png"
+                            },
+                            "compId": 49
+                        },
+                        {
+                            "type": "Script",
+                            "props": {
+                                "runtime": "controller/uicontroller/EffectButton.ts"
+                            },
+                            "compId": 50
+                        }
+                    ]
+                },
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": 536,
+                        "x": 95,
+                        "var": "txtExchange",
+                        "visible":false,
+                        "texture": "assets_dialog/兑换码.png"
+                    },
+                    "compId": 53
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 555,
+                        "x": 488,
+                        "width": 170,
+                        "var": "btnExchange",
+                        "skin": "assets_mainGame/按钮-黄长.png",
+                        "sizeGrid": "22,45,19,53",
+                        "height": 64,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                    },
+                    "compId": 51,
+                    "child": [
+                        {
+                            "type": "Script",
+                            "props": {
+                                "y": 0,
+                                "x": 0,
+                                "runtime": "controller/uicontroller/EffectButton.ts"
+                            },
+                            "compId": 52
+                        },
+                        {
+                            "type": "Image",
+                            "props": {
+                                "skin": "assets_dialog/兑换礼包.png",
+                                "centerY": 0,
+                                "centerX": 0
+                            },
+                            "compId": 54
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "var": "btnShenLong",
+                        "skin": "assets_zhibo/逆袭.png",
+                        "centerX": -130,
+                        "bottom": -150,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                    },
+                    "compId": 55
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "var": "btn_zhibo2",
+                        "skin": "assets_zhibo/一亿坨 金色.png",
+                        "centerX": 130,
+                        "bottom": -150,
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                    },
+                    "compId": 56
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "visible": false,
+                "var": "btnCleanData",
+                "skin": "assets_mainGame/头像框.png",
+                "centerY": 400,
+                "centerX": -230
+            },
+            "compId": 37,
+            "child": [
+                {
+                    "type": "Label",
+                    "props": {
+                        "y": 23,
+                        "x": 23,
+                        "wordWrap": true,
+                        "width": 52,
+                        "text": "一键清档",
+                        "fontSize": 26,
+                        "color": "#ffffff",
+                        "bold": true
+                    },
+                    "compId": 41
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "visible": false,
+                "var": "btnCleanStatus",
+                "skin": "assets_mainGame/头像框.png",
+                "centerY": 400,
+                "centerX": -80
+            },
+            "compId": 38,
+            "child": [
+                {
+                    "type": "Label",
+                    "props": {
+                        "y": 23,
+                        "x": 23,
+                        "wordWrap": true,
+                        "width": 52,
+                        "text": "重置身份",
+                        "fontSize": 26,
+                        "color": "#ffffff",
+                        "bold": true
+                    },
+                    "compId": 42
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "visible": false,
+                "var": "btnCleanCoin",
+                "skin": "assets_mainGame/头像框.png",
+                "centerY": 400,
+                "centerX": 80
+            },
+            "compId": 39,
+            "child": [
+                {
+                    "type": "Label",
+                    "props": {
+                        "y": 23,
+                        "x": 23,
+                        "wordWrap": true,
+                        "width": 52,
+                        "text": "金币归零",
+                        "fontSize": 26,
+                        "color": "#ffffff",
+                        "bold": true
+                    },
+                    "compId": 43
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "var": "btnAddCoin",
+                "skin": "assets_mainGame/头像框.png",
+                "centerY": 400,
+                "centerX": 230
+            },
+            "compId": 40,
+            "child": [
+                {
+                    "type": "Label",
+                    "props": {
+                        "y": 23,
+                        "x": 23,
+                        "wordWrap": true,
+                        "width": 52,
+                        "text": "大把金币",
+                        "fontSize": 26,
+                        "color": "#ffffff",
+                        "bold": true
+                    },
+                    "compId": 44
+                }
+            ]
+        }
+    ],
+    "animations": [
+        {
+            "nodes": [
+                {
+                    "target": 4,
+                    "keyframes": {
+                        "scaleY": [
+                            {
+                                "value": 0,
+                                "tweenMethod": "backOut",
+                                "tween": true,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 0
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleY",
+                                "index": 12
+                            }
+                        ],
+                        "scaleX": [
+                            {
+                                "value": 0,
+                                "tweenMethod": "backOut",
+                                "tween": true,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 0
+                            },
+                            {
+                                "value": 1,
+                                "tweenMethod": "linearNone",
+                                "tween": true,
+                                "target": 4,
+                                "label": null,
+                                "key": "scaleX",
+                                "index": 12
+                            }
+                        ]
+                    }
+                }
+            ],
+            "name": "ani1",
+            "id": 1,
+            "frameRate": 24,
+            "action": 1
+        }
+    ],
+    "loadList": [
+        "assets_dialog/bg.png",
+        "assets_dialog/header_1.png",
+        "assets_dialog/设置.png",
+        "assets_dialog/音效.png",
+        "assets_dialog/背景音乐.png",
+        "assets_dialog/震动.png",
+        "assets_dialog/默认.png",
+        "assets_dialog/bg_off.png",
+        "assets_dialog/off.png",
+        "assets_dialog/close_dialog.png",
+        "assets_mainGame/快速入口.png",
+        "assets_dialog/兑换码.png",
+        "assets_mainGame/按钮-黄长.png",
+        "assets_dialog/兑换礼包.png",
+        "assets_zhibo/逆袭.png",
+        "assets_zhibo/一亿坨 金色.png",
+        "assets_mainGame/头像框.png"
+    ],
+    "loadList3D": []
+}

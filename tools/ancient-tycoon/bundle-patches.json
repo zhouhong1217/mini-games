@@ -1,0 +1,185 @@
+{
+  "source_sha256": "21b9e82ccc719fce6b8b609f28ab74973c2ba4f11bfedc72bbfdacf18fbfda77",
+  "patches": [
+    {
+      "start": 62214,
+      "end": 63153,
+      "replacement": "{return false;}",
+      "reason": "Util.checkPlatform"
+    },
+    {
+      "start": 63184,
+      "end": 63529,
+      "replacement": "{return true;}",
+      "reason": "Util.checkDouYin"
+    },
+    {
+      "start": 88384,
+      "end": 89386,
+      "replacement": "{this.moduleMap.set(moduleName,moduleState.active);}",
+      "reason": "ModuleReportManager.reportModuleEnter"
+    },
+    {
+      "start": 89435,
+      "end": 90049,
+      "replacement": "{}",
+      "reason": "ModuleReportManager.reportModuleAction"
+    },
+    {
+      "start": 90104,
+      "end": 90835,
+      "replacement": "{this.moduleMap.set(moduleName,isExit?moduleState.none:moduleState.inactive);}",
+      "reason": "ModuleReportManager.reportModuleExit"
+    },
+    {
+      "start": 90914,
+      "end": 90936,
+      "replacement": "\"ancient-tycoon-4399-v1:reportmoudle_storage\"",
+      "reason": "Namespace game storage"
+    },
+    {
+      "start": 91318,
+      "end": 91340,
+      "replacement": "\"ancient-tycoon-4399-v1:reportmoudle_storage\"",
+      "reason": "Namespace game storage"
+    },
+    {
+      "start": 92995,
+      "end": 93017,
+      "replacement": "\"ancient-tycoon-4399-v1:reportmoudle_storage\"",
+      "reason": "Namespace game storage"
+    },
+    {
+      "start": 100353,
+      "end": 100371,
+      "replacement": "\"ancient-tycoon-4399-v1:shitcoin_storage\"",
+      "reason": "Namespace game storage"
+    },
+    {
+      "start": 117936,
+      "end": 117945,
+      "replacement": "\"ancient-tycoon-4399-v1:storage\"",
+      "reason": "Namespace game storage"
+    },
+    {
+      "start": 118375,
+      "end": 118393,
+      "replacement": "\"ancient-tycoon-4399-v1:shitcoin_storage\"",
+      "reason": "Namespace game storage"
+    },
+    {
+      "start": 118465,
+      "end": 118483,
+      "replacement": "\"ancient-tycoon-4399-v1:shitcoin_storage\"",
+      "reason": "Namespace game storage"
+    },
+    {
+      "start": 137434,
+      "end": 138070,
+      "replacement": "{\r\n                console.log(\"浏览器存档\");\r\n                Laya.LocalStorage.setItem(\"ancient-tycoon-4399-v1:storage\", JSON.stringify(ext));\r\n            }",
+      "reason": "Remove remote archive branch"
+    },
+    {
+      "start": 143376,
+      "end": 144090,
+      "replacement": "{\r\n                console.log(\"浏览器存档\");\r\n                Laya.LocalStorage.setItem(\"ancient-tycoon-4399-v1:storage\", JSON.stringify(ext));\r\n                this._resetData(ext);\r\n            }",
+      "reason": "Remove remote archive branch"
+    },
+    {
+      "start": 201991,
+      "end": 202627,
+      "replacement": "{\r\n                console.log(\"浏览器存档\");\r\n                Laya.LocalStorage.setItem(\"ancient-tycoon-4399-v1:storage\", JSON.stringify(ext));\r\n            }",
+      "reason": "Remove remote archive branch"
+    },
+    {
+      "start": 335741,
+      "end": 366072,
+      "replacement": "class SDKManager {\nconstructor(){this._sceneWidth=750;this._sceneHeight=1334;this._chn=\"local\";this.videoTimes=0;this.noVideoTimes=0;}\nstatic get instance(){return SDKManager._instance||(SDKManager._instance=new SDKManager())}\nvibrateShort(){}\nvibrateLong(){}\ngetUserInfoSetting(){}\ngetWxUserInfo(success){InfoManager.nick_name=\"本地玩家\";InfoManager.avatar_url=\"assets_common/character/queen_1.png\";if(success)success()}\ntt_open_setting(){}\ntt_drawImg(img){img.skin=\"assets_farmGame/默认头像.png\"}\ntt_get_setting_info(){}\nreportUserGuide(){}\nreportEnterStage(){}\nreportEndStage(){}\nrecordTimeCostStart(){}\nrecordTimeCostEnd(){}\nrecordLoadingTimeStart(){}\nrecordLoadingTimeEnd(){}\nguideSkipReport(){}\nsendMsgToSub(){}\nupdateRankInfo(){}\nsetUserCloudStorage(){}\nshowToast(message){UIMng.instance.createTips(message)}\nShareOrVideo(loc,cb,fail){return AncientTycoonPlatform.rewarded(loc,cb,fail)}\ngetStorage(key){return Promise.resolve(AncientTycoonPlatform.read(key,null))}\nsaveStorage(key,data){AncientTycoonPlatform.write(key,data)}\nrequest(operation,data){return AncientTycoonPlatform.localRequest(operation,data)}\nstartRec(){}\nendRec(){}\nget CanShare(){return true}\nshareRecVideo(loc,cb,fail){return this.ShareOrVideo(loc,cb,fail)}\ngetSeverTime(){return Promise.resolve(Date.now())}\nset SceneWidth(value){this._sceneWidth=value}\nset SceneHeight(value){this._sceneHeight=value}\ngetSceneSize(){}\ngetChn(){}\ncheckUpdate(){}\nverifyApkSign(){}\nshowInteractionAd(loc){return AncientTycoonPlatform.interstitial(loc)}\nshowFullScreenVideoAd(loc,callback){return AncientTycoonPlatform.interstitial(loc,callback)}\nshowSplashAd(loc){return AncientTycoonPlatform.interstitial(loc)}\ncheckIntervalTimeFullScreen(){}\nshowFullScreenDay(){}\ncheckIntervalTimeSplash(){}\ngameStartShowAd(){}\nnoVideoShowAd(){}\nupdateLabelByLevel(){}\nreportUserAction(){}\nttPlatformEventReport(){}\nwxPlatformEventReport(){}\ncanAddShortCut(){return Promise.resolve(false)}\nisDouYinSys(){return false}\nshowFavoriteGuide(){}\nsetClipboardData(value,success,fail,complete){Promise.resolve().then(()=>navigator.clipboard.writeText(value)).then(()=>{if(success)success()},()=>{if(fail)fail()}).finally(()=>{if(complete)complete()})}\ngetLuckyUsers(size,success){if(success)success(Array.from({length:Math.min(50,Math.max(1,Number(size)||1))},(_,i)=>({nickname:\"本地对手 \"+(i+1),avatar:\"assets_common/character/queen_1.png\"})))}\ngetExchange(code,success,fail){if(fail)fail(\"本地版不提供远程兑换\")}\n}",
+      "reason": "Replace original vendor dispatcher with independent local platform boundary"
+    },
+    {
+      "start": 447062,
+      "end": 448303,
+      "replacement": "{if(!StorageManager.instance.is_follow_dou_yin)UIMng.instance.openUIScene(UIScene.GetDouYinAward,UIZorder.dig,this._cb);StorageManager.instance.is_follow_dou_yin=true;UIMng.instance.closeUIScene(UIScene.FollowDouYin);}",
+      "reason": "FollowDouYin._onFollowDouYin"
+    },
+    {
+      "start": 566672,
+      "end": 567912,
+      "replacement": "{return Promise.resolve(null);}",
+      "reason": "SceneManager._loadsubpackage"
+    },
+    {
+      "start": 702493,
+      "end": 703433,
+      "replacement": "{UIMng.instance.createTips(\"本地版不提供原站交流群服务\");}",
+      "reason": "NoticeDialogUI.copyBtnClick"
+    },
+    {
+      "start": 703844,
+      "end": 704611,
+      "replacement": "{UIMng.instance.createTips(\"请使用浏览器收藏功能\");}",
+      "reason": "NoticeDialogUI._addShortcutBtnClick"
+    },
+    {
+      "start": 708227,
+      "end": 712650,
+      "replacement": "{const score=AncientTycoonPlatform.score(rank_topic);return Promise.resolve({rank_score:score,rank:score>0?0:null});}",
+      "reason": "RankManager.rank_get_self_rank"
+    },
+    {
+      "start": 712701,
+      "end": 714419,
+      "replacement": "{AncientTycoonPlatform.addScore(rank_topic,add_score);this._rank_score=AncientTycoonPlatform.score(rank_type.gx_rank);this._keju_score=AncientTycoonPlatform.score(rank_type.keju_rank);}",
+      "reason": "RankManager.rank_update_score"
+    },
+    {
+      "start": 714464,
+      "end": 718546,
+      "replacement": "{const score=AncientTycoonPlatform.score(check_rank_type);return Promise.resolve(score>0?[{head:\"assets_common/character/queen_1.png\",nick_name:\"本地玩家\",score}]:[]);}",
+      "reason": "RankManager.rank_gx_list_data"
+    },
+    {
+      "start": 718588,
+      "end": 722272,
+      "replacement": "{return Promise.resolve({reward:0,gx_rank:0,keju_rank:0});}",
+      "reason": "RankManager.rank_get_award"
+    },
+    {
+      "start": 1541406,
+      "end": 1541534,
+      "replacement": "{UIMng.instance.createTips(\"本地版：进度保存在当前浏览器\");}",
+      "reason": "mainGameUI$1._openFeedback"
+    },
+    {
+      "start": 3496823,
+      "end": 3496895,
+      "replacement": "Laya.stage.scaleMode = \"showall\";",
+      "reason": "Runtime and viewport integration"
+    },
+    {
+      "start": 3496909,
+      "end": 3496980,
+      "replacement": "Laya.stage.screenMode = \"none\";",
+      "reason": "Runtime and viewport integration"
+    },
+    {
+      "start": 3507621,
+      "end": 3510370,
+      "replacement": "{ConfigManager.instance.initRemoteConfig(null);ModuleReportManager.inst.initManager();InfoManager.UID=\"local\";return Promise.resolve();}",
+      "reason": "Main._initSdk"
+    },
+    {
+      "start": 3510402,
+      "end": 3511699,
+      "replacement": "{return Promise.resolve(null);}",
+      "reason": "Main._loadsubpackage"
+    },
+    {
+      "start": 3511818,
+      "end": 3511829,
+      "replacement": "AncientTycoonRuntime.bind({StorageManager,SDKManager,GameMgr,GuideManager,SceneManager,UIMng}); new Main();",
+      "reason": "Runtime and viewport integration"
+    }
+  ]
+}

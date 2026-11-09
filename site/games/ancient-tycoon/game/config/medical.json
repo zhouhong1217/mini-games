@@ -1,0 +1,175 @@
+[{
+    "id": 1,
+    "name": "苍术",
+    "price": 60,
+    "pic_name":"1.png"
+},
+{
+    "id": 2,
+    "name": "厚朴",
+    "price": 30,
+    "pic_name":"2.png"
+},
+{
+    "id": 3,
+    "name": "陈橘皮",
+    "price": 50,
+    "pic_name":"3.png"
+},
+{
+    "id": 4,
+    "name": "甘草",
+    "price": 30,
+    "pic_name":"4.png"
+},
+{
+    "id": 5,
+    "name": "麻黄",
+    "price": 50,
+    "pic_name":"5.png"
+},
+{
+    "id": 6,
+    "name": "桂枝",
+    "price": 20,
+    "pic_name":"6.png"
+},
+{
+    "id": 7,
+    "name": "杏仁",
+    "price": 40,
+    "pic_name":"7.png"
+},
+{
+    "id": 8,
+    "name": "茯苓",
+    "price": 40,
+    "pic_name":"8.png"
+},
+{
+    "id": 9,
+    "name": "白术",
+    "price": 50,
+    "pic_name":"9.png"
+},
+{
+    "id": 10,
+    "name": "知母",
+    "price": 30,
+    "pic_name":"10.png"
+},
+{
+    "id": 11,
+    "name": "生石膏",
+    "price": 20,
+    "pic_name":"11.png"
+},
+{
+    "id": 12,
+    "name": "黄连",
+    "price": 40,
+    "pic_name":"12.png"
+},
+{
+    "id": 13,
+    "name": "黄芩",
+    "price": 40,
+    "pic_name":"13.png"
+},
+{
+    "id": 14,
+    "name": "黄柏",
+    "price": 30,
+    "pic_name":"14.png"
+},
+{
+    "id": 15,
+    "name": "栀子",
+    "price": 60,
+    "pic_name":"15.png"
+},
+{
+    "id": 16,
+    "name": "柴胡",
+    "price": 50,
+    "pic_name":"16.png"
+},
+{
+    "id": 17,
+    "name": "白芍",
+    "price": 40,
+    "pic_name":"17.png"
+},
+{
+    "id": 18,
+    "name": "枳实",
+    "price": 40,
+    "pic_name":"18.png"
+},
+{
+    "id": 19,
+    "name": "大黄",
+    "price": 30,
+    "pic_name":"19.png"
+},
+{
+    "id": 20,
+    "name": "芒硝",
+    "price": 30,
+    "pic_name":"20.png"
+},
+{
+    "id": 21,
+    "name": "当归",
+    "price": 60,
+    "pic_name":"21.png"
+},
+{
+    "id": 22,
+    "name": "川芎",
+    "price": 30,
+    "pic_name":"22.png"
+},
+{
+    "id": 23,
+    "name": "熟地黄",
+    "price": 50,
+    "pic_name":"23.png"
+},
+{
+    "id": 24,
+    "name": "紫苏子",
+    "price": 40,
+    "pic_name":"24.png"
+},
+{
+    "id": 25,
+    "name": "白芥子",
+    "price": 30,
+    "pic_name":"25.png"
+},
+{
+    "id": 26,
+    "name": "莱菔子",
+    "price": 30,
+    "pic_name":"26.png"
+},
+{
+    "id": 27,
+    "name": "酸枣仁",
+    "price": 80,
+    "pic_name":"27.png"
+},
+{
+    "id": 28,
+    "name": "高级药皂",
+    "price": 80,
+    "pic_name":"28.png"
+},
+{
+    "id": 29,
+    "name": "韭菜",
+    "price": 20,
+    "pic_name":"29.png"
+}
+]

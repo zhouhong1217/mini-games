@@ -1,0 +1,188 @@
+{
+    "type": "Scene",
+    "props": {
+        "width": 750,
+        "runtime": "controller/uicontroller/ui_game/loadingUI.ts",
+        "height": 1334
+    },
+    "compId": 2,
+    "child": [
+        {
+            "type": "Image",
+            "props": {
+                "top": 0,
+                "skin": "assets_loading/bg.jpg",
+                "centerX": 0
+            },
+            "compId": 3
+        },
+        {
+            "type": "Image",
+            "props": {
+                "top": 75,
+                "skin": "assets_loading/logo.png",
+                "centerX": 0
+            },
+            "compId": 5
+        },
+        {
+            "type": "Image",
+            "props": {
+                "skin": "assets_loading/tips1.png",
+                "centerX": 0,
+                "bottom": 40
+            },
+            "compId": 6
+        },
+        {
+            "type": "Image",
+            "props": {
+                "skin": "assets_loading/tips2.png",
+                "centerX": 0,
+                "bottom": 300
+            },
+            "compId": 8
+        },
+        {
+            "type": "Image",
+            "props": {
+                "skin": "assets_loading/bar_bg.png",
+                "centerX": 0,
+                "bottom": 249
+            },
+            "compId": 9,
+            "child": [
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 8,
+                        "x": 5,
+                        "width": 0,
+                        "var": "bar1",
+                        "skin": "assets_loading/bar1.png",
+                        "sizeGrid": "0,30,0,30"
+                    },
+                    "compId": 10
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "x": 0,
+                "skin": "assets_loading/bar_bg.png",
+                "centerX": 0,
+                "bottom": 193
+            },
+            "compId": 11,
+            "child": [
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 8,
+                        "x": 5,
+                        "width": 0,
+                        "var": "bar2",
+                        "skin": "assets_loading/bar2.png",
+                        "sizeGrid": "0,30,0,30"
+                    },
+                    "compId": 12
+                }
+            ]
+        },
+        {
+            "type": "Label",
+            "props": {
+                "text": " ",
+                "fontSize": 35,
+                "color": "#ffffff",
+                "centerX": 0,
+                "bottom": 370
+            },
+            "compId": 37
+        },
+        {
+            "type": "Image",
+            "props": {
+                "y": 825,
+                "x": 640,
+                "width": 100,
+                "var": "ageBtn",
+                "skin": "assets_loading/12.png",
+                "height": 130
+            },
+            "compId": 13
+        },
+        {
+            "type": "Image",
+            "props": {
+                "y": 0,
+                "x": 0,
+                "width": 647,
+                "visible": false,
+                "var": "ageTipsNode",
+                "skin": "assets_dialog/bg.png",
+                "sizeGrid": "80,50,120,50",
+                "pivotY": 365,
+                "pivotX": 324,
+                "height": 730,
+                "centerY": 0,
+                "centerX": 0
+            },
+            "compId": 14,
+            "child": [
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": 36,
+                        "x": 622.5,
+                        "var": "btnClose",
+                        "skin": "assets_dialog/close_dialog.png",
+                        "anchorY": 0.5,
+                        "anchorX": 0.5
+                    },
+                    "compId": 28,
+                    "child": [
+                        {
+                            "type": "Script",
+                            "props": {
+                                "y": 0,
+                                "x": 0,
+                                "runtime": "controller/uicontroller/EffectButton.ts"
+                            },
+                            "compId": 29
+                        }
+                    ]
+                },
+                {
+                    "type": "Label",
+                    "props": {
+                        "y": 56.5,
+                        "x": 27,
+                        "wordWrap": true,
+                        "width": 600,
+                        "text": "（1）本游戏是一款创意的放置经营游戏，适用于年满12周岁及以上的用户，建议未成年人在家长监护下使用游戏产品。 （2）本游戏画面简约，游戏背景、情节和角色等设计适中，玩家需要扮演角色，经营自己的人生，建造生产场所、销售摊位，满足游戏中客人的购买需求，从而赚取金钱完成身份地位的晋升 （3）本游戏中有用户实名认证系统，未实名账号不能登录游戏。认证为未成年的用户将接受以下管理：未成年玩家可在周五，周六，周日和法定节假日每日晚20点至21时登录游戏，其他时间无法登录游戏。游戏中无收费内容，不提供任何收费服务。 （4）本游戏不存在陌生人社交系统，鼓励玩家锻炼逻辑思维能力、辨别能力、判断能力，提高手眼协调能力和反应能力。",
+                        "leading": 5,
+                        "fontSize": 31,
+                        "color": "#5C4034",
+                        "bold": true
+                    },
+                    "compId": 36
+                }
+            ]
+        }
+    ],
+    "loadList": [
+        "assets_loading/bg.jpg",
+        "assets_loading/logo.png",
+        "assets_loading/tips1.png",
+        "assets_loading/tips2.png",
+        "assets_loading/bar_bg.png",
+        "assets_loading/bar1.png",
+        "assets_loading/bar2.png",
+        "assets_loading/12.png",
+        "assets_dialog/bg.png",
+        "assets_dialog/close_dialog.png"
+    ],
+    "loadList3D": []
+}

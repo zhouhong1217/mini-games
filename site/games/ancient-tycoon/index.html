@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f8f2">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../i18n.js"></script>
+  <title>穿回古代当首富 · 小游戏乐园</title>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="../../" data-language-link><span class="brand-icon" aria-hidden="true">P</span><span><span data-i18n="playground">小游戏乐园</span><small>LITTLE PLAYGROUND</small></span></a>
+    <div class="header-actions"><a class="portal-back" href="../../" data-language-link data-i18n="back">← 返回小游戏乐园</a><label class="language-picker"><span class="sr-only" data-i18n="languageLabel">语言</span><select data-language-select aria-label="语言" data-i18n-aria-label="languageLabel"><option value="zh-CN">简体中文</option><option value="en">English</option></select></label></div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="game-title">
+      <div><p class="eyebrow">ANCIENT TYCOON</p><h1 id="game-title" data-tycoon-i18n="name">穿回古代当首富</h1><p class="description" data-tycoon-i18n="description">拖动摇杆移动人物，靠近物品自动拾取。建造、补货、收钱，从第一笔铜钱和韭菜小摊开始经营。</p></div>
+      <span class="desktop-badge"><span aria-hidden="true">☝</span> <span data-tycoon-i18n="pointer">模拟经营 · 鼠标 / 触屏</span></span>
+    </section>
+    <section class="play-section" aria-label="穿回古代当首富游戏" data-tycoon-aria="aria">
+      <div class="game-toolbar"><div class="game-label"><span class="live-dot"></span><span data-tycoon-i18n="name">穿回古代当首富</span><span class="divider">/</span><span id="status" role="status" aria-live="polite">准备开始</span></div><div class="tools"><button id="restart" disabled title="重新加载" aria-label="重新加载" data-tycoon-title="restart" data-tycoon-aria="restart">↻ <span data-tycoon-i18n="restart">重新加载</span></button><button id="fullscreen" title="全屏游玩" data-i18n-title="fullscreen" data-i18n-aria-label="fullscreen">⛶ <span data-tycoon-i18n="fullscreen">全屏</span></button></div></div>
+      <div class="game-stage" id="stage">
+        <iframe id="game" loading="eager" title="穿回古代当首富游戏" data-tycoon-title="aria" allow="autoplay; fullscreen" tabindex="0"></iframe>
+        <div class="start-cover" id="cover">
+          <span class="tycoon-sign" aria-hidden="true">钱</span>
+          <p class="cover-kicker" data-tycoon-i18n="kicker">从第一笔铜钱开始</p>
+          <h2 data-tycoon-i18n="coverTitle">回到古代，开张做生意。</h2>
+          <p class="cover-copy" id="cover-copy">拖动摇杆移动人物，按指引拾取物品，攒下开摊的第一笔铜钱。</p>
+          <div class="loading-progress" id="loading-progress" hidden><progress id="progress" value="0" max="1" aria-label="游戏加载进度" data-tycoon-aria="progress"></progress><span id="progress-text">0%</span></div>
+          <button class="start-button" id="start" disabled><span class="start-label">开始游戏</span><span aria-hidden="true">↗</span></button>
+          <p class="start-note" data-tycoon-i18n="loadNote">首次加载需要一点时间，请稍等片刻。</p>
+        </div>
+      </div>
+      <div class="game-bottom"><span data-tycoon-i18n="focusNote">拖动摇杆移动；靠近物品自动拾取，站到标记处建造、补货或收钱。</span><span class="original-language" data-tycoon-i18n="originalLanguage">游戏内保留原版中文</span></div>
+    </section>
+    <p class="mobile-note" data-tycoon-i18n="mobileNote">纵屏游戏，可使用鼠标或触屏操作；需要更大画面时可切换全屏。</p>
+    <section class="controls" aria-label="操作说明" data-tycoon-aria="controlsAria">
+      <div class="control"><kbd data-tycoon-i18n="clickKey">点击</kbd><span data-tycoon-i18n="clickHelp">升级或领取奖励</span></div>
+      <div class="control"><kbd data-tycoon-i18n="dragKey">拖动</kbd><span data-tycoon-i18n="dragHelp">摇杆控制人物移动</span></div>
+      <div class="control"><kbd>↻</kbd><span data-tycoon-i18n="reloadHelp">重新加载游戏</span></div>
+    </section>
+    <p class="small-note" data-tycoon-i18n="languageNotice">语言选择只改变本页面的说明，不会重新开始正在进行的游戏。</p>
+  </main>
+  <footer class="wrap"><span data-i18n="copyright">原游戏及素材版权归各自权利人所有</span><a href="https://www.4399.com/flash/245857.htm" target="_blank" rel="noreferrer" data-tycoon-i18n="original">原始页面 ↗</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>

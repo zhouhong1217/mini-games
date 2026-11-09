@@ -1,0 +1,1 @@
+{"type":"Box","props":{"y":0,"x":0,"width":10,"presetID":1,"name":"shenlong_mini_player","isPresetRoot":true,"height":10,"anchorY":0.5,"anchorX":0.5},"compId":18,"child":[{"type":"Image","props":{"y":0,"x":0,"width":100,"skin":"assets_common/dog.png","presetID":2,"height":100,"anchorY":0.5,"anchorX":0.5},"compId":20}],"loadList":["assets_common/dog.png"],"loadList3D":[]}

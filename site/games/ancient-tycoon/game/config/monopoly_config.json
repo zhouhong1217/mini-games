@@ -1,0 +1,188 @@
+[
+    null,
+    {
+        "prefab_name": "prop_dushidian",
+        "scene": 2,
+        "scale": 0.18,
+        "x": 2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "鉴宝店"
+    },
+    {
+        "prefab_name": "prop_meirongyuan",
+        "scene": 2,
+        "scale": 0.06,
+        "x": 2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "美容院"
+    },
+    {
+        "prefab_name": "production_leekegg",
+        "scene": 1,
+        "scale": 0.13,
+        "x": 2,
+        "z": 0,
+        "rotate": 180,
+        "build_pos": 90,
+        "name_cn": "大排档"
+    },
+    null,
+    {
+        "prefab_name": "prop_zihuadian",
+        "scene": 2,
+        "scale": 0.1,
+        "x": 2,
+        "z": 0,
+        "rotate": -90,
+        "build_pos": 90,
+        "name_cn": "字花店"
+    },
+    {
+        "prefab_name": "prop_zhengrongyuan",
+        "scene": 2,
+        "scale": 0.06,
+        "x": 2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "整容院"
+    },
+    {
+        "prefab_name": "production_clothes",
+        "scene": 1,
+        "scale": 0.15,
+        "x": 2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "裁缝店"
+    },
+    null,
+    {
+        "prefab_name": "production_ink",
+        "scene": 1,
+        "scale": 0.18,
+        "x": 0,
+        "z": 2,
+        "rotate": 180,
+        "build_pos": 180,
+        "name_cn": "墨水店"
+    },
+    {
+        "prefab_name": "production_painting",
+        "scene": 1,
+        "scale": 0.14,
+        "x": 0,
+        "z": 2,
+        "rotate": 180,
+        "build_pos": 180,
+        "name_cn": "书法店"
+    },
+    {
+        "prefab_name": "production_yanzhi",
+        "scene": 2,
+        "scale": 0.07,
+        "x": 0,
+        "z": 2,
+        "rotate": 180,
+        "build_pos": 180,
+        "name_cn": "胭脂店"
+    },
+    null,
+    {
+        "prefab_name": "production_bean",
+        "scene": 1,
+        "scale": 0.2,
+        "x": -2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "猫咖"
+    },
+    {
+        "prefab_name": "production_coffee",
+        "scene": 2,
+        "scale": 0.1,
+        "x": -2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "咖啡馆"
+    },
+    {
+        "prefab_name": "rack_fish",
+        "scene": 2,
+        "scale": 0.2,
+        "x": -2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "水产店"
+    },
+    null,
+    {
+        "prefab_name": "spring",
+        "scene": 2,
+        "scale": 0.06,
+        "x": -2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "大澡堂"
+    },
+    {
+        "prefab_name": "production_susi",
+        "scene": 2,
+        "scale": 0.1,
+        "x": -2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "寿司店"
+    },
+    {
+        "prefab_name": "production_shaokao",
+        "scene": 2,
+        "scale": 0.1,
+        "x": -2,
+        "z": 0,
+        "rotate": 90,
+        "build_pos": 90,
+        "name_cn": "烧烤店"
+    },
+    null,
+    {
+        "prefab_name": "prop_yiguan",
+        "scene": 2,
+        "scale": 0.15,
+        "x": 0,
+        "z": -2,
+        "rotate": 180,
+        "build_pos": 180,
+        "name_cn": "医馆"
+    },
+    {
+        "prefab_name": "kezhan",
+        "scene": 2,
+        "scale": 0.08,
+        "x": 0,
+        "z": -2,
+        "rotate": 180,
+        "build_pos": 180,
+        "name_cn": "客栈"
+    },
+    {
+        "prefab_name": "rack_wc",
+        "scene": 2,
+        "scale": 0.1,
+        "x": 0,
+        "z": -2,
+        "rotate": 180,
+        "build_pos": 180,
+        "name_cn": "收费厕所"
+    }
+]

@@ -1,0 +1,1 @@
+{"type":"Box","props":{"name":"red_left_ed","width":107,"height":96,"x":0,"y":0,"presetID":1,"isPresetRoot":true},"child":[{"type":"Image","props":{"skin":"assets_keju/wood/底2.png","name":"top_4","anchorX":0.5,"anchorY":0.5,"rotation":90,"centerX":0,"centerY":0,"presetID":2},"compId":90}],"compId":89,"loadList":["assets_keju/wood/底2.png"],"loadList3D":[]}

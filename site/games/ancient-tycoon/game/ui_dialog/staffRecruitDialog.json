@@ -1,0 +1,313 @@
+{
+    "type": "Scene",
+    "props": {
+        "width": 750,
+        "runtime": "controller/uicontroller/ui_dialog/StaffRecruitDialogUI.ts",
+        "height": 1334
+    },
+    "compId": 2,
+    "child": [
+        {
+            "type": "Box",
+            "props": {
+                "var": "bg",
+                "top": 0,
+                "right": 0,
+                "left": 0,
+                "bottom": 0,
+                "bgColor": "#000000",
+                "alpha": 0.7
+            },
+            "compId": 3
+        },
+        {
+            "type": "Image",
+            "props": {
+                "width": 647,
+                "top": 300,
+                "skin": "assets_dialog/bg.png",
+                "sizeGrid": "80,50,120,50",
+                "centerX": 0,
+                "bottom": 300
+            },
+            "compId": 4,
+            "child": [
+                {
+                    "type": "Sprite",
+                    "props": {
+                        "y": 0,
+                        "x": -6,
+                        "texture": "assets_dialog/header_1.png"
+                    },
+                    "compId": 41,
+                    "child": [
+                        {
+                            "type": "Sprite",
+                            "props": {
+                                "y": 10,
+                                "x": 214,
+                                "texture": "assets_dialog/员工列表.png"
+                            },
+                            "compId": 59
+                        }
+                    ]
+                },
+                {
+                    "type": "List",
+                    "props": {
+                        "x": 44,
+                        "width": 558,
+                        "var": "listStaff",
+                        "top": 118,
+                        "spaceY": 7,
+                        "bottom": 124
+                    },
+                    "compId": 39,
+                    "child": [
+                        {
+                            "type": "Box",
+                            "props": {
+                                "width": 558,
+                                "renderType": "render",
+                                "height": 130
+                            },
+                            "compId": 40,
+                            "child": [
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 0,
+                                        "x": 0,
+                                        "width": 558,
+                                        "skin": "assets_dialog/底板.png",
+                                        "sizeGrid": "25,25,25,25",
+                                        "height": 130
+                                    },
+                                    "compId": 46
+                                },
+                                {
+                                    "type": "Sprite",
+                                    "props": {
+                                        "y": 7,
+                                        "x": 7,
+                                        "texture": "assets_dialog/头像.png"
+                                    },
+                                    "compId": 47
+                                },
+                                {
+                                    "type": "Sprite",
+                                    "props": {
+                                        "y": 78,
+                                        "x": 128,
+                                        "texture": "assets_dialog/移速.png"
+                                    },
+                                    "compId": 49
+                                },
+                                {
+                                    "type": "Sprite",
+                                    "props": {
+                                        "y": 78,
+                                        "x": 250,
+                                        "texture": "assets_dialog/载量.png"
+                                    },
+                                    "compId": 48
+                                },
+                                {
+                                    "type": "Sprite",
+                                    "props": {
+                                        "y": 20,
+                                        "x": 414,
+                                        "width": 36,
+                                        "texture": "assets_dialog/coin_icon.png",
+                                        "height": 32
+                                    },
+                                    "compId": 56
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 14,
+                                        "x": 14,
+                                        "name": "staffImg"
+                                    },
+                                    "compId": 62
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 11,
+                                        "x": 13,
+                                        "skin": "assets_dialog/头像遮造.png",
+                                        "name": "lock"
+                                    },
+                                    "compId": 50,
+                                    "child": [
+                                        {
+                                            "type": "Sprite",
+                                            "props": {
+                                                "y": 26,
+                                                "x": 31,
+                                                "texture": "assets_dialog/锁.png"
+                                            },
+                                            "compId": 51
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 58,
+                                        "x": 382,
+                                        "skin": "assets_dialog/btn_brown_s.png",
+                                        "name": "btnUpgrade"
+                                    },
+                                    "compId": 45,
+                                    "child": [
+                                        {
+                                            "type": "Sprite",
+                                            "props": {
+                                                "y": 14,
+                                                "x": 62,
+                                                "texture": "assets_dialog/升级.png"
+                                            },
+                                            "compId": 52
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 58,
+                                        "x": 382,
+                                        "skin": "assets_dialog/btn_yellow_s.png",
+                                        "name": "btnRecruit"
+                                    },
+                                    "compId": 44,
+                                    "child": [
+                                        {
+                                            "type": "Sprite",
+                                            "props": {
+                                                "y": 14,
+                                                "x": 62,
+                                                "texture": "assets_dialog/招募.png"
+                                            },
+                                            "compId": 53
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Image",
+                                    "props": {
+                                        "y": 96,
+                                        "x": 6,
+                                        "skin": "assets_dialog/等级底板.png",
+                                        "name": "gplv"
+                                    },
+                                    "compId": 60,
+                                    "child": [
+                                        {
+                                            "type": "Label",
+                                            "props": {
+                                                "y": 4,
+                                                "x": 7,
+                                                "text": "Lv.1",
+                                                "name": "txtlv",
+                                                "fontSize": 16,
+                                                "color": "#FEFEFE",
+                                                "bold": true
+                                            },
+                                            "compId": 61
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 19,
+                                        "x": 131,
+                                        "text": "店小二",
+                                        "name": "staffName",
+                                        "fontSize": 28,
+                                        "color": "#5C4034",
+                                        "bold": true
+                                    },
+                                    "compId": 42
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 53,
+                                        "x": 130,
+                                        "text": "负责收割和搬运非菜",
+                                        "name": "desc",
+                                        "fontSize": 20,
+                                        "color": "#977668",
+                                        "bold": true
+                                    },
+                                    "compId": 43
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 84,
+                                        "x": 162,
+                                        "text": "移速：5 ",
+                                        "name": "speed",
+                                        "fontSize": 20,
+                                        "color": "#3E811F",
+                                        "bold": true
+                                    },
+                                    "compId": 54
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 84,
+                                        "x": 284,
+                                        "text": "载量：5",
+                                        "name": "bearload",
+                                        "fontSize": 20,
+                                        "color": "#3F6A77",
+                                        "bold": true
+                                    },
+                                    "compId": 55
+                                },
+                                {
+                                    "type": "Label",
+                                    "props": {
+                                        "y": 22,
+                                        "x": 457,
+                                        "text": "800",
+                                        "name": "cost",
+                                        "fontSize": 26,
+                                        "color": "#5C4034",
+                                        "bold": true
+                                    },
+                                    "compId": 57
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "loadList": [
+        "assets_dialog/bg.png",
+        "assets_dialog/header_1.png",
+        "assets_dialog/员工列表.png",
+        "assets_dialog/bg.png",
+        "assets_dialog/头像.png",
+        "assets_dialog/移速.png",
+        "assets_dialog/载量.png",
+        "assets_dialog/coin_icon.png",
+        "assets_dialog/头像遮造.png",
+        "assets_dialog/锁.png",
+        "assets_dialog/btn_brown_s.png",
+        "assets_dialog/升级.png",
+        "assets_dialog/btn_yellow_s.png",
+        "assets_dialog/招募.png",
+        "assets_dialog/等级底板.png"
+    ],
+    "loadList3D": []
+}

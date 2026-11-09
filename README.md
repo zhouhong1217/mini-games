@@ -1,6 +1,6 @@
 # 小游戏乐园
 
-中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」「化妆解压」「吃苹果的蛇」「缠绕的绳子」「植物大战僵尸」「双人厨房」，以及本地版「80亿分之1」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
+中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」「化妆解压」「吃苹果的蛇」「缠绕的绳子」「植物大战僵尸」「双人厨房」，「穿回古代当首富」，以及本地版「80亿分之1」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
 
 在线游玩：<https://zhouhong1217.github.io/mini-games/>
 
@@ -297,3 +297,21 @@ PLAYWRIGHT_MODULE=/path/to/playwright-core/index.mjs CJK_FONT_FILE=/path/to/Noto
 单人纵屏解谜，跟随原版中文提示点击或拖动物品。外壳提供中英文说明、加载进度、失败重试、重新加载、全屏和返回首页；切换页面语言会保留正在运行的游戏。
 
 已恢复原版 90 关配置及资源；进度保存在当前浏览器。原广告和远程平台实现已从发布副本删除，提示等奖励入口由独立适配层默认完成。重建、实际玩法验收、来源和 `Unknown` 范围见[恢复记录](provenance/level-relaxation.md)。
+
+## 穿回古代当首富
+
+在线入口：<https://zhouhong1217.github.io/mini-games/games/ancient-tycoon/>。严格子路径本地预览：<http://127.0.0.1:8801/mini-games/games/ancient-tycoon/>。
+
+点击「开始游戏」后，拖动摇杆移动人物，靠近物品自动拾取；站到标记处建造、补货或收钱，从第一笔铜钱和韭菜小摊开始经营。原版中文界面、3D 场景、动画和音效保留；页面说明支持中英文，支持鼠标及触屏、全屏与加载失败重试。静态资源约 66 MB，按玩法逐步加载。
+
+游戏进度保存在当前浏览器，离开页面时保存；本地预览与线上版本分别存档。清除网站数据会删除相应进度。原广告 SDK、云存档及远程排行榜实现已移除，原奖励入口通过独立适配层默认直接完成。本地排行榜仅显示当前浏览器成绩，竞技人物标明为本地 NPC。
+
+启动和验证命令：
+
+```sh
+node scripts/serve-local.mjs --port 8801 --mount /mini-games/
+node scripts/verify-tycoon-platform.mjs
+node scripts/verify-tycoon.mjs
+```
+
+Playwright 位置可通过 `PLAYWRIGHT_MODULE` 指定；设置 `PAGES_URL=https://zhouhong1217.github.io/mini-games/` 可验收线上版本。恢复来源、重建命令、REA 证据、实际验收及后期玩法的 `Unknown` 范围见[恢复记录](provenance/ancient-tycoon.md)与[恢复工具](tools/ancient-tycoon/README.md)。

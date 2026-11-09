@@ -1,0 +1,428 @@
+{
+    "1":{
+        "answer":{
+            "1":"爱你孤身走暗巷",
+            "2":"臣妾做不到啊",
+            "3":"原来是小瘪三",
+            "4":"有请潘周聃",
+            "5":"我是云南的",
+            "6":"退退退",
+            "7":"我信你个鬼",
+            "8":"干净又卫生",
+            "9":"小鸟伏特加",
+            "10":"老司机带带我",
+            "11":"这是可以说的吗"
+        },
+        "title":"消除全部热梗",
+        "tips":"爱你孤身走暗巷",
+        "stackInfo":[
+        [
+            {"word":"以","type":11},{"word":"说","type":11},{"word":"机","type":10},
+            {"word":"带","type":10},{"word":"加","type":9},{"word":"的","type":11},
+            {"word":"司","type":10},{"word":"吗","type":11},"",
+            
+            {"word":"这","type":11},{"word":"老","type":10},{"word":"带","type":10},
+            {"word":"个","type":7},{"word":"特","type":9},{"word":"是","type":11},
+            {"word":"可","type":11},{"word":"我","type":10},"",
+            
+            {"word":"南","type":5},{"word":"小","type":9},{"word":"你","type":7},
+            {"word":"卫","type":8},{"word":"鸟","type":9},{"word":"生","type":8},
+            {"word":"伏","type":9},{"word":"鬼","type":7},"",
+            
+            {"word":"来","type":3},{"word":"潘","type":4},{"word":"干","type":8},
+            {"word":"净","type":8},{"word":"退","type":6},{"word":"周","type":4},
+            {"word":"退","type":6},{"word":"又","type":8},{"word":"信","type":7},
+            
+            {"word":"原","type":3},{"word":"我","type":5},{"word":"我","type":7},
+            {"word":"云","type":5},{"word":"是","type":5},{"word":"小","type":3},
+            {"word":"走","type":1},{"word":"退","type":6},{"word":"做","type":2},
+            
+            {"word":"暗","type":1},{"word":"请","type":4},{"word":"到","type":2},
+            {"word":"的","type":5},{"word":"三","type":3},{"word":"是","type":3},
+            {"word":"身","type":1},{"word":"聃","type":4},{"word":"臣","type":2},
+            
+            {"word":"孤","type":1},{"word":"有","type":4},{"word":"不","type":2},
+            {"word":"啊","type":2},{"word":"你","type":1},{"word":"妾","type":2},
+            {"word":"爱","type":1},{"word":"瘪","type":3},{"word":"巷","type":1}                                                                                                                                  
+        ],
+            [
+                {"word":"可","type":11},{"word":"带","type":10},{"word":"吗","type":11},
+                {"word":"说","type":11},{"word":"干","type":8},"",
+                {"word":"是","type":11},{"word":"机","type":10},{"word":"这","type":11},
+                
+                {"word":"加","type":9},{"word":"我","type":7},{"word":"以","type":11},
+                {"word":"又","type":8},{"word":"退","type":6},"",
+                {"word":"我","type":10},{"word":"伏","type":9},{"word":"我","type":5},
+                
+                {"word":"鬼","type":7},{"word":"小","type":9},{"word":"带","type":10},
+                {"word":"个","type":7},{"word":"的","type":5},"",
+                {"word":"老","type":10},{"word":"鸟","type":9},{"word":"小","type":3},
+                
+                {"word":"南","type":5},{"word":"你","type":7},{"word":"司","type":10},
+                {"word":"退","type":6},{"word":"瘪","type":3},{"word":"的","type":11},
+                {"word":"特","type":9},{"word":"信","type":7},{"word":"来","type":3},
+                
+                {"word":"云","type":5},{"word":"啊","type":2},{"word":"卫","type":8},
+                {"word":"周","type":4},{"word":"原","type":3},{"word":"是","type":5},
+                {"word":"生","type":8},{"word":"妾","type":2},{"word":"到","type":2},
+                
+                {"word":"聃","type":4},{"word":"你","type":1},{"word":"净","type":8},
+                {"word":"三","type":3},{"word":"不","type":2},{"word":"潘","type":4},
+                {"word":"退","type":6},{"word":"巷","type":1},{"word":"做","type":2},
+                
+                {"word":"有","type":4},{"word":"爱","type":1},{"word":"请","type":4},
+                {"word":"孤","type":1},{"word":"臣","type":2},{"word":"身","type":1},
+                {"word":"是","type":3},{"word":"走","type":1},{"word":"暗","type":1}                                           
+                                                                                                                            
+            ],
+            [
+                {"word":"司","type":10},{"word":"吗","type":11},{"word":"老","type":10},
+                "","",{"word":"带","type":10},
+                "",{"word":"是","type":11},{"word":"鬼","type":7},
+                
+                {"word":"特","type":9},{"word":"我","type":10},{"word":"卫","type":8},
+                {"word":"说","type":11},{"word":"机","type":10},{"word":"可","type":11},
+                {"word":"的","type":11},{"word":"净","type":8},{"word":"南","type":5},
+                
+                {"word":"鸟","type":9},{"word":"生","type":8},{"word":"退","type":6},
+                {"word":"加","type":9},{"word":"伏","type":9},{"word":"个","type":7},
+                {"word":"这","type":11},{"word":"干","type":8},{"word":"我","type":5},
+                
+                {"word":"的","type":5},{"word":"云","type":5},{"word":"有","type":4},
+                {"word":"小","type":9},{"word":"又","type":8},{"word":"我","type":7},
+                {"word":"以","type":11},{"word":"信","type":7},{"word":"周","type":4},
+                
+                {"word":"请","type":4},{"word":"妾","type":2},{"word":"是","type":3},
+                {"word":"你","type":7},{"word":"是","type":5},{"word":"退","type":6},
+                {"word":"带","type":10},{"word":"退","type":6},{"word":"小","type":3},
+                
+                {"word":"三","type":3},{"word":"巷","type":1},{"word":"走","type":1},
+                {"word":"聃","type":4},{"word":"来","type":3},{"word":"暗","type":1},
+                {"word":"做","type":2},{"word":"潘","type":4},{"word":"啊","type":2},
+                
+                {"word":"臣","type":2},{"word":"孤","type":1},{"word":"身","type":1},
+                {"word":"原","type":3},{"word":"到","type":2},{"word":"爱","type":1},
+                {"word":"你","type":1},{"word":"瘪","type":3},{"word":"不","type":2}
+                                
+            ]   
+        ]
+    },
+    "2":{
+        "answer":{
+            "1":"海克斯科技食品",
+            "2":"没说就是零卡",
+            "3":"一勺三花淡奶",
+            "4":"咖啡冲不冲",
+            "5":"合法但有病",
+            "6":"躲闪摇",
+            "7":"黄金切尔西",
+            "8":"且行且珍惜",
+            "9":"小飞棍来咯",
+            "10":"王宝钏挖野菜",
+            "11":"你这背景太假了"
+        },
+        "title":"消除全部热梗",
+        "tips":"一勺三花淡奶",
+        "stackInfo":[
+        [
+            {"word":"景","type":11},{"word":"太","type":11},{"word":"钏","type":10},
+            {"word":"挖","type":10},{"word":"咯","type":9},{"word":"假","type":11},
+            {"word":"宝","type":10},{"word":"了","type":11},"",
+            
+            {"word":"你","type":11},{"word":"王","type":10},{"word":"野","type":10},
+            {"word":"尔","type":7},{"word":"来","type":9},{"word":"这","type":11},
+            {"word":"背","type":11},{"word":"菜","type":10},"",
+            
+            {"word":"有","type":5},{"word":"小","type":9},{"word":"切","type":7},
+            {"word":"珍","type":8},{"word":"飞","type":9},{"word":"惜","type":8},
+            {"word":"棍","type":9},{"word":"西","type":7},"",
+            
+            {"word":"勺","type":3},{"word":"冲","type":4},{"word":"且","type":8},
+            {"word":"行","type":8},{"word":"闪","type":6},{"word":"不","type":4},
+            {"word":"摇","type":6},{"word":"且","type":8},{"word":"金","type":7},
+            
+            {"word":"一","type":3},{"word":"合","type":5},{"word":"黄","type":7},
+            {"word":"但","type":5},{"word":"法","type":5},{"word":"花","type":3},
+            {"word":"技","type":1},{"word":"躲","type":6},{"word":"就","type":2},
+            
+            {"word":"食","type":1},{"word":"啡","type":4},{"word":"零","type":2},
+            {"word":"病","type":5},{"word":"奶","type":3},{"word":"三","type":3},
+            {"word":"科","type":1},{"word":"冲","type":4},{"word":"没","type":2},
+            
+            {"word":"斯","type":1},{"word":"咖","type":4},{"word":"是","type":2},
+            {"word":"卡","type":2},{"word":"克","type":1},{"word":"说","type":2},
+            {"word":"海","type":1},{"word":"淡","type":3},{"word":"品","type":1}                                                                                                                                         
+        ],
+        [
+            {"word":"背","type":11},{"word":"挖","type":10},{"word":"了","type":11},
+            {"word":"太","type":11},{"word":"且","type":8},"",
+            {"word":"这","type":11},{"word":"钏","type":10},{"word":"你","type":11},
+            
+            {"word":"咯","type":9},{"word":"黄","type":7},{"word":"景","type":11},
+            {"word":"且","type":8},{"word":"摇","type":6},"",
+            {"word":"菜","type":10},{"word":"棍","type":9},{"word":"合","type":5},
+            
+            {"word":"西","type":7},{"word":"小","type":9},{"word":"野","type":10},
+            {"word":"尔","type":7},{"word":"病","type":5},"",
+            {"word":"王","type":10},{"word":"飞","type":9},{"word":"花","type":3},
+            
+            {"word":"有","type":5},{"word":"切","type":7},{"word":"宝","type":10},
+            {"word":"闪","type":6},{"word":"淡","type":3},{"word":"假","type":11},
+            {"word":"来","type":9},{"word":"金","type":7},{"word":"勺","type":3},
+            
+            {"word":"但","type":5},{"word":"卡","type":2},{"word":"珍","type":8},
+            {"word":"不","type":4},{"word":"一","type":3},{"word":"法","type":5},
+            {"word":"惜","type":8},{"word":"说","type":2},{"word":"零","type":2},
+            
+            {"word":"冲","type":4},{"word":"克","type":1},{"word":"行","type":8},
+            {"word":"奶","type":3},{"word":"是","type":2},{"word":"冲","type":4},
+            {"word":"躲","type":6},{"word":"品","type":1},{"word":"就","type":2},
+            
+            {"word":"咖","type":4},{"word":"海","type":1},{"word":"啡","type":4},
+            {"word":"斯","type":1},{"word":"没","type":2},{"word":"科","type":1},
+            {"word":"三","type":3},{"word":"技","type":1},{"word":"食","type":1}                                                                                                                 
+        ],
+        [
+            {"word":"宝","type":10},{"word":"了","type":11},{"word":"王","type":10},
+            "","",{"word":"挖","type":10},
+            "",{"word":"这","type":11},{"word":"西","type":7},
+            
+            {"word":"来","type":9},{"word":"菜","type":10},{"word":"珍","type":8},
+            {"word":"太","type":11},{"word":"钏","type":10},{"word":"背","type":11},
+            {"word":"假","type":11},{"word":"行","type":8},{"word":"有","type":5},
+            
+            {"word":"飞","type":9},{"word":"惜","type":8},{"word":"摇","type":6},
+            {"word":"咯","type":9},{"word":"棍","type":9},{"word":"尔","type":7},
+            {"word":"你","type":11},{"word":"且","type":8},{"word":"合","type":5},
+            
+            {"word":"病","type":5},{"word":"但","type":5},{"word":"咖","type":4},
+            {"word":"小","type":9},{"word":"且","type":8},{"word":"黄","type":7},
+            {"word":"景","type":11},{"word":"金","type":7},{"word":"不","type":4},
+            
+            {"word":"啡","type":4},{"word":"说","type":2},{"word":"三","type":3},
+            {"word":"切","type":7},{"word":"法","type":5},{"word":"躲","type":6},
+            {"word":"野","type":10},{"word":"闪","type":6},{"word":"花","type":3},
+            
+            {"word":"奶","type":3},{"word":"品","type":1},{"word":"技","type":1},
+            {"word":"冲","type":4},{"word":"勺","type":3},{"word":"食","type":1},
+            {"word":"就","type":2},{"word":"冲","type":4},{"word":"卡","type":2},
+            
+            {"word":"没","type":2},{"word":"斯","type":1},{"word":"科","type":1},
+            {"word":"一","type":3},{"word":"零","type":2},{"word":"海","type":1},
+            {"word":"克","type":1},{"word":"淡","type":3},{"word":"是","type":2}            
+        ]
+    ]
+},
+"3":{
+    "answer":{
+        "1":"三傻大闹宝莱坞",
+        "2":"当幸福来敲门",
+        "3":"肖申克的救赎",
+        "4":"海上钢琴师",
+        "5":"天堂电影院",
+        "6":"无间道",
+        "7":"寻梦环游记",
+        "8":"复仇者联盟",
+        "9":"泰坦尼克号",
+        "10":"剪刀手爱德华",
+        "11":"哈尔的移动城堡"
+    },
+    "title":"消除经典电影",
+    "tips":"三傻大闹宝莱坞",
+    "stackInfo":[
+    [
+        {"word":"移","type":11},{"word":"动","type":11},{"word":"手","type":10},
+        {"word":"爱","type":10},{"word":"号","type":9},{"word":"城","type":11},
+        {"word":"刀","type":10},{"word":"堡","type":11},"",
+        
+        {"word":"哈","type":11},{"word":"剪","type":10},{"word":"德","type":10},
+        {"word":"游","type":7},{"word":"克","type":9},{"word":"尔","type":11},
+        {"word":"的","type":11},{"word":"华","type":10},"",
+        
+        {"word":"影","type":5},{"word":"泰","type":9},{"word":"环","type":7},
+        {"word":"联","type":8},{"word":"坦","type":9},{"word":"盟","type":8},
+        {"word":"尼","type":9},{"word":"记","type":7},"",
+        
+        {"word":"申","type":3},{"word":"钢","type":4},{"word":"复","type":8},
+        {"word":"仇","type":8},{"word":"间","type":6},{"word":"琴","type":4},
+        {"word":"道","type":6},{"word":"者","type":8},{"word":"梦","type":7},
+        
+        {"word":"肖","type":3},{"word":"天","type":5},{"word":"寻","type":7},
+        {"word":"电","type":5},{"word":"堂","type":5},{"word":"的","type":3},
+        {"word":"宝","type":1},{"word":"无","type":6},{"word":"福","type":2},
+        
+        {"word":"莱","type":1},{"word":"上","type":4},{"word":"敲","type":2},
+        {"word":"院","type":5},{"word":"赎","type":3},{"word":"克","type":3},
+        {"word":"闹","type":1},{"word":"师","type":4},{"word":"当","type":2},
+        
+        {"word":"大","type":1},{"word":"海","type":4},{"word":"来","type":2},
+        {"word":"门","type":2},{"word":"傻","type":1},{"word":"幸","type":2},
+        {"word":"三","type":1},{"word":"救","type":3},{"word":"坞","type":1}                                                                                                                                            
+    ],
+    [
+        {"word":"的","type":11},{"word":"爱","type":10},{"word":"堡","type":11},
+        {"word":"动","type":11},{"word":"复","type":8},"",
+        {"word":"尔","type":11},{"word":"手","type":10},{"word":"哈","type":11},
+        
+        {"word":"号","type":9},{"word":"寻","type":7},{"word":"移","type":11},
+        {"word":"者","type":8},{"word":"道","type":6},"",
+        {"word":"华","type":10},{"word":"尼","type":9},{"word":"天","type":5},
+        
+        {"word":"记","type":7},{"word":"泰","type":9},{"word":"德","type":10},
+        {"word":"游","type":7},{"word":"院","type":5},"",
+        {"word":"剪","type":10},{"word":"坦","type":9},{"word":"的","type":3},
+        
+        {"word":"影","type":5},{"word":"环","type":7},{"word":"刀","type":10},
+        {"word":"间","type":6},{"word":"救","type":3},{"word":"城","type":11},
+        {"word":"克","type":9},{"word":"梦","type":7},{"word":"申","type":3},
+        
+        {"word":"电","type":5},{"word":"门","type":2},{"word":"联","type":8},
+        {"word":"琴","type":4},{"word":"肖","type":3},{"word":"堂","type":5},
+        {"word":"盟","type":8},{"word":"幸","type":2},{"word":"敲","type":2},
+        
+        {"word":"师","type":4},{"word":"傻","type":1},{"word":"仇","type":8},
+        {"word":"赎","type":3},{"word":"来","type":2},{"word":"钢","type":4},
+        {"word":"无","type":6},{"word":"坞","type":1},{"word":"福","type":2},
+        
+        {"word":"海","type":4},{"word":"三","type":1},{"word":"上","type":4},
+        {"word":"大","type":1},{"word":"当","type":2},{"word":"闹","type":1},
+        {"word":"克","type":3},{"word":"宝","type":1},{"word":"莱","type":1}                                                                                                                        
+    ],
+    [
+        {"word":"刀","type":10},{"word":"堡","type":11},{"word":"剪","type":10},
+        "","",{"word":"爱","type":10},
+        "",{"word":"尔","type":11},{"word":"记","type":7},
+        
+        {"word":"克","type":9},{"word":"华","type":10},{"word":"联","type":8},
+        {"word":"动","type":11},{"word":"手","type":10},{"word":"的","type":11},
+        {"word":"城","type":11},{"word":"仇","type":8},{"word":"影","type":5},
+        
+        {"word":"坦","type":9},{"word":"盟","type":8},{"word":"道","type":6},
+        {"word":"号","type":9},{"word":"尼","type":9},{"word":"游","type":7},
+        {"word":"哈","type":11},{"word":"复","type":8},{"word":"天","type":5},
+        
+        {"word":"院","type":5},{"word":"电","type":5},{"word":"海","type":4},
+        {"word":"泰","type":9},{"word":"者","type":8},{"word":"寻","type":7},
+        {"word":"移","type":11},{"word":"梦","type":7},{"word":"琴","type":4},
+        
+        {"word":"上","type":4},{"word":"幸","type":2},{"word":"克","type":3},
+        {"word":"环","type":7},{"word":"堂","type":5},{"word":"无","type":6},
+        {"word":"德","type":10},{"word":"间","type":6},{"word":"的","type":3},
+        
+        {"word":"赎","type":3},{"word":"坞","type":1},{"word":"宝","type":1},
+        {"word":"师","type":4},{"word":"申","type":3},{"word":"莱","type":1},
+        {"word":"福","type":2},{"word":"钢","type":4},{"word":"门","type":2},
+        
+        {"word":"当","type":2},{"word":"大","type":1},{"word":"闹","type":1},
+        {"word":"肖","type":3},{"word":"敲","type":2},{"word":"三","type":1},
+        {"word":"傻","type":1},{"word":"救","type":3},{"word":"来","type":2}                  
+    ]
+]
+},
+"4":{
+    "answer":{
+        "1":"天津桂发祥麻花",
+        "2":"河北驴肉火烧",
+        "3":"云南过桥米线",
+        "4":"广西螺狮粉",
+        "5":"湖南臭豆腐",
+        "6":"北京烤鸭",
+        "7":"上海生煎包",
+        "8":"重庆辣子鸡",
+        "9":"福建佛跳墙",
+        "10":"浙江金华火腿",
+        "11":"陕西羊肉泡馍"
+    },
+    "title":"消除著名美食",
+    "tips":"天津桂发祥麻花",
+    "stackInfo":[
+    [
+        {"word":"肉","type":11},{"word":"泡","type":11},{"word":"金","type":10},
+        {"word":"华","type":10},{"word":"墙","type":9},{"word":"西","type":11},
+        {"word":"江","type":10},{"word":"馍","type":11},"",
+        
+        {"word":"陕","type":11},{"word":"浙","type":10},{"word":"火","type":10},
+        {"word":"煎","type":7},{"word":"跳","type":9},{"word":"鸡","type":8},
+        {"word":"羊","type":11},{"word":"腿","type":10},"",
+        
+        {"word":"豆","type":5},{"word":"福","type":9},{"word":"生","type":7},
+        {"word":"子","type":8},{"word":"建","type":9},{"word":"鸭","type":6},
+        {"word":"佛","type":9},{"word":"包","type":7},"",
+        
+        {"word":"南","type":3},{"word":"螺","type":4},{"word":"重","type":8},
+        {"word":"庆","type":8},{"word":"京","type":6},{"word":"狮","type":4},
+        {"word":"烤","type":6},{"word":"辣","type":8},{"word":"海","type":7},
+        
+        {"word":"云","type":3},{"word":"湖","type":5},{"word":"上","type":7},
+        {"word":"臭","type":5},{"word":"南","type":5},{"word":"桥","type":3},
+        {"word":"祥","type":1},{"word":"北","type":6},{"word":"驴","type":2},
+        
+        {"word":"麻","type":1},{"word":"西","type":4},{"word":"火","type":2},
+        {"word":"腐","type":5},{"word":"线","type":3},{"word":"过","type":3},
+        {"word":"发","type":1},{"word":"粉","type":4},{"word":"河","type":2},
+        
+        {"word":"桂","type":1},{"word":"广","type":4},{"word":"肉","type":2},
+        {"word":"烧","type":2},{"word":"津","type":1},{"word":"北","type":2},
+        {"word":"天","type":1},{"word":"米","type":3},{"word":"花","type":1}                                                                                                                                                 
+    ],
+    [
+        {"word":"羊","type":11},{"word":"华","type":10},{"word":"馍","type":11},
+        {"word":"泡","type":11},{"word":"重","type":8},"",
+        {"word":"西","type":11},{"word":"金","type":10},{"word":"陕","type":11},
+        
+        {"word":"墙","type":9},{"word":"上","type":7},{"word":"肉","type":11},
+        {"word":"辣","type":8},{"word":"鸭","type":6},"",
+        {"word":"腿","type":10},{"word":"佛","type":9},{"word":"湖","type":5},
+        
+        {"word":"包","type":7},{"word":"福","type":9},{"word":"火","type":10},
+        {"word":"煎","type":7},{"word":"腐","type":5},"",
+        {"word":"浙","type":10},{"word":"建","type":9},{"word":"桥","type":3},
+        
+        {"word":"豆","type":5},{"word":"生","type":7},{"word":"江","type":10},
+        {"word":"京","type":6},{"word":"米","type":3},{"word":"烤","type":6},
+        {"word":"跳","type":9},{"word":"海","type":7},{"word":"南","type":3},
+        
+        {"word":"臭","type":5},{"word":"烧","type":2},{"word":"子","type":8},
+        {"word":"狮","type":4},{"word":"云","type":3},{"word":"南","type":5},
+        {"word":"鸡","type":8},{"word":"北","type":2},{"word":"火","type":2},
+        
+        {"word":"粉","type":4},{"word":"津","type":1},{"word":"庆","type":8},
+        {"word":"线","type":3},{"word":"肉","type":2},{"word":"螺","type":4},
+        {"word":"北","type":6},{"word":"花","type":1},{"word":"驴","type":2},
+        
+        {"word":"广","type":4},{"word":"天","type":1},{"word":"西","type":4},
+        {"word":"桂","type":1},{"word":"河","type":2},{"word":"发","type":1},
+        {"word":"过","type":3},{"word":"祥","type":1},{"word":"麻","type":1}                                                                                                                               
+    ],
+    [
+        {"word":"江","type":10},{"word":"馍","type":11},{"word":"浙","type":10},
+        "","",{"word":"华","type":10},
+        "",{"word":"西","type":11},{"word":"包","type":7},
+        
+        {"word":"跳","type":9},{"word":"腿","type":10},{"word":"子","type":8},
+        {"word":"泡","type":11},{"word":"金","type":10},{"word":"羊","type":11},
+        {"word":"陕","type":11},{"word":"庆","type":8},{"word":"豆","type":5},
+        
+        {"word":"建","type":9},{"word":"鸡","type":8},{"word":"鸭","type":6},
+        {"word":"墙","type":9},{"word":"佛","type":9},{"word":"煎","type":7},
+        {"word":"肉","type":11},{"word":"重","type":8},{"word":"湖","type":5},
+        
+        {"word":"腐","type":5},{"word":"臭","type":5},{"word":"广","type":4},
+        {"word":"福","type":9},{"word":"辣","type":8},{"word":"上","type":7},
+        {"word":"火","type":10},{"word":"海","type":7},{"word":"狮","type":4},
+        
+        {"word":"西","type":4},{"word":"北","type":2},{"word":"过","type":3},
+        {"word":"生","type":7},{"word":"南","type":5},{"word":"北","type":6},
+        {"word":"烤","type":6},{"word":"京","type":6},{"word":"桥","type":3},
+        
+        {"word":"线","type":3},{"word":"花","type":1},{"word":"祥","type":1},
+        {"word":"粉","type":4},{"word":"南","type":3},{"word":"麻","type":1},
+        {"word":"驴","type":2},{"word":"螺","type":4},{"word":"烧","type":2},
+        
+        {"word":"河","type":2},{"word":"桂","type":1},{"word":"发","type":1},
+        {"word":"云","type":3},{"word":"火","type":2},{"word":"天","type":1},
+        {"word":"津","type":1},{"word":"米","type":3},{"word":"肉","type":2}                         
+    ]
+]
+}
+}

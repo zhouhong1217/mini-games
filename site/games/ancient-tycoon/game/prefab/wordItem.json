@@ -1,0 +1,1 @@
+{"type":"Box","props":{"y":60,"x":60,"width":125,"presetID":1,"name":"wordQuestion","isPresetRoot":true,"height":125,"anchorY":0.5,"anchorX":0.5},"compId":4,"child":[{"type":"Label","props":{"text":"中","presetID":2,"name":"txt","fontSize":88,"centerY":0,"centerX":0,"bold":true},"compId":6}],"loadList":[],"loadList3D":[]}
