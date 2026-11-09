@@ -23,3 +23,5 @@ REA 证据保留在本机 `evidence/rea-evidence-bundle.json`：
 同一次浏览器验收覆盖外壳延迟加载、中英文切换不重启游戏、全屏、390 px 窄屏布局、模拟触屏摇杆移动，以及故意阻断 `js/bundle.js` 后的失败提示与重试。整个验收阻断全部外部 HTTP(S) 请求，记录外部请求尝试 0、HTTP 4xx/5xx 0、页面异常 0。11 项独立平台检查覆盖默认成功、供应商失败、队列顺序、回调异常、存档隔离、本地 NPC 及故障构建不破坏旧副本。报告和截图保存在本机 `.verification/tycoon-local/`；实体手机、其他浏览器及全部后期玩法未逐一验证。
 
 原游戏、封面和素材版权归原权利人所有。本恢复及部署不改变原有授权状态。
+
+线上入口：<https://zhouhong1217.github.io/mini-games/games/ancient-tycoon/>。首个可玩发布提交为 `212753f5e146da0b59bcfc0dd15b1d0bcb697e8f`，[Pages 部署任务](https://github.com/zhouhong1217/mini-games/actions/runs/42599020445)成功。线上重复经营、奖励、刷新存档、中英文切换、全屏、模拟触屏与失败重试验收通过，外部请求尝试、HTTP 错误和页面异常均为 0；核心脚本和适配层与本地发布文件逐字节一致。首页第 12 张卡片已接入，中英文入口和封面加载正常。线上报告保留在本机 `.verification/tycoon-live/`。

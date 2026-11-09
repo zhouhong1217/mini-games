@@ -22,6 +22,9 @@ async function ready(g=game){await g.waitForFunction(()=>window.AncientTycoonRun
 async function shot(name,p=page){await p.screenshot({path:out+name+'.png',fullPage:true})}
 async function click(x,y,p=page,touch=false){if(touch)await p.touchscreen.tap(x,y);else await p.mouse.click(x,y,{delay:40});await p.waitForTimeout(550)}
 async function ui(name,key,p=page,g=game,touch=false){
+ await g.waitForFunction(({name,key})=>{const n=Laya.stage.getChildByName('root')?._children.find(x=>x.name===name)?.[key];return n?.visible&&n.width>0&&n.height>0},{name,key},{timeout:15000});
+ // 线上资源到达后弹窗仍会播放入场动画，等布局稳定再计算真实点击坐标。
+ await p.waitForTimeout(900);
  const v=await g.evaluate(({name,key})=>{const n=Laya.stage.getChildByName('root')?._children.find(x=>x.name===name)?.[key];if(!n||!n.visible)return null;const a=n.localToGlobal(new Laya.Point(n.width/2,n.height/2));return{x:a.x/750,y:a.y/1334}},{name,key});
  assert.ok(v,'Visible UI missing: '+name+'.'+key);
  let b=g===p.mainFrame()?{x:0,y:0,width:540,height:960}:await p.locator('#game').boundingBox();
@@ -66,8 +69,10 @@ try{
  const lockBefore=await game.evaluate(()=>Laya.stage._children[0]._components[0].LockTime);
  await ui('ui_dialog/addCustomerDialog','btnVideo');
  const lockAfter=await game.evaluate(()=>Laya.stage._children[0]._components[0].LockTime);
- assert.ok(lockBefore<=0&&lockAfter>0);report.checks.reward_button={lockBefore,lockAfter};
- await ui('ui_game/mainGame','btnUpgrade');await shot('upgrade');report.checks.upgrade_dialog=await game.evaluate(()=>!!Laya.stage.getChildByName('root').getChildByName('ui_dialog/levelUpDialog'));
+ assert.ok(lockBefore<=0&&lockAfter>0,JSON.stringify({lockBefore,lockAfter}));report.checks.reward_button={lockBefore,lockAfter};
+ await ui('ui_game/mainGame','btnUpgrade');
+ await game.waitForFunction(()=>!!Laya.stage.getChildByName('root').getChildByName('ui_dialog/levelUpDialog'),null,{timeout:15000});
+ await shot('upgrade');report.checks.upgrade_dialog=true;
  const keys=await game.evaluate(()=>Object.keys(localStorage));assert.ok(keys.some(k=>k.startsWith('ancient-tycoon-4399-v1:')));report.checks.save_namespace=keys;
  await page.goto(entry);assert.equal(await page.locator('#game').getAttribute('src'),null);report.checks.lazy_load=true;
  await page.locator('#start').click();await page.waitForFunction(()=>document.querySelector('#cover').hidden,null,{timeout:90000});game=page.frames().find(f=>f.url().includes('/ancient-tycoon/game/'));await ready();await shot('wrapper');
