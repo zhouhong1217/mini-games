@@ -1,6 +1,6 @@
 # 小游戏乐园
 
-中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」「化妆解压」「吃苹果的蛇」「缠绕的绳子」「植物大战僵尸」，以及本地版「80亿分之1」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
+中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」「化妆解压」「吃苹果的蛇」「缠绕的绳子」「植物大战僵尸」「双人厨房」，以及本地版「80亿分之1」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
 
 在线游玩：<https://zhouhong1217.github.io/mini-games/>
 
@@ -271,3 +271,11 @@ PLAYWRIGHT_MODULE=/path/to/playwright-core/index.mjs CJK_FONT_FILE=/path/to/Noto
 存档保存在当前浏览器的当前网站来源中，不提供跨设备同步。本地地址与 GitHub Pages 地址之间不会自动迁移旧存档。
 
 原游戏和素材版权归各自权利人所有。这个主页及部署配置不会改变原游戏素材的授权状态。
+
+## 双人厨房
+
+在线入口：<https://zhouhong1217.github.io/mini-games/games/double-kitchen/>。本地严格子路径：<http://127.0.0.1:8786/mini-games/games/double-kitchen/>。
+
+保留原版 Cocos HTML5 的双人合作和双人对决。玩家 1 使用 `WASD`，玩家 2 使用方向键；移动到食物或餐盘前停下，按画面指引制作和上菜。游戏内为原版中文，外壳支持中英文、加载进度、重试、重新加载和全屏。钻石、皮肤与经营存档保存在当前浏览器，使用独立命名空间。
+
+原广告 SDK 和平台服务已从发布副本移除；原奖励入口由独立本地适配层默认完成。重建、REA 证据、实际玩法验收及 `Unknown` 范围见[恢复记录](provenance/double-kitchen.md)。

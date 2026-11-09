@@ -186,5 +186,30 @@
         ]
       }
     }
+  },
+  {
+    "id": "double-kitchen",
+    "title": "双人厨房",
+    "subtitle": "DOUBLE KITCHEN",
+    "description": "选择双人合作或双人对决，和朋友一起制作餐点、招待客人，挑战忙碌的厨房。",
+    "href": "games/double-kitchen/",
+    "cover": "assets/covers/double-kitchen.jpg",
+    "coverAlt": "双人厨房游戏封面：拟人食物角色与游戏标题",
+    "tags": [
+      "同屏双人",
+      "合作 / 对决"
+    ],
+    "translations": {
+      "en": {
+        "title": "Double Kitchen",
+        "subtitle": "DOUBLE KITCHEN",
+        "description": "Team up or compete with a friend. Prepare food, serve hungry customers, and take on a busy kitchen together.",
+        "coverAlt": "Double Kitchen cover with cartoon food characters and the game title",
+        "tags": [
+          "Local multiplayer",
+          "Co-op / versus"
+        ]
+      }
+    }
   }
 ]
