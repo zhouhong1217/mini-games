@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-09",
+  "result": "passed",
+  "scope": "local Chrome; strict /mini-games/ mount; external HTTP(S) blocked",
+  "checks": {
+    "shell": {
+      "language": true,
+      "language_keeps_game": true,
+      "fullscreen": true,
+      "lazy_start": true
+    },
+    "gameplay": {
+      "first_level_complete": true,
+      "level": 2,
+      "refresh_keeps_level": true,
+      "source": "real mouse; no state injection"
+    },
+    "mobile_layout": true,
+    "download_failure_retry": true
+  },
+  "page_errors": 0,
+  "console_errors": 0,
+  "external_requests": 0,
+  "unexpected_http_failures": 0,
+  "touch_emulation": "passed: first peashooter planted; 150 to 50 sun; screenshot visually reviewed",
+  "physical_phone": "Unknown; not tested",
+  "build": "Rebuilt with JPEXS 26.4.0; cleaned SWF matches recorded SHA-256",
+  "local_swf_sha256": "70f285932b3acd48068d6de0eed2160c0e92988c57ff6f2dde260940347157ea",
+  "full_report": ".verification/pvz-local/report.json",
+  "full_report_sha256": "5a80e05305bf1d593bc7b9791408ce6aae6a12e4edaecfbc3a3fc7569064260c",
+  "remaining_unknowns": [
+    "All remaining levels and modes",
+    "Safari and Firefox",
+    "Physical mobile devices",
+    "Speaker/audio output",
+    "Complete original Flex project"
+  ]
+}

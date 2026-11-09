@@ -1,0 +1,170 @@
+{
+  "source_page": "https://www.4399.com/flash/18012.htm",
+  "game": "Plants vs. Zombies Flash 0.9",
+  "original_swf": {
+    "file": "pvz_9_15.swf",
+    "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/pvz_9_15.swf",
+    "final_url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/pvz_9_15.swf",
+    "bytes": 460502,
+    "sha256": "160385a3297c277b8a2076f9af46474435c9f122050062647a8e7c420dcdf1be"
+  },
+  "local_swf_sha256": "70f285932b3acd48068d6de0eed2160c0e92988c57ff6f2dde260940347157ea",
+  "jpexs_version": "26.4.0",
+  "jpexs_jar_sha256": "80f8ced0bfde98b434c28e9807e91fe5558255b2f712051a0e65221519bd392a",
+  "ruffle": {
+    "package": "@ruffle-rs/ruffle",
+    "version": "0.7.1",
+    "source": "https://registry.npmjs.org/@ruffle-rs/ruffle/-/ruffle-0.7.1.tgz",
+    "archive_sha256": "dc9e7407549a91accc41a14932b0b9d9a9d51a3742ce6f020888c8a76682b157"
+  },
+  "changes": [
+    "Replace embedded MSN implementation with independent LocalPlatformAPI; preserve continuation signatures and sync zero-argument single callbacks",
+    "Remove purchase navigation and hide purchase buttons",
+    "SharedObject app id: plants-vs-zombies-4399-v1",
+    "Remove MSN, upsell and cheat bindings from local data.xml",
+    "Load original game directly with local Ruffle runtime and assets"
+  ],
+  "copy_assets": [
+    {
+      "source": "original/resources.swf",
+      "destination": "games/plants-vs-zombies/game/resources.swf",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/resources.swf",
+      "bytes": 6610793,
+      "sha256": "600c32b11606abb913766b4b61aeb31c32492f724780069d56b910fefa88cd35"
+    },
+    {
+      "source": "original/properties/externalStrings.txt",
+      "destination": "games/plants-vs-zombies/game/properties/externalStrings.txt",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/properties/externalStrings.txt",
+      "bytes": 83660,
+      "sha256": "fd52641d38205f0c4af3b079df9dcf30ffdf66838a7b06cdcb20d73761f946a3"
+    },
+    {
+      "source": "original/music/cerebrawl.mp3",
+      "destination": "games/plants-vs-zombies/game/music/cerebrawl.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/cerebrawl.mp3",
+      "bytes": 1181991,
+      "sha256": "63fe6a29a7a3965c22b604ef1ed7b81aa8fc88a701c5865840a551e8b3825d6d"
+    },
+    {
+      "source": "original/music/chooseyourseeds.mp3",
+      "destination": "games/plants-vs-zombies/game/music/chooseyourseeds.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/chooseyourseeds.mp3",
+      "bytes": 388684,
+      "sha256": "4c4502aed8c9e1c9a88c48c2478d755d7b6f0db6dcc90ac04c2f80afa038b79d"
+    },
+    {
+      "source": "original/music/conveyor.mp3",
+      "destination": "games/plants-vs-zombies/game/music/conveyor.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/conveyor.mp3",
+      "bytes": 872801,
+      "sha256": "f70bf529f196893e5924e2ac2349f44e07a94b8e1cd8e26244ae7b4916a799e3"
+    },
+    {
+      "source": "original/music/crazydave.mp3",
+      "destination": "games/plants-vs-zombies/game/music/crazydave.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/crazydave.mp3",
+      "bytes": 315562,
+      "sha256": "08ce1b91a037cb6321e227018b3b20e70e4f4cb09a3745469ca210e37232c030"
+    },
+    {
+      "source": "original/music/grasswalk.mp3",
+      "destination": "games/plants-vs-zombies/game/music/grasswalk.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/grasswalk.mp3",
+      "bytes": 1678527,
+      "sha256": "9316cc22632b730090cc1adb56741ade587dffc479a2080a9fc99c370ab79f5a"
+    },
+    {
+      "source": "original/music/loonboon.mp3",
+      "destination": "games/plants-vs-zombies/game/music/loonboon.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/loonboon.mp3",
+      "bytes": 1279794,
+      "sha256": "8af6a2796e990563a7795f6b8d70d4155571a7d602e4c85f7150d59df9f4dfe2"
+    },
+    {
+      "source": "original/music/losemusic.mp3",
+      "destination": "games/plants-vs-zombies/game/music/losemusic.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/losemusic.mp3",
+      "bytes": 122279,
+      "sha256": "330e213a5ca1cc8f63dc04ba0b2c19e227656bc70e04cc1f39b79eade63cdfa8"
+    },
+    {
+      "source": "original/music/moongrains.mp3",
+      "destination": "games/plants-vs-zombies/game/music/moongrains.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/moongrains.mp3",
+      "bytes": 1344682,
+      "sha256": "3861d96f545bee2c41b8769fc95e1287334e57f5932c298fc8de4c9dfe68a7bf"
+    },
+    {
+      "source": "original/music/winmusic.mp3",
+      "destination": "games/plants-vs-zombies/game/music/winmusic.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/winmusic.mp3",
+      "bytes": 107232,
+      "sha256": "669fa6a30327a1645de792d84e8cd5594663270bcd01375d188e97bed12b3115"
+    },
+    {
+      "source": "original/music/zengarden.mp3",
+      "destination": "games/plants-vs-zombies/game/music/zengarden.mp3",
+      "url": "https://s4.4399.com/4399swf/upload_swf/ftp/20090929/1/music/zengarden.mp3",
+      "bytes": 1439739,
+      "sha256": "e7f99774d86df4562434ea08f79afe781dbc6c6236950e2b35166305270ea5f2"
+    },
+    {
+      "source": "original/cover.jpg",
+      "destination": "assets/covers/plants-vs-zombies.jpg",
+      "url": "https://imga999.4399.com/upload_pic/2010/3/31/4399_1659458103.jpg",
+      "bytes": 28901,
+      "sha256": "98a89567655f0995fed9513460872165d9cd49febb0266ee3385cb9a6719d772"
+    },
+    {
+      "source": "tools/ruffle/package/172de42e6619eac8f371.wasm",
+      "destination": "games/plants-vs-zombies/game/ruffle/172de42e6619eac8f371.wasm",
+      "bytes": 14302754,
+      "sha256": "1ed33b9b71a6b01b9aafafed660be343ffeb2d246c5d79e6425a32bf93e38207"
+    },
+    {
+      "source": "tools/ruffle/package/878d548199cddef07035.wasm",
+      "destination": "games/plants-vs-zombies/game/ruffle/878d548199cddef07035.wasm",
+      "bytes": 14227884,
+      "sha256": "af9b6a13a8f5e8d305bc3ce28a4edf3f6242df1183e8576ad4ca086e9f21eaea"
+    },
+    {
+      "source": "tools/ruffle/package/LICENSE_APACHE",
+      "destination": "games/plants-vs-zombies/game/ruffle/LICENSE_APACHE",
+      "bytes": 9723,
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+    },
+    {
+      "source": "tools/ruffle/package/LICENSE_MIT",
+      "destination": "games/plants-vs-zombies/game/ruffle/LICENSE_MIT",
+      "bytes": 1097,
+      "sha256": "4de9338a7879c68e911742a7d691f0797ff1ef8d8a6fb978b0c711e258fe959c"
+    },
+    {
+      "source": "tools/ruffle/package/core.ruffle.16d61072ac7fdc4d5013.js",
+      "destination": "games/plants-vs-zombies/game/ruffle/core.ruffle.16d61072ac7fdc4d5013.js",
+      "bytes": 108322,
+      "sha256": "d27c6bdce2a34afb32e8dfa40970bc7e86cbcb912f92db7eb3e1ac70e943bd82"
+    },
+    {
+      "source": "tools/ruffle/package/core.ruffle.994eeef0a471a88cd0e3.js",
+      "destination": "games/plants-vs-zombies/game/ruffle/core.ruffle.994eeef0a471a88cd0e3.js",
+      "bytes": 114743,
+      "sha256": "d89e507ee60d550629e9229aa1e4dd4f9e75ec7db271e0135cbc87dab042ea51"
+    },
+    {
+      "source": "tools/ruffle/package/ruffle.js",
+      "destination": "games/plants-vs-zombies/game/ruffle/ruffle.js",
+      "bytes": 465885,
+      "sha256": "26036a94567088dfb3de88a759e8ed10a4cea07b29500af36f345eef42420098"
+    }
+  ],
+  "evidence_ids": [
+    "ev_82984b67da0cdb3e5d5d3331ac55e54efa554fe0748f304a1e7bc5406ed4210b",
+    "ev_f47cde781a2eb297349a4ec01f8a0839b5542b80eb772652845b0b71e5f52599"
+  ],
+  "unknown": [
+    "Complete original Flex/AS3 project",
+    "All levels and modes runtime coverage"
+  ]
+}

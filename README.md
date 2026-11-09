@@ -1,6 +1,6 @@
 # 小游戏乐园
 
-中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」「化妆解压」「吃苹果的蛇」「缠绕的绳子」，以及本地版「80亿分之1」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
+中英双语小游戏主页，包含「小鳄鱼爱洗澡」「割绳子」「窄道停车」「化妆解压」「吃苹果的蛇」「缠绕的绳子」「植物大战僵尸」，以及本地版「80亿分之1」。使用公开仓库和 GitHub Pages 免费发布，无需 GitHub Pro、付款方式或后端服务。
 
 在线游玩：<https://zhouhong1217.github.io/mini-games/>
 
@@ -117,6 +117,20 @@ PLAYWRIGHT_MODULE=/Users/a/.npm/_npx/af752b90495482d7/node_modules/playwright-co
 ```
 
 设置 `PAGES_URL=https://zhouhong1217.github.io/mini-games/` 验证线上版本。截图和报告保存在 `.verification/rope-local/` 或 `.verification/rope-live/`。实体手机与其他浏览器未验收。
+
+## 植物大战僵尸
+
+在线入口：<https://zhouhong1217.github.io/mini-games/games/plants-vs-zombies/>。恢复自 4399 的 PopCap Flash 0.9 演示版，原版美术和塔防逻辑通过本地 Ruffle 运行。点击「开始游戏」，再选择游戏内 `CLICK TO START` 与 `START ADVENTURE`；点击植物卡片后在草地种植，点击阳光收集资源。
+
+外壳支持中英文、全屏、失败重试及返回首页，游戏内保留原版英文。首次加载约 29 MB。原 MSN SDK 实现与购买跳转已清理，保留独立平台适配接口供以后接入新供应商。关卡进度及声音偏好存于当前浏览器，刷新会重新开始当前关卡；本地与线上存档分别保存。
+
+启动严格子路径预览：
+
+```sh
+node scripts/serve-local.mjs --port 8793 --mount /mini-games/
+```
+
+访问 <http://127.0.0.1:8793/mini-games/games/plants-vs-zombies/>。重建、验收与已知边界见 [恢复工具](tools/plants-vs-zombies/README.md) 和 [恢复记录](provenance/plants-vs-zombies.md)。本构建是 Flash 演示版；未逐一验收其全部关卡和模式。
 
 ## 第一次发布
 

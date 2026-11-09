@@ -161,5 +161,30 @@
         ]
       }
     }
+  },
+  {
+    "id": "plants-vs-zombies",
+    "title": "植物大战僵尸",
+    "subtitle": "PLANTS VS. ZOMBIES",
+    "description": "收集阳光，种下豌豆射手和向日葵。建立植物防线，守住你的小院。",
+    "href": "games/plants-vs-zombies/",
+    "cover": "assets/covers/plants-vs-zombies.jpg",
+    "coverAlt": "植物大战僵尸：向日葵、豌豆射手与来袭的僵尸",
+    "tags": [
+      "策略塔防",
+      "鼠标 / 触屏"
+    ],
+    "translations": {
+      "en": {
+        "title": "Plants vs. Zombies",
+        "subtitle": "PLANTS VS. ZOMBIES",
+        "description": "Gather sunshine, plant peashooters and sunflowers, and build a leafy defense to protect your garden.",
+        "coverAlt": "Plants vs. Zombies with a sunflower, peashooter, and approaching zombies",
+        "tags": [
+          "Tower defense",
+          "Mouse / touch"
+        ]
+      }
+    }
   }
 ]
