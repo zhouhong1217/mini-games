@@ -1,0 +1,34 @@
+{
+  "result": "fail",
+  "home": "http://127.0.0.1:49306/mini-games/",
+  "scenarios": [
+    {
+      "name": "reproduction",
+      "measurements": [
+        {
+          "label": "initial",
+          "dpr": 2,
+          "viewport": {
+            "width": 484,
+            "height": 860
+          },
+          "css": {
+            "width": 968,
+            "height": 1720,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 968,
+            "height": 1720
+          },
+          "engineRatio": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "failed_responses": [],
+  "external_requests": [],
+  "error": "AssertionError [ERR_ASSERTION]: initial: CSS width 968 != viewport 484\n    at check (file:///Users/a/Documents/REA/output/mini-games-pages/scripts/verify-relaxation-display.mjs:27:9)\n    at async file:///Users/a/Documents/REA/output/mini-games-pages/scripts/verify-relaxation-display.mjs:53:3"
+}

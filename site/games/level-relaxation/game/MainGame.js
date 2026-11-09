@@ -17115,8 +17115,8 @@ var dInterface = (function () {
                 this.m_pixelRatio = window.devicePixelRatio;
                 this.m_mainCanvas = window.canvas || document.createElement("canvas");
                 document.body.appendChild(this.m_mainCanvas);
-                this.m_mainCanvas.style.width = String(window.innerWidth);
-                this.m_mainCanvas.style.height = String(window.innerHeight);
+                this.m_mainCanvas.style.width = window.innerWidth + "px";
+                this.m_mainCanvas.style.height = window.innerHeight + "px";
                 this.m_mainCanvas.style.position = "absolute";
                 this.m_mainCanvas.width = window.innerWidth * window.devicePixelRatio;
                 this.m_mainCanvas.height = window.innerHeight * window.devicePixelRatio;
@@ -17337,11 +17337,12 @@ var dInterface = (function () {
             return;
         if (this.m_mainCanvas) {
             ;
-            if (this.m_nLastInnerWidth != window.innerWidth || this.m_nLastInnerHeight != window.innerHeight) {
+            if (this.m_nLastInnerWidth != window.innerWidth || this.m_nLastInnerHeight != window.innerHeight || this.m_pixelRatio !== window.devicePixelRatio) {
+                this.m_pixelRatio = window.devicePixelRatio;
                 this.m_nLastInnerWidth = window.innerWidth;
                 this.m_nLastInnerHeight = window.innerHeight;
-                this.m_mainCanvas.style.width = String(window.innerWidth);
-                this.m_mainCanvas.style.height = String(window.innerHeight);
+                this.m_mainCanvas.style.width = window.innerWidth + "px";
+                this.m_mainCanvas.style.height = window.innerHeight + "px";
                 this.m_mainCanvas.width = window.innerWidth * this.m_pixelRatio;
                 this.m_mainCanvas.height = window.innerHeight * this.m_pixelRatio;
             }

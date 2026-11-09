@@ -17,6 +17,12 @@ const unavailableImages=[
  {path:'level/202.png',context:'Level2._dscData invisible Check target; keep dimensions and hit coordinates',before:'"className": "Check", "classType": "dImage", "height": 783, "resourceFileName": "level/202.png", "visible": 0, "width": 646',after:'"className": "Check", "classType": "dImage", "height": 783, "resourceFileName": "", "visible": 0, "width": 646'},
  {path:'level/38.png',context:'Level42.GetHintImageName optional missing illustration; keep text hint',before:'Level42.prototype.GetHintImageName = function () {\n        return "level/38.png";\n    };',after:'Level42.prototype.GetHintImageName = function () {\n        return "";\n    };'}
 ];
+// CSS 显示尺寸使用逻辑像素；画布缓冲区仍保留 DPR 对应的清晰度。
+const canvasSizingPatches=[
+ {context:'Canvas CSS width at initialization and resize',before:'this.m_mainCanvas.style.width = String(window.innerWidth);',after:'this.m_mainCanvas.style.width = window.innerWidth + "px";',expected_occurrences:2},
+ {context:'Canvas CSS height at initialization and resize',before:'this.m_mainCanvas.style.height = String(window.innerHeight);',after:'this.m_mainCanvas.style.height = window.innerHeight + "px";',expected_occurrences:2},
+ {context:'Refresh backing buffer when devicePixelRatio changes without a viewport resize',before:'if (this.m_nLastInnerWidth != window.innerWidth || this.m_nLastInnerHeight != window.innerHeight) {',after:'if (this.m_nLastInnerWidth != window.innerWidth || this.m_nLastInnerHeight != window.innerHeight || this.m_pixelRatio !== window.devicePixelRatio) {\n                this.m_pixelRatio = window.devicePixelRatio;',expected_occurrences:1}
+];
 for(const item of unavailableImages)if(!manifest.unavailable?.some(r=>r.path===item.path&&r.status===404))throw new Error('Missing upstream404 evidence: '+item.path);
 const replacementMethods={
  RequestHttp:'function(url,callback){if(callback)callback(null,0);return false;}',
@@ -149,6 +155,11 @@ function specialize(text){
   if(occurrences!==1)throw new Error('Unexpected unavailable-image context/count: '+item.path+' '+occurrences);
   result=result.replace(item.before,item.after);
  }
+ for(const item of canvasSizingPatches){
+  const occurrences=result.split(item.before).length-1;
+  if(occurrences!==item.expected_occurrences)throw new Error('Unexpected canvas sizing context/count: '+item.context+' '+occurrences);
+  result=result.replaceAll(item.before,item.after);
+ }
  // 游戏只能使用本地资源；不能由发布包重新注入平台实现。
  const forbidden=/androidJSApis|window\.wx\b|window\.webkit\b|h5api|adid_|createRewardedVideoAd|createInterstitialAd|navigateToMiniProgram|@uploadsave|@playingtime|@crash|s_httpUrl|api\.request|api\.getSystemInfoSync|api\.loadSubpackage|api\.getStorage|https?:\/\//;
  if(forbidden.test(result))throw new Error('Platform/server implementation remains near '+result.slice(Math.max(0,result.search(forbidden)-120),result.search(forbidden)+180));
@@ -200,7 +211,8 @@ for(const path of ['index.html','platform-adapter.js','local-runtime.js']){
 await writeFile(fileURLToPath(new URL('../provenance/level-relaxation.json',import.meta.url)),JSON.stringify({
  source_page:'https://www.4399.com/flash/251997.htm',source_entry:manifest.entry,engine:'Custom dThread/dInterface WebGL engine',
  acquisition_manifest_sha256:sha256(manifestBytes),source_identity:{'MainGame.js':pin},
- changes:['Remove original platform HTML, base.xml, h5api loader and platform-index.js from publication.','Remove original MyAd and MoreGamePanel implementations; retain game-facing ad entrypoints through independent adapter.','Specialize engine platform branches for browser web/local at build time and replace platform/server boundaries.','Load original same-origin .dat packs, namespace local storage and report actual LoginPage readiness.', 'Remove three exact-context references to upstream404 optional images; preserve hit geometry, text hints and popup controls. Render the three MessageBoxPanel text nodes with the original dLabel system-font renderer because the shipped bitmap font lacks glyphs in 金币不足 and 确定.'],
+ changes:['Remove original platform HTML, base.xml, h5api loader and platform-index.js from publication.','Remove original MyAd and MoreGamePanel implementations; retain game-facing ad entrypoints through independent adapter.','Specialize engine platform branches for browser web/local at build time and replace platform/server boundaries.','Load original same-origin .dat packs, namespace local storage and report actual LoginPage readiness.', 'Remove three exact-context references to upstream404 optional images; preserve hit geometry, text hints and popup controls. Render the three MessageBoxPanel text nodes with the original dLabel system-font renderer because the shipped bitmap font lacks glyphs in 金币不足 and 确定.','Set canvas CSS dimensions in px at initialization and resize; update backing-buffer density when devicePixelRatio changes.'],
+ canvas_sizing:canvasSizingPatches.map(({context,expected_occurrences})=>({context,expected_occurrences})),
  specialization:changes,message_box_text:{context:'MessageBoxPanel._dscData',from:'dBitmapFont',to:'dLabel',expected_occurrences:3,reason:'Shipped bitmap font lacks Chinese glyphs for popup content and OK label'},unavailable_images:unavailableImages.map(({path,context})=>({path,context,upstream_status:404,replacement:'empty image reference; retain control geometry/text',expected_occurrences:1})),resource_pack_inventory:packs,ad_callbacks:'Default reward: PauseAllSound; after 100ms, clear showing state, ResumeAllSound, ClearMouseHook; dInterface callback(interface) once and MyAd callback() once. Optional provider receives placement lifecycle only in platform-adapter.js.',
  unknowns:['The original images data/title.png, level/202.png and level/38.png are Unknown: exact upstream URLs returned404. Their optional image references are omitted; text and geometry remain.', 'Complete equivalence of all levels and late progression is Unknown until runtime coverage is expanded.','The four binary resource packs remain byte-identical; unused artwork or opaque embedded dependency absence is Unknown.'],files,custom_files:custom
 },null,2)+'\n');

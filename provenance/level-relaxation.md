@@ -25,6 +25,8 @@
 
 原站本身缺失 `data/title.png`、`level/202.png`、`level/38.png`（确切 URL 均返回 404）。恢复版仅清空这些确证失效的图片引用：保留不可见 Check 控件的几何、弹窗文字和提示文字；不制作替代原图。原图外观为 `Unknown`。该提示弹窗的三个文字节点改用原引擎 `dLabel` 系统字体，以显示原 bitmap font 缺失的“足/定”等字，保留原文字与点击交互。确切替换上下文、次数、采集结果和文件哈希在构建脚本与 JSON 中记录。
 
+画布初始化及 resize 分支的 CSS 宽高补充 `px` 单位；原值为无单位的非零字符串，在 DPR > 1 时被浏览器忽略，使 CSS 显示尺寸回退到物理像素缓冲区，导致画面放大、裁切。窗口尺寸不变但 `devicePixelRatio` 改变时也更新缓冲区及引擎密度，保持显示尺寸与输入坐标一致。这些修改纳入构建脚本，并校验原始替换上下文与次数。
+
 四包保持原字节；构建检查 DGFP 结构和完整成员类型，仅包含 png/jpg/mp3/JSON/atlas。103 个 JSON/atlas 文本成员未发现远程 URL 或广告 SDK 引用。图片及音频内是否包含未使用的品牌或其他不可见元数据为 `Unknown`。
 
 ## 重建与验收
@@ -35,6 +37,7 @@
 npm ci --prefix tools/1in8b
 node scripts/build-relaxation.mjs ../4399_251997_2026-11-09
 PLAYWRIGHT_MODULE=/path/to/playwright-core/index.mjs node scripts/verify-relaxation.mjs
+PLAYWRIGHT_MODULE=/path/to/playwright-core/index.mjs node scripts/verify-relaxation-display.mjs
 PLAYWRIGHT_MODULE=/path/to/playwright-core/index.mjs node scripts/verify-pages.mjs
 PLAYWRIGHT_MODULE=/path/to/playwright-core/index.mjs node scripts/verify-i18n.mjs
 ```
@@ -44,3 +47,12 @@ PLAYWRIGHT_MODULE=/path/to/playwright-core/index.mjs node scripts/verify-i18n.mj
 `verify-relaxation.mjs` 阻断外站请求，以真实点击完成风扇关、以真实拖动和旋转完成挂画关、以真实拖动完成套娃关，并验证进度重载、存档隔离、提示奖励、广告 callback 参数及单次执行、provider 拒绝和失败、中英文切换不中断、移动触屏通关。详细输出位于 `.verification/relaxation-local/` 或 `.verification/relaxation-live/`；精选证据见 [local-verification.json](level-relaxation/local-verification.json)、[shell-verification.json](level-relaxation/shell-verification.json) 及同目录截图。
 
 [最终本地验收](level-relaxation/local-verification.json) 通过，零外站请求、零脚本错误、零资源 404。[全部关卡加载记录](level-relaxation/all-levels-smoke.json) 以程序化选关加载并渲染 90/90 关，零异常、零外站请求及零资源 404；这仅证明加载覆盖，不代表逐关完成。完整游戏等价性、后期全部交互路线及实体设备表现为 `Unknown`。
+
+
+## 高 DPI 适配修复验收
+
+修复前在 DPR 2 下复现：iframe 视口为 484×860 CSS px，canvas 显示为 968×1720，右侧和底部被裁切；零脚本错误或资源失败，因此原有仅 DPR 1 的玩法验收未发现问题。复现数据与截图见 [display-before.json](level-relaxation/display-before.json)、[display-before.png](level-relaxation/display-before.png)。
+
+`verify-relaxation-display.mjs` 覆盖桌面初始 DPR 1/2、移动触屏模拟 DPR 3、窗口 resize、进入/退出全屏，以及保持窗口大小不变时 DPR 1→2 与 2→1.5。14 次测量中 canvas 显示尺寸均与 iframe 视口一致，缓冲区尺寸随 DPR 更新；每个场景使用真实鼠标或模拟触屏通关第一关，游戏实例未被重建，零外站请求、零脚本错误、零资源失败。见 [display-local.json](level-relaxation/display-local.json)、[桌面 DPR 2 截图](level-relaxation/display-desktop-2x.png)、[移动 DPR 3 截图](level-relaxation/display-mobile-3x.png)。这些是 Chrome 模拟结果，实体设备与其他浏览器表现仍为 `Unknown`。
+
+原有 `verify-relaxation.mjs` 的桌面及移动场景分别固定为 DPR 2、DPR 3，避免之后再次只验证默认 DPR 1。修复后重跑通过：前三关点击、拖动、旋转，本地存档重载，提示奖励及广告回调，中英文切换，移动触屏通关均正常；零脚本/console 错误、零外站请求、零资源失败，见 [high-dpi-gameplay.json](level-relaxation/high-dpi-gameplay.json)。

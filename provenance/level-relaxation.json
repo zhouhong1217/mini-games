@@ -11,7 +11,22 @@
     "Remove original MyAd and MoreGamePanel implementations; retain game-facing ad entrypoints through independent adapter.",
     "Specialize engine platform branches for browser web/local at build time and replace platform/server boundaries.",
     "Load original same-origin .dat packs, namespace local storage and report actual LoginPage readiness.",
-    "Remove three exact-context references to upstream404 optional images; preserve hit geometry, text hints and popup controls. Render the three MessageBoxPanel text nodes with the original dLabel system-font renderer because the shipped bitmap font lacks glyphs in 金币不足 and 确定."
+    "Remove three exact-context references to upstream404 optional images; preserve hit geometry, text hints and popup controls. Render the three MessageBoxPanel text nodes with the original dLabel system-font renderer because the shipped bitmap font lacks glyphs in 金币不足 and 确定.",
+    "Set canvas CSS dimensions in px at initialization and resize; update backing-buffer density when devicePixelRatio changes."
+  ],
+  "canvas_sizing": [
+    {
+      "context": "Canvas CSS width at initialization and resize",
+      "expected_occurrences": 2
+    },
+    {
+      "context": "Canvas CSS height at initialization and resize",
+      "expected_occurrences": 2
+    },
+    {
+      "context": "Refresh backing buffer when devicePixelRatio changes without a viewport resize",
+      "expected_occurrences": 1
+    }
   ],
   "specialization": {
     "branches": 27,
@@ -220,8 +235,8 @@
     {
       "path": "MainGame.js",
       "original_sha256": "a3e7b4d54add8964055ded38ee2542bd045028ef554219c98ea67eafa6e7fa3a",
-      "local_sha256": "5589fa25a06a19fcdde95a1aa21cf841014f6d6d7372abd89108841d24163d48",
-      "bytes": 2740302
+      "local_sha256": "b2413958c02b49b1994587afe93e3e7ad521bff83204db9f1e9578a03e1548a9",
+      "bytes": 2740408
     },
     {
       "path": "loading/tangpingyazi.atlas",

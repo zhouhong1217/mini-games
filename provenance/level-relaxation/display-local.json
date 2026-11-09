@@ -1,0 +1,296 @@
+{
+  "result": "pass",
+  "home": "http://127.0.0.1:50309/mini-games/",
+  "scenarios": [
+    {
+      "name": "desktop-1x",
+      "measurements": [
+        {
+          "label": "initial",
+          "dpr": 1,
+          "viewport": {
+            "width": 484,
+            "height": 860
+          },
+          "css": {
+            "width": 484,
+            "height": 860,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 484,
+            "height": 860
+          },
+          "engineRatio": 1
+        },
+        {
+          "label": "resize",
+          "dpr": 1,
+          "viewport": {
+            "width": 315,
+            "height": 560
+          },
+          "css": {
+            "width": 315,
+            "height": 560,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 315,
+            "height": 560
+          },
+          "engineRatio": 1
+        },
+        {
+          "label": "fullscreen",
+          "dpr": 1,
+          "viewport": {
+            "width": 394,
+            "height": 700
+          },
+          "css": {
+            "width": 394,
+            "height": 700,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 394,
+            "height": 700
+          },
+          "engineRatio": 1
+        },
+        {
+          "label": "exit-fullscreen",
+          "dpr": 1,
+          "viewport": {
+            "width": 315,
+            "height": 560
+          },
+          "css": {
+            "width": 315,
+            "height": 560,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 315,
+            "height": 560
+          },
+          "engineRatio": 1
+        },
+        {
+          "label": "density-change",
+          "dpr": 2,
+          "viewport": {
+            "width": 315,
+            "height": 560
+          },
+          "css": {
+            "width": 315,
+            "height": 560,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 630,
+            "height": 1120
+          },
+          "engineRatio": 2
+        },
+        {
+          "label": "playing",
+          "dpr": 2,
+          "viewport": {
+            "width": 315,
+            "height": 560
+          },
+          "css": {
+            "width": 315,
+            "height": 560,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 630,
+            "height": 1120
+          },
+          "engineRatio": 2
+        }
+      ],
+      "kept_game_instance": true,
+      "real_input_cleared_level": true
+    },
+    {
+      "name": "desktop-2x",
+      "measurements": [
+        {
+          "label": "initial",
+          "dpr": 2,
+          "viewport": {
+            "width": 484,
+            "height": 860
+          },
+          "css": {
+            "width": 484,
+            "height": 860,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 968,
+            "height": 1720
+          },
+          "engineRatio": 2
+        },
+        {
+          "label": "resize",
+          "dpr": 2,
+          "viewport": {
+            "width": 315,
+            "height": 560
+          },
+          "css": {
+            "width": 315,
+            "height": 560,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 630,
+            "height": 1120
+          },
+          "engineRatio": 2
+        },
+        {
+          "label": "fullscreen",
+          "dpr": 2,
+          "viewport": {
+            "width": 394,
+            "height": 700
+          },
+          "css": {
+            "width": 394,
+            "height": 700,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 788,
+            "height": 1400
+          },
+          "engineRatio": 2
+        },
+        {
+          "label": "exit-fullscreen",
+          "dpr": 2,
+          "viewport": {
+            "width": 315,
+            "height": 560
+          },
+          "css": {
+            "width": 315,
+            "height": 560,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 630,
+            "height": 1120
+          },
+          "engineRatio": 2
+        },
+        {
+          "label": "density-change",
+          "dpr": 1.5,
+          "viewport": {
+            "width": 315,
+            "height": 560
+          },
+          "css": {
+            "width": 315,
+            "height": 560,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 472,
+            "height": 840
+          },
+          "engineRatio": 1.5
+        },
+        {
+          "label": "playing",
+          "dpr": 1.5,
+          "viewport": {
+            "width": 315,
+            "height": 560
+          },
+          "css": {
+            "width": 315,
+            "height": 560,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 472,
+            "height": 840
+          },
+          "engineRatio": 1.5
+        }
+      ],
+      "kept_game_instance": true,
+      "real_input_cleared_level": true
+    },
+    {
+      "name": "mobile-3x",
+      "measurements": [
+        {
+          "label": "initial",
+          "dpr": 3,
+          "viewport": {
+            "width": 356,
+            "height": 633
+          },
+          "css": {
+            "width": 356,
+            "height": 633,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 1068,
+            "height": 1899
+          },
+          "engineRatio": 3
+        },
+        {
+          "label": "playing",
+          "dpr": 3,
+          "viewport": {
+            "width": 356,
+            "height": 633
+          },
+          "css": {
+            "width": 356,
+            "height": 633,
+            "x": 0,
+            "y": 0
+          },
+          "buffer": {
+            "width": 1068,
+            "height": 1899
+          },
+          "engineRatio": 3
+        }
+      ],
+      "kept_game_instance": true,
+      "real_input_cleared_level": true
+    }
+  ],
+  "errors": [],
+  "failed_responses": [],
+  "external_requests": []
+}
