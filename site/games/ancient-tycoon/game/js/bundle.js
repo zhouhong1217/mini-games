@@ -51448,15 +51448,15 @@ getExchange(code,success,fail){if(fail)fail("本地版不提供远程兑换")}
             GameEvent.off(GameEV.reprimandStaff, this, this._staffback);
             Laya.Tween.clearAll(this.tweenObj);
         }
-        loadCharacterModel() {
-            return __awaiter(this, void 0, void 0, function* () {
-                let model = yield ResourceManager.instance.loadPrefabs(this.modelName[this._config.workermodelid]);
-                this.root.addChild(model);
-                this.model = model;
-                this.characterAnimationController = this.model.addComponent(CharacterAnimationController);
-                this.upMover = this.model.addChild(new Laya.Sprite3D("upMover"));
-                this.upMover.transform.localPosition = new Laya.Vector3(0, 2, 1);
-            });
+        loadCharacterModel() {return __awaiter(this,void 0,void 0,function*(){
+ this.upMover=this.root.addChild(new Laya.Sprite3D("upMover"));
+ this.upMover.transform.localPosition=new Laya.Vector3(0,2,1);
+ const model=yield ResourceManager.instance.loadPrefabs(this.modelName[this._config.workermodelid]);
+ if(!this.root||this.root.destroyed){if(model)model.destroy();return;}
+ this.root.addChild(model);this.model=model;
+ this.characterAnimationController=this.model.addComponent(CharacterAnimationController);
+ this.model.addChild(this.upMover);
+});
         }
         refreshAni() {
             if (this.state == staffState.kneel)

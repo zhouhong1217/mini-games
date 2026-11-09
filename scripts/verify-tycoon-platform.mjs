@@ -129,7 +129,7 @@ await test('late-game local opponent callback supplies the requested number of l
   for(const npc of npcs){assert.match(npc.nickname,/^本地对手 \d+$/);assert.ok(images.has(npc.avatar),'NPC avatar absent from atlas inventory: '+npc.avatar)}
 });
 
-await test('corrupt input manifest fails before changing the existing published game',async()=>{
+for(const mode of ['corrupt manifest','missing required prefab'])await test(mode+' fails before changing the existing published game',async()=>{
   const tracked=['js/bundle.js','index.html','platform-adapter.js','local-runtime.js'];
   const before=new Map(await Promise.all(tracked.map(async name=>[name,sha(await readFile(resolve(published,name)))])));
   const beforeChildren=(await readdir(published)).sort();
@@ -138,14 +138,22 @@ await test('corrupt input manifest fails before changing the existing published 
     await symlink(resolve(source,'original'),resolve(scratch,'original'),'dir');
     await mkdir(resolve(scratch,'tools'));
     const manifest=JSON.parse(await readFile(resolve(source,'tools/acquisition-manifest.json'),'utf8'));
-    const excluded=new Set(['index.html','gameIndex.html','base.xml','index.js','js/LWGSDK.js','js/bundle.js']);
-    const broken=manifest.files.findLast(record=>!excluded.has(record.path));
-    assert.ok(broken,'Need at least one copied asset to test manifest validation');
-    broken.sha256=broken.sha256==='0'.repeat(64)?'1'.repeat(64):'0'.repeat(64);
+    let expected;
+    if(mode==='missing required prefab'){
+      assert.ok(manifest.files.some(x=>x.path==='prefab/productionDialog.json'));
+      manifest.files=manifest.files.filter(x=>x.path!=='prefab/productionDialog.json');
+      expected='Required UI prefab missing: productionDialog';
+    }else{
+      const excluded=new Set(['index.html','gameIndex.html','base.xml','index.js','js/LWGSDK.js','js/bundle.js']);
+      const broken=manifest.files.findLast(record=>!excluded.has(record.path));
+      assert.ok(broken,'Need at least one copied asset to test manifest validation');
+      broken.sha256=broken.sha256==='0'.repeat(64)?'1'.repeat(64):'0'.repeat(64);
+      expected='Acquisition manifest mismatch: '+broken.path;
+    }
     await writeFile(resolve(scratch,'tools/acquisition-manifest.json'),JSON.stringify(manifest));
     const result=spawnSync(process.execPath,[resolve(project,'scripts/build-tycoon.mjs'),scratch],{cwd:project,encoding:'utf8',timeout:30000,maxBuffer:1024*1024});
     assert.ifError(result.error);assert.equal(result.status,1,'Corrupt manifest must prevent a successful build');
-    assert.ok(result.stderr.includes('Acquisition manifest mismatch: '+broken.path),result.stderr);
+    assert.ok(result.stderr.includes(expected),result.stderr);
     for(const [name,digest] of before)assert.equal(sha(await readFile(resolve(published,name))),digest,'Failed build changed '+name);
     assert.deepEqual((await readdir(published)).sort(),beforeChildren,'Failed build changed publication entries');
   }finally{await rm(scratch,{recursive:true,force:true})}

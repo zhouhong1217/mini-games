@@ -2,8 +2,8 @@
   "source_page": "https://www.4399.com/flash/245857.htm",
   "source_entry": "https://sda.4399.com/4399swf/upload_swf/ftp49/huangcijin/20241223/08/gameIndex.html",
   "bundle_source_sha256": "21b9e82ccc719fce6b8b609f28ab74973c2ba4f11bfedc72bbfdacf18fbfda77",
-  "acquisition_manifest_sha256": "04eb3e9c9a2f064912faa9d03d838928ca83ec5e061ebceb26a459129187eb46",
-  "acquired_files": 3057,
+  "acquisition_manifest_sha256": "da8eba375ed450f1cfef67c170070d296759c472374ac8db947a0316b37cde6c",
+  "acquired_files": 3061,
   "support_files": [
     {
       "path": "index.html",
@@ -155,6 +155,11 @@
       "start": 1541406,
       "end": 1541534,
       "reason": "mainGameUI$1._openFeedback"
+    },
+    {
+      "start": 2232406,
+      "end": 2232974,
+      "reason": "StaffController.loadCharacterModel"
     },
     {
       "start": 3496823,
@@ -8351,9 +8356,9 @@
     },
     {
       "path": "js/bundle.js",
-      "bytes": 3473172,
+      "bytes": 3473137,
       "source_sha256": "21b9e82ccc719fce6b8b609f28ab74973c2ba4f11bfedc72bbfdacf18fbfda77",
-      "local_sha256": "bb972d65b198cf1b9155e51e0baae4521c659d8838de2372df746dcd322936b3"
+      "local_sha256": "2690c3f00b036055d5c6dc3f638f308a7aefb05e365394e84db6c109411cacc5"
     },
     {
       "path": "js/regenerator-runtime.js",
@@ -8494,6 +8499,12 @@
       "local_sha256": "076ba5ac93ac8f21d7a8c43686d6422ac63c26ae3a934a9f7721aa363bfa2000"
     },
     {
+      "path": "prefab/doctorTalk.json",
+      "bytes": 1627,
+      "source_sha256": "c6246d29ff7dd318fd8de89051479a24418b6002d944d9eebf51f65441830b61",
+      "local_sha256": "c6246d29ff7dd318fd8de89051479a24418b6002d944d9eebf51f65441830b61"
+    },
+    {
       "path": "prefab/imageTip.json",
       "bytes": 1174,
       "source_sha256": "a67dde8c34f388cf621e415b2b23c149bcff7a1bc611730e43e3b6b2fbff27fb",
@@ -8504,6 +8515,18 @@
       "bytes": 809,
       "source_sha256": "fc8bb5c4c335a361b4320dfbaf608abe5e19bcdf35aa41a0d4f322794ef03852",
       "local_sha256": "fc8bb5c4c335a361b4320dfbaf608abe5e19bcdf35aa41a0d4f322794ef03852"
+    },
+    {
+      "path": "prefab/patientTalk.json",
+      "bytes": 1608,
+      "source_sha256": "61ff15075f8eb0bc21569e3db29529fc0eaf3f1bc99662543e38e61edd95b80f",
+      "local_sha256": "61ff15075f8eb0bc21569e3db29529fc0eaf3f1bc99662543e38e61edd95b80f"
+    },
+    {
+      "path": "prefab/productionDialog.json",
+      "bytes": 652,
+      "source_sha256": "cca3b3e31ef1cd490958258c59374317f6638ea21ed1faf953aa25900a4b407e",
+      "local_sha256": "cca3b3e31ef1cd490958258c59374317f6638ea21ed1faf953aa25900a4b407e"
     },
     {
       "path": "prefab/red_bottom_ed.json",
@@ -8546,6 +8569,12 @@
       "bytes": 412,
       "source_sha256": "1f0f120adbe1427b4e14919d13a770333f8ca121c39a1cc7ff6ec1300a4ad13b",
       "local_sha256": "1f0f120adbe1427b4e14919d13a770333f8ca121c39a1cc7ff6ec1300a4ad13b"
+    },
+    {
+      "path": "prefab/unlockDialog.json",
+      "bytes": 1438,
+      "source_sha256": "ef0f3b595581afd6853460cf9bbe6ad173fd8154ff372c3e81f389dc293566b8",
+      "local_sha256": "ef0f3b595581afd6853460cf9bbe6ad173fd8154ff372c3e81f389dc293566b8"
     },
     {
       "path": "prefab/wordItem.json",

@@ -2,7 +2,7 @@
 
 原始页面：<https://www.4399.com/flash/245857.htm>。实际游戏入口：<https://sda.4399.com/4399swf/upload_swf/ftp49/huangcijin/20241223/08/gameIndex.html>。
 
-原包保留在本机 `/Users/a/Documents/REA/output/4399_245857_2026-11-09/original/`，不进入 Pages。采集清单包含 3057 个文件、66,515,502 bytes，各文件均记录实际 URL、字节数、SHA-256 和引用来源。原 `js/bundle.js` SHA-256 为 `21b9e82ccc719fce6b8b609f28ab74973c2ba4f11bfedc72bbfdacf18fbfda77`。发布文件的原始及本地哈希、采集清单哈希与适配层哈希见 `ancient-tycoon.json`。
+原包保留在本机 `/Users/a/Documents/REA/output/4399_245857_2026-11-09/original/`，不进入 Pages。采集清单包含 3061 个文件、66,520,827 bytes，各文件均记录实际 URL、字节数、SHA-256 和引用来源。原 `js/bundle.js` SHA-256 为 `21b9e82ccc719fce6b8b609f28ab74973c2ba4f11bfedc72bbfdacf18fbfda77`。发布文件的原始及本地哈希、采集清单哈希与适配层哈希见 `ancient-tycoon.json`。
 
 REA 证据保留在本机 `evidence/rea-evidence-bundle.json`：
 
@@ -25,3 +25,9 @@ REA 证据保留在本机 `evidence/rea-evidence-bundle.json`：
 原游戏、封面和素材版权归原权利人所有。本恢复及部署不改变原有授权状态。
 
 线上入口：<https://zhouhong1217.github.io/mini-games/games/ancient-tycoon/>。首个可玩发布提交为 `212753f5e146da0b59bcfc0dd15b1d0bcb697e8f`，[Pages 部署任务](https://github.com/zhouhong1217/mini-games/actions/runs/42599020445)成功。线上重复经营、奖励、刷新存档、中英文切换、全屏、模拟触屏与失败重试验收通过，外部请求尝试、HTTP 错误和页面异常均为 0；核心脚本和适配层与本地发布文件逐字节一致。首页第 12 张卡片已接入，中英文入口和封面加载正常。线上报告保留在本机 `.verification/tycoon-live/`。
+
+2026-11-09 生产界面修复：用户当前 IAB 页面的开发日志记录 `prefab/productionDialog.json` 两次 HTTP 404，随后 `UIMng.createUIPrefab` 在 `res.json` 处抛出异常（初版 `bundle.js:5608`）。补采原站 `productionDialog`、`patientTalk`、`doctorTalk`、`unlockDialog` 四个 JSON，未修改其字节。原包全部 49 处 UI 工厂调用经参数转发审计得到 27 个必需模板，调用证据见 `tools/ancient-tycoon/required-prefabs.json`；构建缺少任一模板时会失败并保留旧副本。
+
+同一浏览器日志还记录 `StaffController.addProduct` 的 `upMover.transform` 异常。原版员工先开始工作、后异步创建模型与携带节点，模型延迟时可以复现。发布补丁把携带节点提前建立，并在模型到达时移动同一个节点，保留已接收的物品；员工已销毁时回收晚到模型。独立时序回归同时验证了原实现可复现和修复后行为。相关修复不改变存档命名空间或原存档结构。
+
+修复回归：27 个模板均由真实 Laya 加载器和原 `UIMng.createUIPrefab` 成功创建，无 404、页面异常或外部请求。完整经营回归以真实鼠标操作从新手开始，再支付 25 铜钱建造奶牛养殖区，确认生产需求 `0/4` 面板出现，刷新后 `milk_1=25` 保留；同时复查奖励、全屏、模拟触屏及失败重试。构建与平台检查新增“缺少 productionDialog 时拒绝构建且不改旧副本”，共 12 项通过。报告分别保留在 `.verification/tycoon-prefabs-local/` 与 `.verification/tycoon-local/`。

@@ -152,6 +152,12 @@
       "reason": "mainGameUI$1._openFeedback"
     },
     {
+      "start": 2232406,
+      "end": 2232974,
+      "replacement": "{return __awaiter(this,void 0,void 0,function*(){\n this.upMover=this.root.addChild(new Laya.Sprite3D(\"upMover\"));\n this.upMover.transform.localPosition=new Laya.Vector3(0,2,1);\n const model=yield ResourceManager.instance.loadPrefabs(this.modelName[this._config.workermodelid]);\n if(!this.root||this.root.destroyed){if(model)model.destroy();return;}\n this.root.addChild(model);this.model=model;\n this.characterAnimationController=this.model.addComponent(CharacterAnimationController);\n this.model.addChild(this.upMover);\n});\n        }",
+      "reason": "StaffController.loadCharacterModel"
+    },
+    {
       "start": 3496823,
       "end": 3496895,
       "replacement": "Laya.stage.scaleMode = \"showall\";",

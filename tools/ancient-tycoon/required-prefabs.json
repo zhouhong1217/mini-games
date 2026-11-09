@@ -1,0 +1,731 @@
+[
+  {
+    "name": "buildDialog",
+    "path": "prefab/buildDialog.json",
+    "sources": [
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 50474,
+        "class": "ProductionController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper ProductionController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 51849,
+        "class": "RackController",
+        "method": "_addDialog",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 51849; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 56392,
+        "class": "kezhanController",
+        "method": "_refreshGuide",
+        "source": "js/bundle.js",
+        "evidence": "wrapper kezhanController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 56671,
+        "class": "kezhanController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper kezhanController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 57359,
+        "class": "springController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper springController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 57385,
+        "class": "springController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper springController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 58011,
+        "class": "FishController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper FishController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 59652,
+        "class": "SusiProductionController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper SusiProductionController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 61434,
+        "class": "ScratchTicketController",
+        "method": "init",
+        "source": "js/bundle.js",
+        "evidence": "wrapper ScratchTicketController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 61492,
+        "class": "ScratchTicketController",
+        "method": "_addDialog",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 61494; default parameter name"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 62781,
+        "class": "MeirongyuanController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper MeirongyuanController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 62808,
+        "class": "MeirongyuanController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper MeirongyuanController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 63478,
+        "class": "ZhengrongyuanController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper ZhengrongyuanController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 63505,
+        "class": "ZhengrongyuanController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper ZhengrongyuanController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 68732,
+        "class": "palaceItemController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper palaceItemController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 73449,
+        "class": "TigerController",
+        "method": "init",
+        "source": "js/bundle.js",
+        "evidence": "wrapper TigerController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/buildDialog.json",
+        "name": "buildDialog",
+        "line": 73506,
+        "class": "TigerController",
+        "method": "_addDialog",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 73508; default parameter name"
+      }
+    ]
+  },
+  {
+    "name": "coinTips",
+    "path": "prefab/coinTips.json",
+    "sources": [
+      {
+        "path": "prefab/coinTips.json",
+        "name": "coinTips",
+        "line": 22651,
+        "class": "guideDialogScene2UI",
+        "method": "checkGuideIndex",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 22651; literal"
+      },
+      {
+        "path": "prefab/coinTips.json",
+        "name": "coinTips",
+        "line": 46264,
+        "class": "CoinController",
+        "method": "_addToTarget",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 46264; literal"
+      },
+      {
+        "path": "prefab/coinTips.json",
+        "name": "coinTips",
+        "line": 46302,
+        "class": "CoinController",
+        "method": "_addToTarget",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 46302; literal"
+      },
+      {
+        "path": "prefab/coinTips.json",
+        "name": "coinTips",
+        "line": 54067,
+        "class": "StatuController",
+        "method": "_addToTarget",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 54067; literal"
+      },
+      {
+        "path": "prefab/coinTips.json",
+        "name": "coinTips",
+        "line": 54335,
+        "class": "WalletItemController",
+        "method": "_addToTarget",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 54335; literal"
+      },
+      {
+        "path": "prefab/coinTips.json",
+        "name": "coinTips",
+        "line": 54629,
+        "class": "YuXiController",
+        "method": "_addToTarget",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 54629; literal"
+      },
+      {
+        "path": "prefab/coinTips.json",
+        "name": "coinTips",
+        "line": 61622,
+        "class": "RankNpcController",
+        "method": "_to_shanggong",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 61622; literal"
+      }
+    ]
+  },
+  {
+    "name": "compose_bg_item",
+    "path": "prefab/compose_bg_item.json",
+    "sources": [
+      {
+        "path": "prefab/compose_bg_item.json",
+        "name": "compose_bg_item",
+        "line": 29571,
+        "class": "composeGame",
+        "method": "_init_layout",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 29571; literal"
+      }
+    ]
+  },
+  {
+    "name": "compose_item",
+    "path": "prefab/compose_item.json",
+    "sources": [
+      {
+        "path": "prefab/compose_item.json",
+        "name": "compose_item",
+        "line": 29565,
+        "class": "composeGame",
+        "method": "_init_layout",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 29565; literal"
+      }
+    ]
+  },
+  {
+    "name": "compose_order_item",
+    "path": "prefab/compose_order_item.json",
+    "sources": [
+      {
+        "path": "prefab/compose_order_item.json",
+        "name": "compose_order_item",
+        "line": 30970,
+        "class": "ComposeOrderDig",
+        "method": "_init_order_list",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 30970; literal"
+      },
+      {
+        "path": "prefab/compose_order_item.json",
+        "name": "compose_order_item",
+        "line": 30993,
+        "class": "ComposeOrderDig",
+        "method": "_init_order_list",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 30993; literal"
+      },
+      {
+        "path": "prefab/compose_order_item.json",
+        "name": "compose_order_item",
+        "line": 31003,
+        "class": "ComposeOrderDig",
+        "method": "_init_order_list",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 31003; literal"
+      }
+    ]
+  },
+  {
+    "name": "compose_order_prop",
+    "path": "prefab/compose_order_prop.json",
+    "sources": [
+      {
+        "path": "prefab/compose_order_prop.json",
+        "name": "compose_order_prop",
+        "line": 30923,
+        "class": "compose_order_item",
+        "method": "_init_prop_list",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 30923; literal"
+      }
+    ]
+  },
+  {
+    "name": "compose_order_tip",
+    "path": "prefab/compose_order_tip.json",
+    "sources": [
+      {
+        "path": "prefab/compose_order_tip.json",
+        "name": "compose_order_tip",
+        "line": 28892,
+        "class": "compose_game_order_tip_ctr",
+        "method": "init",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 28892; literal"
+      }
+    ]
+  },
+  {
+    "name": "compose_order_up_prop",
+    "path": "prefab/compose_order_up_prop.json",
+    "sources": [
+      {
+        "path": "prefab/compose_order_up_prop.json",
+        "name": "compose_order_up_prop",
+        "line": 31120,
+        "class": "composeOrderUpDig",
+        "method": "_initUI",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 31120; literal"
+      }
+    ]
+  },
+  {
+    "name": "customerDialog",
+    "path": "prefab/customerDialog.json",
+    "sources": [
+      {
+        "path": "prefab/customerDialog.json",
+        "name": "customerDialog",
+        "line": 44112,
+        "class": "FarmCustomerController",
+        "method": "init",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 44112; literal"
+      },
+      {
+        "path": "prefab/customerDialog.json",
+        "name": "customerDialog",
+        "line": 47080,
+        "class": "CustomerController",
+        "method": "onAwake",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 47080; literal"
+      }
+    ]
+  },
+  {
+    "name": "doctorTalk",
+    "path": "prefab/doctorTalk.json",
+    "sources": [
+      {
+        "path": "prefab/doctorTalk.json",
+        "name": "doctorTalk",
+        "line": 11466,
+        "class": "DoctorDialogUI",
+        "method": "createTalkPrefab",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 11470; local assignment prefabName; literal"
+      }
+    ]
+  },
+  {
+    "name": "imageTip",
+    "path": "prefab/imageTip.json",
+    "sources": [
+      {
+        "path": "prefab/imageTip.json",
+        "name": "imageTip",
+        "line": 45827,
+        "class": "ThiefCustomerController",
+        "method": "_thieveCustomrGetCoinEvent",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 45827; literal"
+      },
+      {
+        "path": "prefab/imageTip.json",
+        "name": "imageTip",
+        "line": 45990,
+        "class": "ThiefCustomerController",
+        "method": "doEmoji",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 45990; literal"
+      },
+      {
+        "path": "prefab/imageTip.json",
+        "name": "imageTip",
+        "line": 70653,
+        "class": "StaffPalaceController",
+        "method": "doEmoji",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 70653; literal"
+      },
+      {
+        "path": "prefab/imageTip.json",
+        "name": "imageTip",
+        "line": 70973,
+        "class": "StaffZhaodaiPalaceController",
+        "method": "doEmoji",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 70973; literal"
+      }
+    ]
+  },
+  {
+    "name": "off_line_tip_pre",
+    "path": "prefab/off_line_tip_pre.json",
+    "sources": [
+      {
+        "path": "prefab/off_line_tip_pre.json",
+        "name": "off_line_tip_pre",
+        "line": 52384,
+        "class": "OffLineController",
+        "method": "_init_off_line_ai",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 52384; literal"
+      }
+    ]
+  },
+  {
+    "name": "patientTalk",
+    "path": "prefab/patientTalk.json",
+    "sources": [
+      {
+        "path": "prefab/patientTalk.json",
+        "name": "patientTalk",
+        "line": 11464,
+        "class": "DoctorDialogUI",
+        "method": "createTalkPrefab",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 11470; local assignment prefabName; literal"
+      }
+    ]
+  },
+  {
+    "name": "productionDialog",
+    "path": "prefab/productionDialog.json",
+    "sources": [
+      {
+        "path": "prefab/productionDialog.json",
+        "name": "productionDialog",
+        "line": 50867,
+        "class": "ProductionController",
+        "method": "build",
+        "source": "js/bundle.js",
+        "evidence": "wrapper ProductionController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/productionDialog.json",
+        "name": "productionDialog",
+        "line": 60002,
+        "class": "SusiProductionController",
+        "method": "build",
+        "source": "js/bundle.js",
+        "evidence": "wrapper SusiProductionController._addDialog parameter 0 -> createUIPrefab; literal"
+      }
+    ]
+  },
+  {
+    "name": "red_bottom_ed",
+    "path": "prefab/red_bottom_ed.json",
+    "sources": [
+      {
+        "path": "prefab/red_bottom_ed.json",
+        "name": "red_bottom_ed",
+        "line": 25484,
+        "class": "RedWoodGame",
+        "method": "_init_content",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 25484; literal"
+      }
+    ]
+  },
+  {
+    "name": "red_left_ed",
+    "path": "prefab/red_left_ed.json",
+    "sources": [
+      {
+        "path": "prefab/red_left_ed.json",
+        "name": "red_left_ed",
+        "line": 25496,
+        "class": "RedWoodGame",
+        "method": "_init_content",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 25496; literal"
+      }
+    ]
+  },
+  {
+    "name": "red_right_ed",
+    "path": "prefab/red_right_ed.json",
+    "sources": [
+      {
+        "path": "prefab/red_right_ed.json",
+        "name": "red_right_ed",
+        "line": 25497,
+        "class": "RedWoodGame",
+        "method": "_init_content",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 25497; literal"
+      }
+    ]
+  },
+  {
+    "name": "red_top_ed",
+    "path": "prefab/red_top_ed.json",
+    "sources": [
+      {
+        "path": "prefab/red_top_ed.json",
+        "name": "red_top_ed",
+        "line": 25483,
+        "class": "RedWoodGame",
+        "method": "_init_content",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 25483; literal"
+      }
+    ]
+  },
+  {
+    "name": "red_wood_prefab",
+    "path": "prefab/red_wood_prefab.json",
+    "sources": [
+      {
+        "path": "prefab/red_wood_prefab.json",
+        "name": "red_wood_prefab",
+        "line": 25515,
+        "class": "RedWoodGame",
+        "method": "_init_content",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 25515; literal"
+      }
+    ]
+  },
+  {
+    "name": "shenlong_mini_player",
+    "path": "prefab/shenlong_mini_player.json",
+    "sources": [
+      {
+        "path": "prefab/shenlong_mini_player.json",
+        "name": "shenlong_mini_player",
+        "line": 39404,
+        "class": "shenglongPlayer",
+        "method": "_add_mini_player",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 39404; literal"
+      }
+    ]
+  },
+  {
+    "name": "textDialog",
+    "path": "prefab/textDialog.json",
+    "sources": [
+      {
+        "path": "prefab/textDialog.json",
+        "name": "textDialog",
+        "line": 52147,
+        "class": "ShitHoleController",
+        "method": "_addDialog",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 52147; literal"
+      },
+      {
+        "path": "prefab/textDialog.json",
+        "name": "textDialog",
+        "line": 61435,
+        "class": "ScratchTicketController",
+        "method": "init",
+        "source": "js/bundle.js",
+        "evidence": "wrapper ScratchTicketController._addDialog parameter 0 -> createUIPrefab; literal"
+      }
+    ]
+  },
+  {
+    "name": "unlockDialog",
+    "path": "prefab/unlockDialog.json",
+    "sources": [
+      {
+        "path": "prefab/unlockDialog.json",
+        "name": "unlockDialog",
+        "line": 68370,
+        "class": "palaceItemController",
+        "method": "_checkDialog",
+        "source": "js/bundle.js",
+        "evidence": "wrapper palaceItemController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/unlockDialog.json",
+        "name": "unlockDialog",
+        "line": 68704,
+        "class": "palaceItemController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper palaceItemController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/unlockDialog.json",
+        "name": "unlockDialog",
+        "line": 68958,
+        "class": "PalaceBuildingController",
+        "method": "checkDialog",
+        "source": "js/bundle.js",
+        "evidence": "wrapper PalaceBuildingController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/unlockDialog.json",
+        "name": "unlockDialog",
+        "line": 68986,
+        "class": "PalaceBuildingController",
+        "method": "checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper PalaceBuildingController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/unlockDialog.json",
+        "name": "unlockDialog",
+        "line": 71748,
+        "class": "PondController",
+        "method": "_checkShow",
+        "source": "js/bundle.js",
+        "evidence": "wrapper PondController._addDialog parameter 0 -> createUIPrefab; literal"
+      },
+      {
+        "path": "prefab/unlockDialog.json",
+        "name": "unlockDialog",
+        "line": 71967,
+        "class": "PondController",
+        "method": "_checkDialog",
+        "source": "js/bundle.js",
+        "evidence": "wrapper PondController._addDialog parameter 0 -> createUIPrefab; literal"
+      }
+    ]
+  },
+  {
+    "name": "wordItem",
+    "path": "prefab/wordItem.json",
+    "sources": [
+      {
+        "path": "prefab/wordItem.json",
+        "name": "wordItem",
+        "line": 24471,
+        "class": "AddWordGameUI",
+        "method": "initView",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 24471; literal"
+      },
+      {
+        "path": "prefab/wordItem.json",
+        "name": "wordItem",
+        "line": 24493,
+        "class": "AddWordGameUI",
+        "method": "initQuestion",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 24493; literal"
+      }
+    ]
+  },
+  {
+    "name": "xiehouyu_left",
+    "path": "prefab/xiehouyu_left.json",
+    "sources": [
+      {
+        "path": "prefab/xiehouyu_left.json",
+        "name": "xiehouyu_left",
+        "line": 26129,
+        "class": "XieHouYuLineUI",
+        "method": "_init_content",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 26129; literal"
+      }
+    ]
+  },
+  {
+    "name": "xiehouyu_left_sound",
+    "path": "prefab/xiehouyu_left_sound.json",
+    "sources": [
+      {
+        "path": "prefab/xiehouyu_left_sound.json",
+        "name": "xiehouyu_left_sound",
+        "line": 26127,
+        "class": "XieHouYuLineUI",
+        "method": "_init_content",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 26127; literal"
+      }
+    ]
+  },
+  {
+    "name": "xiehouyu_right",
+    "path": "prefab/xiehouyu_right.json",
+    "sources": [
+      {
+        "path": "prefab/xiehouyu_right.json",
+        "name": "xiehouyu_right",
+        "line": 26145,
+        "class": "XieHouYuLineUI",
+        "method": "_init_content",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 26145; literal"
+      }
+    ]
+  },
+  {
+    "name": "xiuDogOrder",
+    "path": "prefab/xiuDogOrder.json",
+    "sources": [
+      {
+        "path": "prefab/xiuDogOrder.json",
+        "name": "xiuDogOrder",
+        "line": 61792,
+        "class": "XiuDogController",
+        "method": "_build_oder_ui",
+        "source": "js/bundle.js",
+        "evidence": "createUIPrefab at line 61792; literal"
+      }
+    ]
+  }
+]

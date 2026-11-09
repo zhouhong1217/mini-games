@@ -65,6 +65,12 @@ try{
  for(let i=0;i<3&&(await state()).guide>0;i++)await click(380,860);
  const saved=await state();await page.reload();await ready();const restored=await state();
  assert.equal(restored.coin,saved.coin);assert.deepEqual(restored.production,saved.production);assert.deepEqual(restored.sale,saved.sale);report.checks.refresh_save=restored;
+ // 回归用户遇到的生产需求面板：真实移动、支付25铜钱建造奶牛养殖区。
+ const milk=await game.evaluate(()=>{const c=Laya.stage._children[0]._components[0].propProductions[4][0],p=c.buildPos.transform.position;return{x:p.x,z:p.z}});
+ await walk(milk.x,milk.z);await game.waitForFunction(()=>AncientTycoonRuntime.snapshot().production.milk_1===25,null,{timeout:15000});
+ await game.waitForFunction(()=>{const c=Laya.stage._children[0]._components[0].propProductions[4][0];return c.dialogui&&!c.dialogui.destroyed&&c.dialoguiCtrl},null,{timeout:15000});
+ report.checks.milk_production_panel=await state();await shot('milk-production-panel');
+ await page.reload();await ready();assert.equal((await state()).production.milk_1,25);report.checks.milk_refresh_save=true;
  await ui('ui_game/mainGame','btnVideoAdd');
  const lockBefore=await game.evaluate(()=>Laya.stage._children[0]._components[0].LockTime);
  await ui('ui_dialog/addCustomerDialog','btnVideo');

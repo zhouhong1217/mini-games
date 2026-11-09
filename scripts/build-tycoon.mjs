@@ -24,6 +24,14 @@ if(/LWGSDK|BASICAPI|h5api|\b(?:wx|tt|qq|qg)\s*[.]/.test(bundle))throw new Error(
 const files=[],pending=[];
 const manifestBytes=await readFile(resolve(source,'tools/acquisition-manifest.json'));
 const manifest=JSON.parse(manifestBytes);
+// 动态界面清单来自原调用链审计，缺少任何一项都在替换旧版前停止构建。
+const requiredPrefabs=JSON.parse(await readFile(resolve(support,'required-prefabs.json'),'utf8'));
+const acquired=new Set(manifest.files.map(x=>x.path));
+for(const item of requiredPrefabs){
+ const name=typeof item==='string'?item:item.name;
+ if(typeof name!=='string'||!/^[A-Za-z0-9_]+$/.test(name))throw new Error('Invalid required prefab name');
+ if(!acquired.has('prefab/'+name+'.json'))throw new Error('Required UI prefab missing: '+name);
+}
 for(const record of manifest.files){
  const rel=record.path;
  if(typeof rel!=='string'||rel.startsWith('/')||rel.split('/').some(p=>p==='..'||p==='.')||rel.includes('\\'))throw new Error('Unsafe source path');
