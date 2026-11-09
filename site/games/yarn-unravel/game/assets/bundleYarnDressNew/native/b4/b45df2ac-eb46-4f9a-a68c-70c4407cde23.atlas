@@ -1,0 +1,90 @@
+
+cheng.png
+size: 259,531
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2_1
+  rotate: false
+  xy: 211, 477
+  size: 46, 52
+  orig: 48, 54
+  offset: 1, 1
+  index: -1
+2_1_2
+  rotate: true
+  xy: 211, 322
+  size: 42, 46
+  orig: 44, 48
+  offset: 1, 1
+  index: -1
+2_1_3
+  rotate: true
+  xy: 211, 278
+  size: 42, 46
+  orig: 44, 48
+  offset: 1, 1
+  index: -1
+2_2
+  rotate: true
+  xy: 113, 2
+  size: 55, 97
+  orig: 55, 97
+  offset: 0, 0
+  index: -1
+2_2_2
+  rotate: true
+  xy: 2, 10
+  size: 47, 109
+  orig: 47, 109
+  offset: 0, 0
+  index: -1
+2_3
+  rotate: false
+  xy: 211, 213
+  size: 23, 63
+  orig: 23, 63
+  offset: 0, 0
+  index: -1
+2_3_2
+  rotate: false
+  xy: 210, 80
+  size: 47, 120
+  orig: 47, 120
+  offset: 0, 0
+  index: -1
+2_4
+  rotate: false
+  xy: 120, 202
+  size: 89, 327
+  orig: 89, 327
+  offset: 0, 0
+  index: -1
+2_4_2
+  rotate: false
+  xy: 2, 187
+  size: 116, 342
+  orig: 116, 342
+  offset: 0, 0
+  index: -1
+2_5
+  rotate: false
+  xy: 212, 25
+  size: 23, 53
+  orig: 23, 53
+  offset: 0, 0
+  index: -1
+2_5_2
+  rotate: false
+  xy: 211, 366
+  size: 40, 109
+  orig: 40, 109
+  offset: 0, 0
+  index: -1
+xingxing
+  rotate: true
+  xy: 2, 59
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

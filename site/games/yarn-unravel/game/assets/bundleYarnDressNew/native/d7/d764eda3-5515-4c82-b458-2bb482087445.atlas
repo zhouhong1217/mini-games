@@ -1,0 +1,118 @@
+
+qianlan.png
+size: 273,435
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+nan_1
+  rotate: true
+  xy: 51, 4
+  size: 41, 46
+  orig: 43, 48
+  offset: 1, 1
+  index: -1
+nan_1_2
+  rotate: true
+  xy: 108, 31
+  size: 39, 47
+  orig: 41, 49
+  offset: 1, 1
+  index: -1
+nan_1_3
+  rotate: true
+  xy: 2, 6
+  size: 39, 47
+  orig: 39, 47
+  offset: 0, 0
+  index: -1
+nan_2
+  rotate: false
+  xy: 208, 185
+  size: 63, 45
+  orig: 63, 45
+  offset: 0, 0
+  index: -1
+nan_2_2
+  rotate: false
+  xy: 203, 134
+  size: 66, 49
+  orig: 66, 49
+  offset: 0, 0
+  index: -1
+nan_3
+  rotate: false
+  xy: 213, 407
+  size: 57, 26
+  orig: 59, 28
+  offset: 1, 1
+  index: -1
+nan_3_2
+  rotate: true
+  xy: 172, 152
+  size: 45, 29
+  orig: 47, 31
+  offset: 1, 1
+  index: -1
+nan_4
+  rotate: true
+  xy: 2, 72
+  size: 85, 167
+  orig: 85, 167
+  offset: 0, 0
+  index: -1
+nan_4_2
+  rotate: false
+  xy: 197, 2
+  size: 72, 130
+  orig: 72, 130
+  offset: 0, 0
+  index: -1
+nan_5
+  rotate: true
+  xy: 2, 47
+  size: 23, 104
+  orig: 23, 104
+  offset: 0, 0
+  index: -1
+nan_5_2
+  rotate: true
+  xy: 2, 373
+  size: 60, 209
+  orig: 60, 209
+  offset: 0, 0
+  index: -1
+nan_6
+  rotate: true
+  xy: 2, 159
+  size: 38, 168
+  orig: 38, 168
+  offset: 0, 0
+  index: -1
+nan_6_2
+  rotate: true
+  xy: 2, 199
+  size: 44, 204
+  orig: 44, 204
+  offset: 0, 0
+  index: -1
+nan_7
+  rotate: false
+  xy: 213, 232
+  size: 55, 173
+  orig: 55, 173
+  offset: 0, 0
+  index: -1
+nan_7_2
+  rotate: false
+  xy: 171, 59
+  size: 24, 91
+  orig: 24, 91
+  offset: 0, 0
+  index: -1
+xingxing
+  rotate: true
+  xy: 2, 245
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

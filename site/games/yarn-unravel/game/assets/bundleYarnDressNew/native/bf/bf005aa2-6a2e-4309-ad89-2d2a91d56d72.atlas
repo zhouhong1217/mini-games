@@ -1,0 +1,90 @@
+
+zong.png
+size: 926,146
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5_1
+  rotate: true
+  xy: 423, 2
+  size: 49, 87
+  orig: 49, 87
+  offset: 0, 0
+  index: -1
+5_1_2
+  rotate: true
+  xy: 332, 2
+  size: 49, 89
+  orig: 49, 90
+  offset: 0, 0
+  index: -1
+5_2
+  rotate: true
+  xy: 276, 13
+  size: 43, 54
+  orig: 45, 56
+  offset: 1, 1
+  index: -1
+5_2_2
+  rotate: true
+  xy: 512, 8
+  size: 43, 54
+  orig: 45, 56
+  offset: 1, 1
+  index: -1
+5_2_3
+  rotate: true
+  xy: 568, 8
+  size: 43, 54
+  orig: 45, 56
+  offset: 1, 1
+  index: -1
+5_3
+  rotate: true
+  xy: 2, 9
+  size: 47, 136
+  orig: 47, 141
+  offset: 0, 5
+  index: -1
+5_3_2
+  rotate: true
+  xy: 140, 9
+  size: 47, 134
+  orig: 47, 139
+  offset: 0, 5
+  index: -1
+5_4
+  rotate: true
+  xy: 364, 53
+  size: 91, 352
+  orig: 91, 387
+  offset: 0, 0
+  index: -1
+5_4_2
+  rotate: true
+  xy: 2, 58
+  size: 86, 360
+  orig: 110, 360
+  offset: 24, 0
+  index: -1
+5_5
+  rotate: true
+  xy: 675, 6
+  size: 45, 39
+  orig: 47, 41
+  offset: 1, 1
+  index: -1
+5_5_2
+  rotate: false
+  xy: 624, 8
+  size: 49, 43
+  orig: 51, 45
+  offset: 1, 1
+  index: -1
+xingxing
+  rotate: true
+  xy: 718, 18
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

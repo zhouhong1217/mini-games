@@ -1,0 +1,90 @@
+
+hei.png
+size: 280,543
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6_1
+  rotate: true
+  xy: 210, 408
+  size: 45, 55
+  orig: 47, 57
+  offset: 1, 1
+  index: -1
+6_1_2
+  rotate: true
+  xy: 2, 2
+  size: 45, 55
+  orig: 47, 57
+  offset: 1, 1
+  index: -1
+6_1_3
+  rotate: true
+  xy: 59, 2
+  size: 45, 55
+  orig: 47, 57
+  offset: 1, 1
+  index: -1
+6_2
+  rotate: true
+  xy: 116, 13
+  size: 35, 81
+  orig: 35, 81
+  offset: 0, 0
+  index: -1
+6_2_2
+  rotate: true
+  xy: 199, 15
+  size: 33, 76
+  orig: 33, 76
+  offset: 0, 0
+  index: -1
+6_3
+  rotate: false
+  xy: 227, 273
+  size: 51, 133
+  orig: 51, 133
+  offset: 0, 0
+  index: -1
+6_3_3
+  rotate: false
+  xy: 227, 140
+  size: 48, 131
+  orig: 48, 131
+  offset: 0, 0
+  index: -1
+6_4
+  rotate: false
+  xy: 2, 49
+  size: 109, 357
+  orig: 109, 357
+  offset: 0, 0
+  index: -1
+6_4_2
+  rotate: false
+  xy: 113, 50
+  size: 112, 356
+  orig: 112, 356
+  offset: 0, 0
+  index: -1
+6_5
+  rotate: false
+  xy: 210, 499
+  size: 61, 42
+  orig: 63, 44
+  offset: 1, 1
+  index: -1
+6_5_2
+  rotate: false
+  xy: 210, 455
+  size: 60, 42
+  orig: 62, 44
+  offset: 1, 1
+  index: -1
+xingxing
+  rotate: true
+  xy: 2, 415
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

@@ -1,0 +1,90 @@
+
+lan.png
+size: 249,544
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6_arm_L_1
+  rotate: false
+  xy: 216, 224
+  size: 18, 56
+  orig: 20, 58
+  offset: 1, 1
+  index: -1
+6_arm_L_2
+  rotate: false
+  xy: 189, 224
+  size: 25, 56
+  orig: 27, 58
+  offset: 1, 1
+  index: -1
+6_arm_R_1
+  rotate: false
+  xy: 225, 416
+  size: 22, 126
+  orig: 22, 126
+  offset: 0, 0
+  index: -1
+6_arm_R_2
+  rotate: false
+  xy: 189, 416
+  size: 34, 126
+  orig: 34, 126
+  offset: 0, 0
+  index: -1
+6_body2
+  rotate: false
+  xy: 2, 216
+  size: 95, 326
+  orig: 95, 326
+  offset: 0, 0
+  index: -1
+6_bodya
+  rotate: false
+  xy: 99, 219
+  size: 88, 323
+  orig: 88, 323
+  offset: 0, 0
+  index: -1
+6_elbow_L_1
+  rotate: false
+  xy: 189, 349
+  size: 53, 65
+  orig: 53, 65
+  offset: 0, 0
+  index: -1
+6_elbow_L_2
+  rotate: false
+  xy: 189, 282
+  size: 52, 65
+  orig: 52, 65
+  offset: 0, 0
+  index: -1
+6_hair
+  rotate: false
+  xy: 130, 72
+  size: 104, 145
+  orig: 104, 145
+  offset: 0, 0
+  index: -1
+6_head_1
+  rotate: false
+  xy: 130, 2
+  size: 55, 68
+  orig: 57, 70
+  offset: 1, 1
+  index: -1
+6_head_2
+  rotate: false
+  xy: 187, 2
+  size: 55, 68
+  orig: 57, 70
+  offset: 1, 1
+  index: -1
+xingxing
+  rotate: false
+  xy: 2, 8
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

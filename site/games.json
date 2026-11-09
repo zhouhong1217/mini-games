@@ -236,5 +236,30 @@
         ]
       }
     }
+  },
+  {
+    "id": "yarn-unravel",
+    "title": "拆个毛线",
+    "subtitle": "YARN UNRAVEL",
+    "description": "点击彩色毛线团，按颜色收集。拆开眼前的图案，织出新的画面，慢慢布置温馨的小屋。",
+    "href": "games/yarn-unravel/",
+    "cover": "assets/covers/yarn-unravel.jpg",
+    "coverAlt": "拆个毛线原版游戏封面",
+    "tags": [
+      "休闲解压",
+      "鼠标 / 触屏"
+    ],
+    "translations": {
+      "en": {
+        "title": "Yarn Unravel",
+        "subtitle": "YARN UNRAVEL",
+        "description": "Match colorful yarn to the collectors, unravel each picture, and weave something new. Build a cozy little room as you play.",
+        "coverAlt": "Original Yarn Unravel game cover",
+        "tags": [
+          "Casual puzzles",
+          "Mouse / touch"
+        ]
+      }
+    }
   }
 ]

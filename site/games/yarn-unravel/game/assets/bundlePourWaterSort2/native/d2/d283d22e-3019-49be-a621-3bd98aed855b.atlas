@@ -1,0 +1,48 @@
+
+meinv_6.png
+size: 1926,1198
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6_body_a
+  rotate: false
+  xy: 659, 37
+  size: 619, 1159
+  orig: 619, 1159
+  offset: 0, 0
+  index: -1
+6_body_b
+  rotate: false
+  xy: 2, 2
+  size: 655, 1194
+  orig: 666, 1209
+  offset: 6, 8
+  index: -1
+6_hair_a
+  rotate: true
+  xy: 1280, 402
+  size: 393, 396
+  orig: 393, 396
+  offset: 0, 0
+  index: -1
+6_hair_b
+  rotate: true
+  xy: 1280, 797
+  size: 399, 424
+  orig: 421, 443
+  offset: 9, 10
+  index: -1
+6_head_a
+  rotate: true
+  xy: 1611, 92
+  size: 308, 313
+  orig: 315, 313
+  offset: 3, 0
+  index: -1
+6_head_b
+  rotate: false
+  xy: 1280, 63
+  size: 329, 337
+  orig: 344, 352
+  offset: 7, 8
+  index: -1

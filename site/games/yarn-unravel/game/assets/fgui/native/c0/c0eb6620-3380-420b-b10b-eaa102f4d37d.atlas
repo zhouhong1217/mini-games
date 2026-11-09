@@ -1,0 +1,13 @@
+
+new.png
+size: 83,61
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+a7
+  rotate: false
+  xy: 2, 2
+  size: 79, 57
+  orig: 82, 59
+  offset: 1, 1
+  index: -1

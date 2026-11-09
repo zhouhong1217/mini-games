@@ -1,0 +1,48 @@
+
+meinv_1.png
+size: 1671,1019
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_arm_L_a
+  rotate: true
+  xy: 1444, 752
+  size: 265, 206
+  orig: 265, 207
+  offset: 0, 1
+  index: -1
+1_arm_L_b
+  rotate: true
+  xy: 1429, 212
+  size: 296, 240
+  orig: 311, 254
+  offset: 8, 6
+  index: -1
+1_body_a
+  rotate: true
+  xy: 2, 2
+  size: 506, 1425
+  orig: 507, 1428
+  offset: 1, 0
+  index: -1
+1_body_b
+  rotate: true
+  xy: 2, 510
+  size: 507, 1440
+  orig: 525, 1449
+  offset: 8, 0
+  index: -1
+1_eye_pi_a
+  rotate: false
+  xy: 1429, 15
+  size: 116, 41
+  orig: 119, 49
+  offset: 1, 2
+  index: -1
+1_eye_pi_b
+  rotate: true
+  xy: 1429, 58
+  size: 152, 81
+  orig: 166, 94
+  offset: 7, 7
+  index: -1

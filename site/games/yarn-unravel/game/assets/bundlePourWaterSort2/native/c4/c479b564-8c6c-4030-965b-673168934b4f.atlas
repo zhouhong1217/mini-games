@@ -1,0 +1,20 @@
+
+meinv_4.png
+size: 1166,1097
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_body_a
+  rotate: false
+  xy: 600, 46
+  size: 564, 1049
+  orig: 564, 1051
+  offset: 0, 2
+  index: -1
+4_body_b
+  rotate: false
+  xy: 2, 2
+  size: 596, 1093
+  orig: 609, 1097
+  offset: 4, 4
+  index: -1

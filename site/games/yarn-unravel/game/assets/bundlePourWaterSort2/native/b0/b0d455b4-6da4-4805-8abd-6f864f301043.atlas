@@ -1,0 +1,20 @@
+
+meinv_9.png
+size: 1383,1237
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+9_body_a
+  rotate: true
+  xy: 2, 2
+  size: 594, 1348
+  orig: 594, 1348
+  offset: 0, 0
+  index: -1
+9_body_b
+  rotate: true
+  xy: 2, 598
+  size: 637, 1379
+  orig: 645, 1379
+  offset: 4, 0
+  index: -1

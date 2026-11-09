@@ -1,0 +1,76 @@
+
+zi.png
+size: 156,875
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+12_arm_L_1
+  rotate: false
+  xy: 120, 584
+  size: 33, 143
+  orig: 33, 143
+  offset: 0, 0
+  index: -1
+12_arm_L_2
+  rotate: false
+  xy: 120, 729
+  size: 34, 144
+  orig: 34, 144
+  offset: 0, 0
+  index: -1
+12_arm_R_1
+  rotate: false
+  xy: 105, 344
+  size: 38, 74
+  orig: 38, 74
+  offset: 0, 0
+  index: -1
+12_arm_R_2
+  rotate: false
+  xy: 105, 420
+  size: 39, 83
+  orig: 39, 83
+  offset: 0, 0
+  index: -1
+12_body2
+  rotate: false
+  xy: 2, 541
+  size: 116, 332
+  orig: 116, 336
+  offset: 0, 0
+  index: -1
+12_bodya
+  rotate: false
+  xy: 2, 210
+  size: 101, 329
+  orig: 101, 330
+  offset: 0, 0
+  index: -1
+12_elbow_R
+  rotate: true
+  xy: 120, 505
+  size: 77, 21
+  orig: 77, 21
+  offset: 0, 0
+  index: -1
+12_head_1
+  rotate: false
+  xy: 105, 288
+  size: 48, 54
+  orig: 50, 56
+  offset: 1, 1
+  index: -1
+12_head_2
+  rotate: false
+  xy: 105, 232
+  size: 48, 54
+  orig: 50, 56
+  offset: 1, 1
+  index: -1
+xingxing
+  rotate: false
+  xy: 2, 2
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

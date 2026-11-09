@@ -1,0 +1,76 @@
+
+zong.png
+size: 516,273
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_arm_1
+  rotate: true
+  xy: 237, 2
+  size: 58, 83
+  orig: 58, 83
+  offset: 0, 0
+  index: -1
+4_arm_2
+  rotate: false
+  xy: 457, 53
+  size: 57, 80
+  orig: 57, 80
+  offset: 0, 0
+  index: -1
+4_arm_R_1
+  rotate: false
+  xy: 457, 135
+  size: 57, 136
+  orig: 57, 136
+  offset: 0, 0
+  index: -1
+4_arm_R_2
+  rotate: true
+  xy: 2, 6
+  size: 54, 133
+  orig: 54, 133
+  offset: 0, 0
+  index: -1
+4_body2
+  rotate: true
+  xy: 2, 143
+  size: 128, 325
+  orig: 128, 325
+  offset: 0, 0
+  index: -1
+4_bodya
+  rotate: true
+  xy: 2, 62
+  size: 79, 323
+  orig: 79, 323
+  offset: 0, 0
+  index: -1
+4_hair
+  rotate: true
+  xy: 137, 10
+  size: 50, 98
+  orig: 50, 98
+  offset: 0, 0
+  index: -1
+4_head_1
+  rotate: true
+  xy: 327, 14
+  size: 49, 63
+  orig: 49, 63
+  offset: 0, 0
+  index: -1
+4_head_2
+  rotate: true
+  xy: 392, 14
+  size: 49, 63
+  orig: 49, 63
+  offset: 0, 0
+  index: -1
+xingxing
+  rotate: false
+  xy: 329, 65
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

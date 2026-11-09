@@ -1,0 +1,90 @@
+
+rou.png
+size: 588,249
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+rou_st1
+  rotate: true
+  xy: 2, 158
+  size: 89, 359
+  orig: 89, 359
+  offset: 0, 0
+  index: -1
+rou_st2
+  rotate: true
+  xy: 2, 64
+  size: 92, 356
+  orig: 92, 356
+  offset: 0, 0
+  index: -1
+rou_tf
+  rotate: true
+  xy: 360, 24
+  size: 95, 143
+  orig: 95, 143
+  offset: 0, 0
+  index: -1
+rou_tou1
+  rotate: false
+  xy: 136, 7
+  size: 45, 55
+  orig: 45, 55
+  offset: 0, 0
+  index: -1
+rou_tou2
+  rotate: false
+  xy: 183, 8
+  size: 45, 54
+  orig: 45, 54
+  offset: 0, 0
+  index: -1
+rou_ys1
+  rotate: true
+  xy: 2, 33
+  size: 29, 132
+  orig: 29, 132
+  offset: 0, 0
+  index: -1
+rou_ys2
+  rotate: true
+  xy: 2, 2
+  size: 29, 132
+  orig: 29, 132
+  offset: 0, 0
+  index: -1
+rou_zsb1
+  rotate: true
+  xy: 277, 23
+  size: 39, 52
+  orig: 39, 52
+  offset: 0, 0
+  index: -1
+rou_zsb2
+  rotate: false
+  xy: 230, 11
+  size: 45, 51
+  orig: 45, 51
+  offset: 0, 0
+  index: -1
+rou_zsz1
+  rotate: true
+  xy: 571, 223
+  size: 24, 15
+  orig: 24, 15
+  offset: 0, 0
+  index: -1
+rou_zxb1
+  rotate: false
+  xy: 505, 46
+  size: 51, 73
+  orig: 51, 73
+  offset: 0, 0
+  index: -1
+xingxing
+  rotate: true
+  xy: 363, 121
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

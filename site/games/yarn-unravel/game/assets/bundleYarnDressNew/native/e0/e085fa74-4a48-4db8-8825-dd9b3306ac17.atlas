@@ -1,0 +1,76 @@
+
+hong.png
+size: 211,542
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+h_sb1
+  rotate: false
+  xy: 183, 285
+  size: 18, 60
+  orig: 18, 60
+  offset: 0, 0
+  index: -1
+h_sb2
+  rotate: false
+  xy: 183, 347
+  size: 26, 65
+  orig: 26, 65
+  offset: 0, 0
+  index: -1
+h_st1
+  rotate: false
+  xy: 93, 94
+  size: 88, 318
+  orig: 88, 318
+  offset: 0, 0
+  index: -1
+h_st2
+  rotate: false
+  xy: 2, 86
+  size: 89, 326
+  orig: 89, 326
+  offset: 0, 0
+  index: -1
+h_t1
+  rotate: true
+  xy: 109, 2
+  size: 40, 46
+  orig: 40, 46
+  offset: 0, 0
+  index: -1
+h_t2
+  rotate: false
+  xy: 109, 44
+  size: 40, 48
+  orig: 40, 48
+  offset: 0, 0
+  index: -1
+h_t3
+  rotate: false
+  xy: 151, 46
+  size: 40, 46
+  orig: 40, 46
+  offset: 0, 0
+  index: -1
+h_xb1
+  rotate: false
+  xy: 54, 10
+  size: 53, 74
+  orig: 53, 74
+  offset: 0, 0
+  index: -1
+h_xb2
+  rotate: false
+  xy: 2, 8
+  size: 50, 76
+  orig: 50, 76
+  offset: 0, 0
+  index: -1
+xingxing
+  rotate: true
+  xy: 2, 414
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

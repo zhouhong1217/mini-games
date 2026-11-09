@@ -1,0 +1,69 @@
+
+fen.png
+size: 496,210
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3_arm_L
+  rotate: true
+  xy: 73, 178
+  size: 30, 47
+  orig: 30, 47
+  offset: 0, 0
+  index: -1
+3_arm_R
+  rotate: true
+  xy: 2, 183
+  size: 25, 69
+  orig: 25, 69
+  offset: 0, 0
+  index: -1
+3_body1
+  rotate: true
+  xy: 2, 88
+  size: 76, 338
+  orig: 76, 338
+  offset: 0, 0
+  index: -1
+3_body2
+  rotate: true
+  xy: 2, 9
+  size: 77, 347
+  orig: 77, 347
+  offset: 0, 0
+  index: -1
+3_elbow_L
+  rotate: true
+  xy: 188, 173
+  size: 35, 72
+  orig: 35, 72
+  offset: 0, 0
+  index: -1
+3_elbow_R
+  rotate: false
+  xy: 122, 175
+  size: 64, 33
+  orig: 64, 33
+  offset: 0, 0
+  index: -1
+3_head_1
+  rotate: true
+  xy: 262, 166
+  size: 42, 51
+  orig: 44, 53
+  offset: 1, 1
+  index: -1
+3_head_2
+  rotate: true
+  xy: 315, 166
+  size: 42, 51
+  orig: 44, 53
+  offset: 1, 1
+  index: -1
+xingxing
+  rotate: false
+  xy: 368, 2
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

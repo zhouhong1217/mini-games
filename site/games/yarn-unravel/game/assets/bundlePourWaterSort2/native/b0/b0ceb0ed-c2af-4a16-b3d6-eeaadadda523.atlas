@@ -1,0 +1,20 @@
+
+meinv_10.png
+size: 1428,1406
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10_body_a
+  rotate: false
+  xy: 732, 18
+  size: 694, 1386
+  orig: 694, 1386
+  offset: 0, 0
+  index: -1
+10_body_b
+  rotate: false
+  xy: 2, 2
+  size: 728, 1402
+  orig: 741, 1408
+  offset: 7, 0
+  index: -1

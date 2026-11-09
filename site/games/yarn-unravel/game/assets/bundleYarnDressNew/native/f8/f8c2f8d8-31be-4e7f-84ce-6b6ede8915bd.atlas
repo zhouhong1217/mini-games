@@ -1,0 +1,69 @@
+
+qing.png
+size: 479,277
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_arm_L
+  rotate: true
+  xy: 77, 7
+  size: 30, 48
+  orig: 30, 48
+  offset: 0, 0
+  index: -1
+1_arm_R
+  rotate: true
+  xy: 2, 39
+  size: 50, 190
+  orig: 50, 190
+  offset: 0, 0
+  index: -1
+1_body1
+  rotate: true
+  xy: 2, 91
+  size: 81, 338
+  orig: 81, 338
+  offset: 0, 0
+  index: -1
+1_body2
+  rotate: true
+  xy: 2, 174
+  size: 101, 347
+  orig: 101, 347
+  offset: 0, 0
+  index: -1
+1_elbow_L
+  rotate: true
+  xy: 2, 2
+  size: 35, 73
+  orig: 35, 73
+  offset: 0, 0
+  index: -1
+1_hair
+  rotate: false
+  xy: 347, 29
+  size: 40, 38
+  orig: 42, 40
+  offset: 1, 1
+  index: -1
+1_head
+  rotate: false
+  xy: 277, 9
+  size: 68, 80
+  orig: 70, 82
+  offset: 1, 1
+  index: -1
+1_head2
+  rotate: true
+  xy: 194, 21
+  size: 68, 81
+  orig: 68, 81
+  offset: 0, 0
+  index: -1
+xingxing
+  rotate: false
+  xy: 351, 69
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

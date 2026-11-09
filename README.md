@@ -132,6 +132,16 @@ node scripts/serve-local.mjs --port 8793 --mount /mini-games/
 
 访问 <http://127.0.0.1:8793/mini-games/games/plants-vs-zombies/>。重建、验收与已知边界见 [恢复工具](tools/plants-vs-zombies/README.md) 和 [恢复记录](provenance/plants-vs-zombies.md)。本构建是 Flash 演示版；未逐一验收其全部关卡和模式。
 
+## 拆个毛线
+
+在线入口：<https://zhouhong1217.github.io/mini-games/games/yarn-unravel/>。本地严格子路径预览：<http://127.0.0.1:8797/mini-games/games/yarn-unravel/>。
+
+点击「开始游戏」，再点击原版菜单中的「开始游戏」。点击毛线团，按收集器颜色拆开图案并织出新的画面；奖励按钮在本地直接继续。原版中文画面与玩法保留，外壳支持中英文、全屏和失败重试。进度保存在当前浏览器，本地与线上分别保存。
+
+原广告 SDK 和远程服务边界已移除，保留独立广告适配接口；排行榜显示当前浏览器的本地成绩。相同素材通过本地路径复用，游戏静态资源约 273 MB，按玩法和关卡逐步加载。已验证前两关、刷新恢复第 3 关、触屏操作与外网阻断；其余关卡和附加玩法未逐一验收。
+
+恢复、重建与验证命令见[恢复工具](tools/yarn-unravel/README.md)，来源及边界见[恢复记录](provenance/yarn-unravel.md)。
+
 ## 第一次发布
 
 ### 1. 创建公开仓库

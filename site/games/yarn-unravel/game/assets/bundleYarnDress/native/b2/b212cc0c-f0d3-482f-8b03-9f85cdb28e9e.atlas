@@ -1,0 +1,69 @@
+
+qianlan.png
+size: 514,226
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+8_arm_L
+  rotate: true
+  xy: 2, 192
+  size: 32, 55
+  orig: 32, 55
+  offset: 0, 0
+  index: -1
+8_arm_R
+  rotate: true
+  xy: 204, 187
+  size: 37, 74
+  orig: 37, 74
+  offset: 0, 0
+  index: -1
+8_body2
+  rotate: true
+  xy: 2, 2
+  size: 94, 344
+  orig: 94, 344
+  offset: 0, 0
+  index: -1
+8_bodya
+  rotate: true
+  xy: 2, 98
+  size: 85, 340
+  orig: 85, 340
+  offset: 0, 0
+  index: -1
+8_elbow_L
+  rotate: true
+  xy: 127, 190
+  size: 34, 75
+  orig: 34, 75
+  offset: 0, 0
+  index: -1
+8_elbow_R
+  rotate: false
+  xy: 59, 191
+  size: 66, 33
+  orig: 66, 33
+  offset: 0, 0
+  index: -1
+8_head_1
+  rotate: true
+  xy: 280, 185
+  size: 39, 51
+  orig: 41, 53
+  offset: 1, 1
+  index: -1
+8_head_2
+  rotate: true
+  xy: 333, 185
+  size: 39, 51
+  orig: 41, 53
+  offset: 1, 1
+  index: -1
+xingxing
+  rotate: false
+  xy: 386, 18
+  size: 126, 206
+  orig: 256, 256
+  offset: 65, 25
+  index: -1

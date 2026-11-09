@@ -1,0 +1,34 @@
+
+meinv_7.png
+size: 1865,1351
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+7_body_a
+  rotate: false
+  xy: 855, 34
+  size: 832, 1315
+  orig: 832, 1316
+  offset: 0, 1
+  index: -1
+7_body_b
+  rotate: false
+  xy: 2, 2
+  size: 851, 1347
+  orig: 855, 1361
+  offset: 4, 6
+  index: -1
+7_elbow_a
+  rotate: false
+  xy: 1689, 655
+  size: 147, 331
+  orig: 149, 332
+  offset: 1, 1
+  index: -1
+7_elbow_b
+  rotate: false
+  xy: 1689, 988
+  size: 174, 361
+  orig: 194, 379
+  offset: 11, 9
+  index: -1
