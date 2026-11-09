@@ -1,0 +1,274 @@
+{
+  "source_page": "https://www.4399.com/flash/251997.htm",
+  "source_entry": "https://szhong.4399.com/4399swf/upload_swf/ftp51/huangcijin/20250822/09/gameIndex.html",
+  "engine": "Custom dThread/dInterface WebGL engine",
+  "acquisition_manifest_sha256": "e42fbf95eeccf6684624707473d832f76ab01d4c48505c1db4d2109f0f606cfe",
+  "source_identity": {
+    "MainGame.js": "a3e7b4d54add8964055ded38ee2542bd045028ef554219c98ea67eafa6e7fa3a"
+  },
+  "changes": [
+    "Remove original platform HTML, base.xml, h5api loader and platform-index.js from publication.",
+    "Remove original MyAd and MoreGamePanel implementations; retain game-facing ad entrypoints through independent adapter.",
+    "Specialize engine platform branches for browser web/local at build time and replace platform/server boundaries.",
+    "Load original same-origin .dat packs, namespace local storage and report actual LoginPage readiness.",
+    "Remove three exact-context references to upstream404 optional images; preserve hit geometry, text hints and popup controls. Render the three MessageBoxPanel text nodes with the original dLabel system-font renderer because the shipped bitmap font lacks glyphs in 金币不足 and 确定."
+  ],
+  "specialization": {
+    "branches": 27,
+    "methods": [
+      "RequestHttp",
+      "_LoadSubPackage",
+      "MakeFileUrl",
+      "GetSubFileList",
+      "OpenWebPage",
+      "ShowHtmlDialog",
+      "OpenMiniProgram",
+      "GetSafeAreaTop",
+      "GetSafeAreaBottom",
+      "GetAppList",
+      "GetPackageVersionCode",
+      "GetPackageAppId",
+      "GetPackageName",
+      "GetPackageSha1",
+      "GetLocalLanguage",
+      "ReadStorage",
+      "WriteStorage",
+      "ShowAdRewardedVideo",
+      "isAdRewardedShowing",
+      "isAdRewardedReady",
+      "isAdInterstitialVideoReady",
+      "ShowAdInterstitialImage",
+      "ShowAdInterstitialVideo",
+      "ShowAdBanner",
+      "ShowAdBox",
+      "hasMoreGame",
+      "GetMoreGameList",
+      "ShowAdMoreGameIcon",
+      "HideAdMoreGameIcon",
+      "StartShareRecord",
+      "StopShareRecord",
+      "ShareRecord",
+      "isPrivacyAgree",
+      "ExitApp",
+      "DeleteAccount",
+      "GetSdkName",
+      "GetChannelName"
+    ]
+  },
+  "message_box_text": {
+    "context": "MessageBoxPanel._dscData",
+    "from": "dBitmapFont",
+    "to": "dLabel",
+    "expected_occurrences": 3,
+    "reason": "Shipped bitmap font lacks Chinese glyphs for popup content and OK label"
+  },
+  "unavailable_images": [
+    {
+      "path": "data/title.png",
+      "context": "MessageBoxPanel._dscData Title decorative backdrop",
+      "upstream_status": 404,
+      "replacement": "empty image reference; retain control geometry/text",
+      "expected_occurrences": 1
+    },
+    {
+      "path": "level/202.png",
+      "context": "Level2._dscData invisible Check target; keep dimensions and hit coordinates",
+      "upstream_status": 404,
+      "replacement": "empty image reference; retain control geometry/text",
+      "expected_occurrences": 1
+    },
+    {
+      "path": "level/38.png",
+      "context": "Level42.GetHintImageName optional missing illustration; keep text hint",
+      "upstream_status": 404,
+      "replacement": "empty image reference; retain control geometry/text",
+      "expected_occurrences": 1
+    }
+  ],
+  "resource_pack_inventory": [
+    {
+      "path": "data.dat",
+      "members": 190,
+      "suffix_counts": {
+        ".png": 174,
+        ".json": 4,
+        ".atlas": 1,
+        ".mp3": 11
+      },
+      "text_members_checked": 5,
+      "text_remote_or_sdk_matches": 0
+    },
+    {
+      "path": "level.dat",
+      "members": 323,
+      "suffix_counts": {
+        ".jpg": 32,
+        ".png": 211,
+        ".mp3": 46,
+        ".atlas": 17,
+        ".json": 17
+      },
+      "text_members_checked": 34,
+      "text_remote_or_sdk_matches": 0
+    },
+    {
+      "path": "level2.dat",
+      "members": 285,
+      "suffix_counts": {
+        ".png": 175,
+        ".jpg": 28,
+        ".mp3": 40,
+        ".atlas": 21,
+        ".json": 21
+      },
+      "text_members_checked": 42,
+      "text_remote_or_sdk_matches": 0
+    },
+    {
+      "path": "level3.dat",
+      "members": 93,
+      "suffix_counts": {
+        ".png": 50,
+        ".jpg": 5,
+        ".atlas": 11,
+        ".json": 11,
+        ".mp3": 16
+      },
+      "text_members_checked": 22,
+      "text_remote_or_sdk_matches": 0
+    }
+  ],
+  "ad_callbacks": "Default reward: PauseAllSound; after 100ms, clear showing state, ResumeAllSound, ClearMouseHook; dInterface callback(interface) once and MyAd callback() once. Optional provider receives placement lifecycle only in platform-adapter.js.",
+  "unknowns": [
+    "The original images data/title.png, level/202.png and level/38.png are Unknown: exact upstream URLs returned404. Their optional image references are omitted; text and geometry remain.",
+    "Complete equivalence of all levels and late progression is Unknown until runtime coverage is expanded.",
+    "The four binary resource packs remain byte-identical; unused artwork or opaque embedded dependency absence is Unknown."
+  ],
+  "files": [
+    {
+      "path": "data.dat",
+      "original_sha256": "b6e83d47e46f53516aab3897cf802cf449a0f3112cc69bd90b7dd8030295a5a1",
+      "local_sha256": "b6e83d47e46f53516aab3897cf802cf449a0f3112cc69bd90b7dd8030295a5a1",
+      "bytes": 1555507
+    },
+    {
+      "path": "level.dat",
+      "original_sha256": "7a4daa17715d4665a271ae95dbb2cf941ed45b603a8a2d980a7a466fad991cca",
+      "local_sha256": "7a4daa17715d4665a271ae95dbb2cf941ed45b603a8a2d980a7a466fad991cca",
+      "bytes": 4146226
+    },
+    {
+      "path": "level2.dat",
+      "original_sha256": "139da93fa8db3de48e732da278d71c7229808e71d309162b3f7f97674b326363",
+      "local_sha256": "139da93fa8db3de48e732da278d71c7229808e71d309162b3f7f97674b326363",
+      "bytes": 3603525
+    },
+    {
+      "path": "level3.dat",
+      "original_sha256": "d8533c2b1feed5210a3f5e34d62ceae25e9a2452bbd07399437c52e3eb7df1e8",
+      "local_sha256": "d8533c2b1feed5210a3f5e34d62ceae25e9a2452bbd07399437c52e3eb7df1e8",
+      "bytes": 1141988
+    },
+    {
+      "path": "loading/loadingfont64.json",
+      "original_sha256": "39227a84504cb7958826486ffcb2af04c29f4c79041a4cabc2af2c347251e566",
+      "local_sha256": "39227a84504cb7958826486ffcb2af04c29f4c79041a4cabc2af2c347251e566",
+      "bytes": 1473
+    },
+    {
+      "path": "loading/loadingfont64.png",
+      "original_sha256": "a51a26fd3f851fbd8af7d371725ad88e466a859f0ed62cfb467e02ee8714c26d",
+      "local_sha256": "a51a26fd3f851fbd8af7d371725ad88e466a859f0ed62cfb467e02ee8714c26d",
+      "bytes": 8408
+    },
+    {
+      "path": "loading/loading_logo.png",
+      "original_sha256": "57329a6773bcb290b01f7ad322b11502b20e87e0166c0138317744bc8686bb30",
+      "local_sha256": "57329a6773bcb290b01f7ad322b11502b20e87e0166c0138317744bc8686bb30",
+      "bytes": 48905
+    },
+    {
+      "path": "loading/loading_progress2.png",
+      "original_sha256": "92074431a0a21e297d382a94a045c73aa43a43bfef9573a69aa04cfc1f172af1",
+      "local_sha256": "92074431a0a21e297d382a94a045c73aa43a43bfef9573a69aa04cfc1f172af1",
+      "bytes": 499
+    },
+    {
+      "path": "loading/loading_progress1.png",
+      "original_sha256": "5f1c1f4604da5d6183725c685fb50d9942d178dcd9e2e0dddd07c471a018d191",
+      "local_sha256": "5f1c1f4604da5d6183725c685fb50d9942d178dcd9e2e0dddd07c471a018d191",
+      "bytes": 379
+    },
+    {
+      "path": "loading/loading_jiankang.png",
+      "original_sha256": "dd49023dee54023f6531835a38f83877a2c6cb7fb567cdb8b1156c760cd2fef6",
+      "local_sha256": "dd49023dee54023f6531835a38f83877a2c6cb7fb567cdb8b1156c760cd2fef6",
+      "bytes": 14155
+    },
+    {
+      "path": "loading/loading_zhuzuo.png",
+      "original_sha256": "7c8d5f6b14779379c1fef5d8ac064628c82451db2f1a962a87bc17927f0daf6c",
+      "local_sha256": "7c8d5f6b14779379c1fef5d8ac064628c82451db2f1a962a87bc17927f0daf6c",
+      "bytes": 2159
+    },
+    {
+      "path": "loading/loading_8plus.png",
+      "original_sha256": "6bbf0208e30d197c503ca0544b51f4e4b1ebbc1ede669bade757baf2a3eee4ec",
+      "local_sha256": "6bbf0208e30d197c503ca0544b51f4e4b1ebbc1ede669bade757baf2a3eee4ec",
+      "bytes": 25940
+    },
+    {
+      "path": "MainGame.js",
+      "original_sha256": "a3e7b4d54add8964055ded38ee2542bd045028ef554219c98ea67eafa6e7fa3a",
+      "local_sha256": "5589fa25a06a19fcdde95a1aa21cf841014f6d6d7372abd89108841d24163d48",
+      "bytes": 2740302
+    },
+    {
+      "path": "loading/tangpingyazi.atlas",
+      "original_sha256": "ca835f404afad6a4d23e12a9ef4c961f5d1d2c12c22cd40b6ab4a8acf86bec95",
+      "local_sha256": "ca835f404afad6a4d23e12a9ef4c961f5d1d2c12c22cd40b6ab4a8acf86bec95",
+      "bytes": 476
+    },
+    {
+      "path": "loading/loading_8plustext.png",
+      "original_sha256": "c1af1750f89c4770499a1dad7a2fab85b85a626aaaa3b96fc4a1a1c9dfdebf69",
+      "local_sha256": "c1af1750f89c4770499a1dad7a2fab85b85a626aaaa3b96fc4a1a1c9dfdebf69",
+      "bytes": 41326
+    },
+    {
+      "path": "loading/loading_back.jpg",
+      "original_sha256": "8edd6ebe0b7b5afb22c2ce04a5fc1d5148a44b5d2cb70fa7f64705cf0852d185",
+      "local_sha256": "8edd6ebe0b7b5afb22c2ce04a5fc1d5148a44b5d2cb70fa7f64705cf0852d185",
+      "bytes": 48958
+    },
+    {
+      "path": "loading/tangpingyazi.png",
+      "original_sha256": "3129020832a95138f34f995c9bd337ccf7a45737b44cfe86a954e3ff193bc756",
+      "local_sha256": "3129020832a95138f34f995c9bd337ccf7a45737b44cfe86a954e3ff193bc756",
+      "bytes": 20256
+    },
+    {
+      "path": "loading/tangpingyazi.json",
+      "original_sha256": "584e01df667205a970a086e57be68757eb23c3efd64bde633aaf6e75582af8f2",
+      "local_sha256": "584e01df667205a970a086e57be68757eb23c3efd64bde633aaf6e75582af8f2",
+      "bytes": 9787
+    }
+  ],
+  "custom_files": [
+    {
+      "path": "index.html",
+      "local_sha256": "22dae2a913e6992fe6fb8c1777b52d5229b52b6f7a6b0b93d294a844b2521e69",
+      "bytes": 795
+    },
+    {
+      "path": "platform-adapter.js",
+      "local_sha256": "16ab5ca34d319d83c745b439d529d6f4727bc59e18574f559ec5c486501e0062",
+      "bytes": 2140
+    },
+    {
+      "path": "local-runtime.js",
+      "local_sha256": "ea0bb480c8dc24d46b46cfe001c56a5df9e121e717914a0215136424a211fff1",
+      "bytes": 1478
+    }
+  ]
+}

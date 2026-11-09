@@ -1,0 +1,182 @@
+{
+  "result": "pass",
+  "home": "http://127.0.0.1:63517/mini-games/",
+  "checks": {
+    "lazy_load": true,
+    "menu": true,
+    "language_keeps_game": true,
+    "resources": {
+      "packs": [
+        93,
+        190,
+        285,
+        323
+      ],
+      "max": 90
+    },
+    "ad_contract": {
+      "records": [
+        {
+          "id": "one",
+          "args": 0,
+          "elapsed": 101.5
+        },
+        {
+          "id": "two",
+          "args": 0,
+          "elapsed": 204.09999990463257
+        },
+        {
+          "id": "provider",
+          "args": 0
+        },
+        {
+          "id": "interface",
+          "args": 1,
+          "same": true
+        }
+      ],
+      "placements": [
+        "denied",
+        "provider",
+        "rewarded"
+      ],
+      "showing": false
+    },
+    "first_level_real_click": {
+      "page": "GamePage",
+      "stage": 1,
+      "level": "Level60",
+      "pass": 1,
+      "energy": 9
+    },
+    "second_level_real_drag_rotate": {
+      "page": "GamePage",
+      "stage": 2,
+      "level": "Level2",
+      "pass": 2,
+      "energy": 8
+    },
+    "third_level_real_drag": {
+      "page": "GamePage",
+      "stage": 3,
+      "level": "Level3",
+      "pass": 3,
+      "energy": 7
+    },
+    "save_reload": true,
+    "namespaced_save": true,
+    "hint_reward_button": true,
+    "mobile_real_touch": true
+  },
+  "inputs": [
+    {
+      "click": "page.StartButton",
+      "point": {
+        "x": 642.2384265237604,
+        "y": 916.8697916666666
+      }
+    },
+    {
+      "click": "level.OpenButton",
+      "point": {
+        "x": 535.6893239927685,
+        "y": 848.7864583333333
+      }
+    },
+    {
+      "click": "StageClearPanel.Window_NextButton",
+      "point": {
+        "x": 640,
+        "y": 919.78125
+      }
+    },
+    {
+      "drag": {
+        "a": {
+          "x": 640,
+          "y": 944.1927083333334
+        },
+        "b": {
+          "x": 640,
+          "y": 606.9114583333334
+        }
+      }
+    },
+    {
+      "drag": {
+        "a": {
+          "x": 728.2223612073436,
+          "y": 591.3554757506708
+        },
+        "b": {
+          "x": 729.5833333333334,
+          "y": 606.9114583333334
+        }
+      }
+    },
+    {
+      "click": "StageClearPanel.Window_NextButton",
+      "point": {
+        "x": 640,
+        "y": 919.78125
+      }
+    },
+    {
+      "drag": {
+        "a": {
+          "x": 501.6652408316115,
+          "y": 921.796875
+        },
+        "b": {
+          "x": 640,
+          "y": 832.2135416666666
+        }
+      }
+    },
+    {
+      "drag": {
+        "a": {
+          "x": 744.7583613119834,
+          "y": 921.796875
+        },
+        "b": {
+          "x": 639.593959839876,
+          "y": 833.1451041666666
+        }
+      }
+    },
+    {
+      "click": "page.StartButton",
+      "point": {
+        "x": 642.2384265237604,
+        "y": 916.8697916666666
+      }
+    },
+    {
+      "click": "world.TitleBack_HintButton",
+      "point": {
+        "x": 842.2548505294421,
+        "y": 372.9216944166667
+      }
+    },
+    {
+      "click": "HintPanel.Window_Panel_ShowButton",
+      "point": {
+        "x": 550.4629390495868,
+        "y": 956.734375
+      }
+    },
+    {
+      "click": "HintPanel.Window_Panel_CloseButton",
+      "point": {
+        "x": 644.0291677427685,
+        "y": 1024.1458333333335
+      }
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "external_requests": [],
+  "failed_responses": []
+}

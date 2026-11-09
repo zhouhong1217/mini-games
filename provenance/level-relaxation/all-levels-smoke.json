@@ -1,0 +1,368 @@
+{
+  "scope": "Programmatic stage loading and rendering only; no claim of clearing all levels",
+  "stages": [
+    {
+      "stage": 1,
+      "level": "Level60"
+    },
+    {
+      "stage": 2,
+      "level": "Level2"
+    },
+    {
+      "stage": 3,
+      "level": "Level3"
+    },
+    {
+      "stage": 4,
+      "level": "Level4"
+    },
+    {
+      "stage": 5,
+      "level": "Level5"
+    },
+    {
+      "stage": 6,
+      "level": "Level6"
+    },
+    {
+      "stage": 7,
+      "level": "Level7"
+    },
+    {
+      "stage": 8,
+      "level": "Level27"
+    },
+    {
+      "stage": 9,
+      "level": "Level66"
+    },
+    {
+      "stage": 10,
+      "level": "Level10"
+    },
+    {
+      "stage": 11,
+      "level": "Level11"
+    },
+    {
+      "stage": 12,
+      "level": "Level48"
+    },
+    {
+      "stage": 13,
+      "level": "Level13"
+    },
+    {
+      "stage": 14,
+      "level": "Level14"
+    },
+    {
+      "stage": 15,
+      "level": "Level15"
+    },
+    {
+      "stage": 16,
+      "level": "Level16"
+    },
+    {
+      "stage": 17,
+      "level": "Level17"
+    },
+    {
+      "stage": 18,
+      "level": "Level1"
+    },
+    {
+      "stage": 19,
+      "level": "Level19"
+    },
+    {
+      "stage": 20,
+      "level": "Level71"
+    },
+    {
+      "stage": 21,
+      "level": "Level21"
+    },
+    {
+      "stage": 22,
+      "level": "Level22"
+    },
+    {
+      "stage": 23,
+      "level": "Level23"
+    },
+    {
+      "stage": 24,
+      "level": "Level24"
+    },
+    {
+      "stage": 25,
+      "level": "Level25"
+    },
+    {
+      "stage": 26,
+      "level": "Level26"
+    },
+    {
+      "stage": 27,
+      "level": "Level8"
+    },
+    {
+      "stage": 28,
+      "level": "Level28"
+    },
+    {
+      "stage": 29,
+      "level": "Level29"
+    },
+    {
+      "stage": 30,
+      "level": "Level30"
+    },
+    {
+      "stage": 31,
+      "level": "Level31"
+    },
+    {
+      "stage": 32,
+      "level": "Level32"
+    },
+    {
+      "stage": 33,
+      "level": "Level58"
+    },
+    {
+      "stage": 34,
+      "level": "Level34"
+    },
+    {
+      "stage": 35,
+      "level": "Level35"
+    },
+    {
+      "stage": 36,
+      "level": "Level36"
+    },
+    {
+      "stage": 37,
+      "level": "Level37"
+    },
+    {
+      "stage": 38,
+      "level": "Level38"
+    },
+    {
+      "stage": 39,
+      "level": "Level39"
+    },
+    {
+      "stage": 40,
+      "level": "Level40"
+    },
+    {
+      "stage": 41,
+      "level": "Level41"
+    },
+    {
+      "stage": 42,
+      "level": "Level42"
+    },
+    {
+      "stage": 43,
+      "level": "Level43"
+    },
+    {
+      "stage": 44,
+      "level": "Level44"
+    },
+    {
+      "stage": 45,
+      "level": "Level45"
+    },
+    {
+      "stage": 46,
+      "level": "Level46"
+    },
+    {
+      "stage": 47,
+      "level": "Level47"
+    },
+    {
+      "stage": 48,
+      "level": "Level12"
+    },
+    {
+      "stage": 49,
+      "level": "Level49"
+    },
+    {
+      "stage": 50,
+      "level": "Level50"
+    },
+    {
+      "stage": 51,
+      "level": "Level51"
+    },
+    {
+      "stage": 52,
+      "level": "Level52"
+    },
+    {
+      "stage": 53,
+      "level": "Level53"
+    },
+    {
+      "stage": 54,
+      "level": "Level54"
+    },
+    {
+      "stage": 55,
+      "level": "Level55"
+    },
+    {
+      "stage": 56,
+      "level": "Level56"
+    },
+    {
+      "stage": 57,
+      "level": "Level57"
+    },
+    {
+      "stage": 58,
+      "level": "Level33"
+    },
+    {
+      "stage": 59,
+      "level": "Level59"
+    },
+    {
+      "stage": 60,
+      "level": "Level18"
+    },
+    {
+      "stage": 61,
+      "level": "Level61"
+    },
+    {
+      "stage": 62,
+      "level": "Level62"
+    },
+    {
+      "stage": 63,
+      "level": "Level63"
+    },
+    {
+      "stage": 64,
+      "level": "Level64"
+    },
+    {
+      "stage": 65,
+      "level": "Level65"
+    },
+    {
+      "stage": 66,
+      "level": "Level9"
+    },
+    {
+      "stage": 67,
+      "level": "Level67"
+    },
+    {
+      "stage": 68,
+      "level": "Level68"
+    },
+    {
+      "stage": 69,
+      "level": "Level69"
+    },
+    {
+      "stage": 70,
+      "level": "Level70"
+    },
+    {
+      "stage": 71,
+      "level": "Level20"
+    },
+    {
+      "stage": 72,
+      "level": "Level72"
+    },
+    {
+      "stage": 73,
+      "level": "Level73"
+    },
+    {
+      "stage": 74,
+      "level": "Level74"
+    },
+    {
+      "stage": 75,
+      "level": "Level75"
+    },
+    {
+      "stage": 76,
+      "level": "Level76"
+    },
+    {
+      "stage": 77,
+      "level": "Level77"
+    },
+    {
+      "stage": 78,
+      "level": "Level78"
+    },
+    {
+      "stage": 79,
+      "level": "Level79"
+    },
+    {
+      "stage": 80,
+      "level": "Level80"
+    },
+    {
+      "stage": 81,
+      "level": "Level81"
+    },
+    {
+      "stage": 82,
+      "level": "Level82"
+    },
+    {
+      "stage": 83,
+      "level": "Level83"
+    },
+    {
+      "stage": 84,
+      "level": "Level84"
+    },
+    {
+      "stage": 85,
+      "level": "Level85"
+    },
+    {
+      "stage": 86,
+      "level": "Level86"
+    },
+    {
+      "stage": 87,
+      "level": "Level87"
+    },
+    {
+      "stage": 88,
+      "level": "Level88"
+    },
+    {
+      "stage": 89,
+      "level": "Level89"
+    },
+    {
+      "stage": 90,
+      "level": "Level90"
+    }
+  ],
+  "errors": [],
+  "failed_responses": [],
+  "external": []
+}

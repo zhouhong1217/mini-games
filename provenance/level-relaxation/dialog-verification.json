@@ -1,0 +1,19 @@
+{
+  "result": "pass",
+  "scope": "Open MessageBoxPanel programmatically, then click OK with a real mouse to verify text and decoration-removal behavior",
+  "texts": {
+    "title": "提示",
+    "body": "金币不足",
+    "button": "确定"
+  },
+  "click": {
+    "x": 270,
+    "y": 577
+  },
+  "interaction": {
+    "ok": 1,
+    "removed": true
+  },
+  "failed_responses": [],
+  "page_errors": []
+}

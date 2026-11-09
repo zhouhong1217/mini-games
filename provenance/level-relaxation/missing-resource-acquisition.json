@@ -1,0 +1,26 @@
+[
+  {
+    "path": "data/title.png",
+    "url": "https://szhong.4399.com/4399swf/upload_swf/ftp51/huangcijin/20250822/09/data/title.png",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "original_image_status": "Unknown",
+    "reason": "Exact original-host URL returned HTTP404"
+  },
+  {
+    "path": "level/202.png",
+    "url": "https://szhong.4399.com/4399swf/upload_swf/ftp51/huangcijin/20250822/09/level/202.png",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "original_image_status": "Unknown",
+    "reason": "Exact original-host URL returned HTTP404"
+  },
+  {
+    "path": "level/38.png",
+    "url": "https://szhong.4399.com/4399swf/upload_swf/ftp51/huangcijin/20250822/09/level/38.png",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "original_image_status": "Unknown",
+    "reason": "Exact original-host URL returned HTTP404"
+  }
+]

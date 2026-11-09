@@ -279,3 +279,11 @@ PLAYWRIGHT_MODULE=/path/to/playwright-core/index.mjs CJK_FONT_FILE=/path/to/Noto
 保留原版 Cocos HTML5 的双人合作和双人对决。玩家 1 使用 `WASD`，玩家 2 使用方向键；移动到食物或餐盘前停下，按画面指引制作和上菜。游戏内为原版中文，外壳支持中英文、加载进度、重试、重新加载和全屏。钻石、皮肤与经营存档保存在当前浏览器，使用独立命名空间。
 
 原广告 SDK 和平台服务已从发布副本移除；原奖励入口由独立本地适配层默认完成。重建、REA 证据、实际玩法验收及 `Unknown` 范围见[恢复记录](provenance/double-kitchen.md)。
+
+## 这关很解压
+
+页面入口：`site/games/level-relaxation/index.html`；Pages 地址：<https://zhouhong1217.github.io/mini-games/games/level-relaxation/>。启动默认本地预览后访问 <http://127.0.0.1:8766/games/level-relaxation/>。
+
+单人纵屏解谜，跟随原版中文提示点击或拖动物品。外壳提供中英文说明、加载进度、失败重试、重新加载、全屏和返回首页；切换页面语言会保留正在运行的游戏。
+
+已恢复原版 90 关配置及资源；进度保存在当前浏览器。原广告和远程平台实现已从发布副本删除，提示等奖励入口由独立适配层默认完成。重建、实际玩法验收、来源和 `Unknown` 范围见[恢复记录](provenance/level-relaxation.md)。

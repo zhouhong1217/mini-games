@@ -1,0 +1,22 @@
+{
+  "result": "passed",
+  "scope": "Shell with controlled iframe fixture; actual gameplay is not covered.",
+  "home": "http://127.0.0.1:61677/mini-games/",
+  "checks": {
+    "homepage_card_and_cover": true,
+    "deferred_load": true,
+    "wrong_source_rejected": true,
+    "progress_monotonic_and_finite": true,
+    "ready": true,
+    "language_keeps_iframe": true,
+    "fullscreen": true,
+    "reload_error_retry": true,
+    "layouts": [
+      320,
+      390,
+      1280
+    ],
+    "return_home_preserves_language": true
+  },
+  "errors": []
+}

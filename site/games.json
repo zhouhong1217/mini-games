@@ -211,5 +211,30 @@
         ]
       }
     }
+  },
+  {
+    "id": "level-relaxation",
+    "title": "这关很解压",
+    "subtitle": "LEVEL RELAXATION",
+    "description": "点击、拖动，解开各式各样的小谜题。仔细观察画面，慢慢找到每一关的答案。",
+    "href": "games/level-relaxation/",
+    "cover": "assets/covers/level-relaxation.jpg",
+    "coverAlt": "这关很解压原版游戏封面",
+    "tags": [
+      "休闲解谜",
+      "鼠标 / 触屏"
+    ],
+    "translations": {
+      "en": {
+        "title": "Level Relaxation",
+        "subtitle": "LEVEL RELAXATION",
+        "description": "Tap, drag, and solve a variety of little puzzles. Look closely and find each answer at your own pace.",
+        "coverAlt": "Original Level Relaxation game cover",
+        "tags": [
+          "Casual puzzles",
+          "Mouse / touch"
+        ]
+      }
+    }
   }
 ]

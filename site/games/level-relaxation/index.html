@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f8f2">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'none'">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../i18n.js"></script>
+  <title>这关很解压 · 小游戏乐园</title>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="../../" data-language-link><span class="brand-icon" aria-hidden="true">P</span><span><span data-i18n="playground">小游戏乐园</span><small>LITTLE PLAYGROUND</small></span></a>
+    <div class="header-actions"><a class="portal-back" href="../../" data-language-link data-i18n="back">← 返回小游戏乐园</a><label class="language-picker"><span class="sr-only" data-i18n="languageLabel">语言</span><select data-language-select aria-label="语言" data-i18n-aria-label="languageLabel"><option value="zh-CN">简体中文</option><option value="en">English</option></select></label></div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="game-title">
+      <div><p class="eyebrow">LEVEL RELAXATION</p><h1 id="game-title" data-relaxation-i18n="name">这关很解压</h1><p class="description" data-relaxation-i18n="description">点击、拖动，解开各式各样的小谜题。跟随画面提示，一关一关慢慢找出答案。</p></div>
+      <span class="desktop-badge"><span aria-hidden="true">☝</span> <span data-relaxation-i18n="pointer">单人解谜 · 鼠标 / 触屏</span></span>
+    </section>
+    <section class="play-section" aria-label="这关很解压游戏" data-relaxation-aria="aria">
+      <div class="game-toolbar"><div class="game-label"><span class="live-dot"></span><span data-relaxation-i18n="name">这关很解压</span><span class="divider">/</span><span id="status" role="status" aria-live="polite">准备开始</span></div><div class="tools"><button id="restart" disabled title="重新加载" aria-label="重新加载" data-relaxation-title="restart" data-relaxation-aria="restart">↻ <span data-relaxation-i18n="restart">重新加载</span></button><button id="fullscreen" title="全屏游玩" data-i18n-title="fullscreen" data-i18n-aria-label="fullscreen">⛶ <span data-relaxation-i18n="fullscreen">全屏</span></button></div></div>
+      <div class="game-stage" id="stage">
+        <iframe id="game" loading="eager" title="这关很解压游戏" data-relaxation-title="aria" allow="autoplay; fullscreen" tabindex="0"></iframe>
+        <div class="start-cover" id="cover">
+          <span class="relaxation-sign" aria-hidden="true">✦</span>
+          <p class="cover-kicker" data-relaxation-i18n="kicker">动动手指，轻松解谜</p>
+          <h2 data-relaxation-i18n="coverTitle">这一关，慢慢解。</h2>
+          <p class="cover-copy" id="cover-copy">观察画面，试试点击或拖动，找到过关的小窍门。</p>
+          <div class="loading-progress" id="loading-progress" hidden><progress id="progress" value="0" max="1" aria-label="游戏加载进度" data-relaxation-aria="progress"></progress><span id="progress-text">0%</span></div>
+          <button class="start-button" id="start" disabled><span class="start-label">开始游戏</span><span aria-hidden="true">↗</span></button>
+          <p class="start-note" data-relaxation-i18n="loadNote">首次加载需要一点时间，请稍等片刻。</p>
+        </div>
+      </div>
+      <div class="game-bottom"><span data-relaxation-i18n="focusNote">按画面提示点击或拖动，完成当前关卡。</span><span class="original-language" data-relaxation-i18n="originalLanguage">游戏内保留原版中文</span></div>
+    </section>
+    <p class="mobile-note" data-relaxation-i18n="mobileNote">纵屏游戏，可使用鼠标或触屏操作；需要更大画面时可切换全屏。</p>
+    <section class="controls" aria-label="操作说明" data-relaxation-aria="controlsAria">
+      <div class="control"><kbd data-relaxation-i18n="clickKey">点击</kbd><span data-relaxation-i18n="clickHelp">选择与互动</span></div>
+      <div class="control"><kbd data-relaxation-i18n="dragKey">拖动</kbd><span data-relaxation-i18n="dragHelp">移动画面物品</span></div>
+      <div class="control"><kbd>↻</kbd><span data-relaxation-i18n="reloadHelp">重新加载游戏</span></div>
+    </section>
+    <p class="small-note" data-relaxation-i18n="languageNotice">语言选择只改变本页面的说明，不会重新开始正在进行的游戏。</p>
+  </main>
+  <footer class="wrap"><span data-i18n="copyright">原游戏及素材版权归各自权利人所有</span><a href="https://www.4399.com/flash/251997.htm" target="_blank" rel="noreferrer" data-relaxation-i18n="original">原始页面 ↗</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
