@@ -1,0 +1,36 @@
+{
+  "id": "./",
+  "name": "یک در هشت میلیارد",
+  "short_name": "یک در هشت میلیارد",
+  "description": "سایت رسمی «یک در هشت میلیارد» (1in8b). بازی شبیه‌سازی زندگی رایگان: تولدی تصادفی در میان نوزادان امروز و یک زندگی که تا پایان، بر پایهٔ آمار واقعی 172 کشور و منطقه (سازمان ملل، سازمان جهانی بهداشت، بانک جهانی)، زیسته می‌شود. بدون ثبت‌نام.",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EBF0ED",
+  "theme_color": "#8C1D3C",
+  "categories": [
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "../icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -136,5 +136,30 @@
         ]
       }
     }
+  },
+  {
+    "id": "1in8b",
+    "title": "80亿分之1",
+    "subtitle": "1 IN 8 BILLION",
+    "description": "在世界的某个角落出生，经历选择、相遇与成长。用另一种人生，看看不一样的世界。",
+    "href": "games/1in8b/",
+    "cover": "assets/covers/1in8b.svg",
+    "coverAlt": "80亿分之1：地球轮廓、人生轨迹与代表不同人生的人物",
+    "tags": [
+      "人生模拟",
+      "19 种语言"
+    ],
+    "translations": {
+      "en": {
+        "title": "1 in 8 Billion",
+        "subtitle": "1 IN 8 BILLION",
+        "description": "Be born somewhere in the world, make choices, and meet the people who shape a lifetime. See the world through another life.",
+        "coverAlt": "1 in 8 Billion with an abstract globe, a lifetime path, and people representing different lives",
+        "tags": [
+          "Life simulation",
+          "19 languages"
+        ]
+      }
+    }
   }
 ]

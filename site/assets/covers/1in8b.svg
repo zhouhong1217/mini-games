@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-labelledby="title description">
+  <title id="title">1 in 8 Billion</title>
+  <desc id="description">An abstract world and a winding path connecting people through a lifetime.</desc>
+  <defs>
+    <radialGradient id="paper" cx="25%" cy="12%" r="110%"><stop stop-color="#faf4df"/><stop offset="1" stop-color="#dce6ce"/></radialGradient>
+    <clipPath id="globe"><circle cx="757" cy="313" r="227"/></clipPath>
+    <pattern id="grain" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#506c51" opacity=".08"/></pattern>
+  </defs>
+  <rect width="1100" height="680" fill="url(#paper)"/>
+  <rect width="1100" height="680" fill="url(#grain)"/>
+  <circle cx="757" cy="313" r="244" fill="none" stroke="#9eaf8c" stroke-width="1"/>
+  <circle cx="757" cy="313" r="227" fill="#cedcc3" stroke="#8da284" stroke-width="2"/>
+  <g clip-path="url(#globe)">
+    <g fill="none" stroke="#a8ba9b" stroke-width="1.5">
+      <ellipse cx="757" cy="313" rx="103" ry="227"/>
+      <ellipse cx="757" cy="313" rx="183" ry="227"/>
+      <path d="M530 313h454M549 222h416M549 404h416M590 145h334M590 481h334M757 86v454"/>
+    </g>
+    <g fill="#89a080" stroke="#738e6c" stroke-width="2" stroke-linejoin="round">
+      <path d="m555 180 49-33 46 7 25 33-15 26 21 27-34 23-19 39-34-3-9-33-29-9-16-33z"/>
+      <path d="m629 303 37 5 28 34-12 36 16 29-33 59-20-24-5-55-25-29z"/>
+      <path d="m745 163 51-17 30 17 41-6 48 21 38 37-9 30-48 7-21-18-30 25-29-3-18-28-26 8-38-19z"/>
+      <path d="m753 257 46 3 38 39-12 38-21 44-33-9-11-31-25-34z"/>
+      <path d="m857 282 33-7 12 27 30 10-15 17-31-16zM887 393l42-19 39 18-5 37-34 8-38-19z"/>
+    </g>
+  </g>
+  <g fill="#2f5845">
+    <text x="86" y="178" font-family="Georgia, 'Times New Roman', serif" font-size="106">1</text>
+    <path d="M87 200h302" stroke="#587651" stroke-width="3"/>
+    <text x="86" y="269" font-family="Georgia, 'Times New Roman', serif" font-size="52">8,000,000,000</text>
+    <text x="90" y="327" font-family="Arial, sans-serif" font-size="15" letter-spacing="5">A WORLD OF LIVES</text>
+  </g>
+  <path d="M73 540c97-166 198 131 302-7s159-129 248-24 209-107 373 4" fill="none" stroke="#b39a67" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 11"/>
+  <g stroke="#f6f4e4" stroke-width="4">
+    <circle cx="170" cy="471" r="42" fill="#d8c09b"/>
+    <circle cx="386" cy="505" r="42" fill="#708e7e"/>
+    <circle cx="603" cy="482" r="42" fill="#ad8064"/>
+    <circle cx="818" cy="497" r="42" fill="#aaa976"/>
+  </g>
+  <g fill="#faf7e9">
+    <circle cx="170" cy="460" r="11"/><path d="M150 491v-9a20 20 0 0 1 40 0v9z"/>
+    <circle cx="386" cy="494" r="11"/><path d="M366 525v-9a20 20 0 0 1 40 0v9z"/>
+    <circle cx="603" cy="471" r="11"/><path d="M583 502v-9a20 20 0 0 1 40 0v9z"/>
+    <circle cx="818" cy="486" r="11"/><path d="M798 517v-9a20 20 0 0 1 40 0v9z"/>
+  </g>
+  <path d="M88 601h924" stroke="#a8b699"/>
+  <text x="90" y="638" fill="#526c51" font-family="Arial, sans-serif" font-size="14" letter-spacing="3">ONE LIFE. COUNTLESS POSSIBILITIES.</text>
+  <circle cx="952" cy="143" r="8" fill="#c3a364" stroke="#f8f5e5" stroke-width="4"/>
+</svg>

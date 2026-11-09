@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "Pinned parsers for reproducible 1in8b static adaptation; no browser runtime dependencies",
+  "dependencies": {"acorn": "8.15.0", "acorn-walk": "8.3.4"}
+}
