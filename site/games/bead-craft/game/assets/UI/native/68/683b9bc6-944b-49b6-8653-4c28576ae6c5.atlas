@@ -1,0 +1,27 @@
+
+引导.png
+size: 454,135
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 2, 2
+  size: 131, 188
+  orig: 131, 188
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 192, 2
+  size: 131, 176
+  orig: 131, 176
+  offset: 0, 0
+  index: -1
+点击
+  rotate: false
+  xy: 370, 51
+  size: 82, 82
+  orig: 82, 82
+  offset: 0, 0
+  index: -1

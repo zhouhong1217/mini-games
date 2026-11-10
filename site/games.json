@@ -286,5 +286,30 @@
         ]
       }
     }
+  },
+  {
+    "id": "bead-craft",
+    "title": "大家来拼豆",
+    "subtitle": "BEAD CRAFT",
+    "description": "选中相连的同色拼豆，借助暂存区中转，再放回同色底板，完成整幅图案。",
+    "href": "games/bead-craft/",
+    "cover": "assets/covers/bead-craft.jpg",
+    "coverAlt": "大家来拼豆原版游戏封面",
+    "tags": [
+      "休闲拼豆",
+      "鼠标 / 触屏"
+    ],
+    "translations": {
+      "en": {
+        "title": "Bead Craft",
+        "subtitle": "BEAD CRAFT",
+        "description": "Select connected beads of the same color, move them through the holding area, and place them on the matching base to complete each picture.",
+        "coverAlt": "Original Bead Craft game cover",
+        "tags": [
+          "Casual bead puzzles",
+          "Mouse / touch"
+        ]
+      }
+    }
   }
 ]
